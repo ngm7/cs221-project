@@ -90,9 +90,25 @@ Article Name    Category    Impact score(scale of 1 to 10)
 crime_report    Police      0
 
 As per the Oracle, the scores are dependent on the context of the domain in question.
-Hence even though the article "crime_report" has words like shooting and homicide, it doesnt have any impact on the domain of "guns".
+Hence even though the article "crime_report" has words like shooting and homicide, it doesnt have any impact on the domain of "guns".\newline
 
-%----------------------------------------------------------------------------------------
+For the baseline we implemented a SGD ML classifier, where tfidf and vector count was used as features. With this we achieved an accuracy score of 82.4 percent. \newline
+
+The output of the classifier is what we fed into the impact score analyser where we tried to rank the documents in terms of their impact score. \newline
+
+For calculating the impact score we gave the function a set of words for a given category of the articles. Using these tokens we identified the frequency of these tokens in each of the articles. \newline
+
+For our baseline we only tried to count the frequency of terms in the article from the set of tokens against which the impact score was being calculated.  However the numbers were not great.\newline
+
+In order to improve the same we want to explore using the following features : \newline
+
+a. Word2Vec : Using this we would include in the word frequency not just exact words which match but also words that are close in meaning. \newline
+b. Wordvector averaging \newline
+c. BERT and ELMO - Since these embedding take into account not just the word but also the context of the input this would help us improve how we calculate the impact score. \newline
+
+We would also like to improve our classification model for which we want to look at using Neural Network (RNN using LSTM CNN) using Keras and Tensorflow. \newline
+
+%---------i-------------------------------------------------------------------------------
 %	CHALLENGES
 %----------------------------------------------------------------------------------------
 
