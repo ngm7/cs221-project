@@ -30,7 +30,89 @@
 
 \section*{Introduction} % Unnumbered section
 
-Identifying information on the internet that could be potentially damaging to a brand is an important function of marketing and PR for a brand. News articles about the entire industry, a product ecosystem or the brand itself, could be relevant to a brand and impact positively or negatively. A system that provides an impact score by analyzing news and other textual documents can provide useful leads for a brand to get ahead of a PR cycle. For example, articles in Mexican national newspapers about use of guns can be relevant to NRA as a brand in North America and will be helpful for it to shape it's policies.
+Identifying information on the internet that could be potentially damaging to a brand is an important function of marketing and PR for a brand. News articles about the entire industry, a product ecosystem or the brand itself, could be relevant to a brand and impact positively or negatively. A system that provides an impact score by analyzing news and other textual documents can provide useful leads for a brand to get ahead of a PR cycle. For example, articles in Mexican national newspapers about use of guns can be relevant to NRA as a brand in North America and will be helpful for it to shape it's policies.\newline \newline
+For the final project we would try to classify an article into a news group and once classified we would try to extract Company/Organization names and analyse the article to produce an impact score for a set of pre-defined parameters, which would give an insigt into how the article may impact the Company/Organization or Brand in question.
+
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	SCOPE
+%----------------------------------------------------------------------------------------
+\section*{Project Scope} % Unnumbered section
+
+We will start by exploring to build a text classifier. To build this we will explore multiple techniques like RNN using LSTM, CNN and ML. Based on our findings we plan to either chose 1 classification model or create an ensamble of the 3 models and use that to classify our article. To name a few we would be exploring the below(and more) features to study each ones impact on the classification model.We will compare the output of the model looking at the  Precision , Recall and F1 scores on the validation set: \newline
+1. Bag of words\newline
+2. Word2Vec using Glove vectors\newline
+3. TFIDF\newline
+4. Part of Speech Tagging\newline
+5. Averaging word vectors \newline
+6. etc\newline
+
+Once the article is categorized we will explore to identify the following impact parameters and try to provide a score for each of them:
+Features: are people talking about a particular aspect of your product or service?
+Wishes/Desires: is the article talking about expressing particular desires?\newline
+Price: is the article talking about how the price of a product is being perceived.
+Competitors: how does your brand compare to competitors? What are your strengths and weaknesses?
+
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Dataset} % Unnumbered section
+
+We will be using the “20 Newsgoup” data set. The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. To the best of my knowledge, it was originally collected by Ken Lang, probably for his Newsweeder: Learning to filter netnews paper, though he does not explicitly mention this collection. The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. This comes builtin with scikit learn. And can be used directly from there. \newline
+We are also exploring to use the bbc data set which consists of 2225 documents from the BBC news website corresponding to stories in five topical areas business, entertainment, politics, sport, tech. 
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Oracle and Baseline} % Unnumbered section%
+
+
+
+
+
+-----------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Next Steps} % Unnumbered section
+
+
+-----------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Identify the attributes which build up the impact score} % Unnumbered section
+
+
+-----------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Identify the attributes which build up the impact score} % Unnumbered section
+
+
+
+-----------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Improve Model for classification and Impact score} % Unnumbered section
+
+-----------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Challenges} % Unnumbered section
+
+
 
 \section*{Project Prompt}
 
