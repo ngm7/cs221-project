@@ -80,17 +80,26 @@ Similar to classification, use of RNN or CNN or a combination of ML techniques c
 
 The Oracle will be a manual classification of articles, and impact score based on the content and its relevance to the subject.
 Following is a table of the results of the articles that have any impact to the subject of "guns".
-We are interested in articles that reflect a true impact to guns, in the context of gun control, gun legislation, NRA and 2nd amaendment
+We are interested in articles that reflect a true impact to the brand of guns and NRA.
 The following list of articles are categorized and evaluated.
 
 Article Name    Category    Impact score(scale of 1 to 10)
-53297           Politics    10
-53294           Politics    10
-176846          Politics    0
-crime_report    Police      0
+53297           Guns    0.5
+53294           Guns    0.6
+176846          Guns        0
+54580           Guns      0.7
+54591           Guns      0
+54598           Guns        0.5
+54606           Guns        0.8
+54670           Guns        0.7
+54735           Guns        0.8
+55241           Guns        0.9
+55251           Guns        0.6
+54555           Guns        0.2
 
 As per the Oracle, the scores are dependent on the context of the domain in question.
-Hence even though the article "crime_report" has words like shooting and homicide, it doesnt have any impact on the domain of "guns".
+Hence even though the article 54591 has words like "fire, suicide and survivors", it is an article about an incident, and not about guns.
+
 
 %----------------------------------------------------------------------------------------
 %	CHALLENGES
@@ -133,7 +142,7 @@ We are also looking to use the bbc data set which consists of 2225 documents fro
 The data cleanup and preprocessing is done using the TFIDFVectorizer from Scikit-learn.
 We also explored the Bagofwords algorithm before finalizing on the tfidf for training, as this has additional capability of cleaning up words that are too common across documents.
 To provide impact analysis, we have manually built a vocabulary set to look for specific domain in the articles, for two categories.
-TODO Examples of the data here:
+
 Vocab for Guns:
 guns, shooting, victim, mass, kill, murder, weapon, gun, nra, handgun, assault
 
