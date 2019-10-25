@@ -111,17 +111,32 @@ Following are some key challenges facing the project:
 %----------------------------------------------------------------------------------------
 
 \section*{Infrastructure} % Unnumbered section
-Infrastructure for the project consists of building instrumentation for the model to run
+The details of the infrastructure required for this project is detailed below. The "Application and Interface" section provides a basic information about
+the core of the project (Ex: code and any api calls). Compute is used to specify the infrastructure used for the project. The section for "Dataset" will cover
+the source, preprocessing and cleanup of data done so far.
 
-\subsection*{Application}
-The model will accept input from user on the category and will display the outputs as a stack rank of articles on the internet along with their potential impact scores. This application will interact with the model. This application will also be responsible for pulling articles from the internet in obtaining test data if required.
+\subsection*{Application and interfaces}
+The project will be written in Python using Scikit-learn library as needed. \newline
+The model will accept input from user on the category and will display the outputs as a stack rank of articles on the internet along with their potential impact scores. \newline
+This application will interact with the model. \newline
+The application will also be responsible for pulling articles from the internet in obtaining test data if required.
 
 \subsection*{Compute}
-Google cloud credits will be used to run this model and perform training of the model. 
+The project will be run on GCP (Google Cloud platform) using the google cloud credits.
 
 \subsection*{Dataset}
-We will be using the “20 Newsgroup” data set. The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. To the best of my knowledge, it was originally collected by Ken Lang, probably for his Newsweeder: Learning to filter netnews paper, though he does not explicitly mention this collection. The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. This comes builtin with scikit learn. And can be used directly from there. \newline
-We are also exploring to use the bbc data set which consists of 2225 documents from the BBC news website corresponding to stories in five topical areas business, entertainment, politics, sport, tech. 
+We will be using the “20 Newsgroup” data set from sklearn. The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. \newline
+To the best of our knowledge, it was originally collected by Ken Lang, probably for his Newsweeder: Learning to filter netnews paper, though he does not explicitly mention this collection.
+The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. This comes builtin with scikit learn. And can be used directly from there. \newline
+We are also looking to use the bbc data set which consists of 2225 documents from the BBC news website corresponding to stories in five topical areas business, entertainment, politics, sport, tech.
+
+The baseline is doing the data cleanup and preprocessing using the TFIDFVectorizer from Scikit-learn.
+We also explored the Bagofwords algorithm before finalizing on the tfidf for training, as this has additional capability of cleaning up words that are too common across documents.
+To provide impact analysis, we have manually built a vocabulary set to look for specific domain in the articles, for two categories.
+TODO Examples of the data here:
+Vocab for Guns:
+guns, shooting, victim, mass, kill, murder, weapon, gun, nra, handgun, assault
+
 
 \maketitle % Print the title
 
