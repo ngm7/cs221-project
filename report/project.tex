@@ -5,6 +5,7 @@
 \documentclass{article}
 
 \input{structure.tex} % Include the file specifying the document structure and custom commands
+\usepackage{graphicx}
 
 %----------------------------------------------------------------------------------------
 %	ASSIGNMENT INFORMATION
@@ -42,6 +43,13 @@ For the final project we will, first, classify a set of articles into a news gro
 \section*{Project Scope} % Unnumbered section
 
 This project can be broken down into two stages: a) Classification and b) Impact analysis. Both these operations will deploy ML techniques. The system will take as input some domain data which represents the brand. It will also present to the user certain categories or news groups that the brand is interested in. 
+
+\begin{figure}
+	\centering
+ 	 \includegraphics[width=0.6\linewidth]{impact_score.png}
+	  \caption{Process Overview}
+ 	 \label{fig:Impact Potential}
+\end{figure}
 
 \subsection{Classification into News Groups}
 
@@ -81,23 +89,24 @@ Following is a table of the results of the articles that have any impact to the 
 We are interested in articles that reflect a true impact to the brand of guns and NRA.
 The following list of articles are categorized and evaluated.
 
-Article Name    Category    Impact score(scale of 1 to 10)
-53297           Guns    0.5
-53294           Guns    0.6
-176846          Guns        0
-54580           Guns      0.7
-54591           Guns      0
-54598           Guns        0.5
-54606           Guns        0.8
-54670           Guns        0.7
-54735           Guns        0.8
-55241           Guns        0.9
-55251           Guns        0.6
-54555           Guns        0.2
+\begin{center}
+		\begin{tabular}{ c c c }
+			Article Index & Category & Impact Score \\
+			55241 & Guns & 0.9 \\ 
+			54735 & Guns & 0.8 \\ 
+			54606 & Guns & 0.8 \\ 
+			54670 & Guns & 0.7 \\ 
+			54580 & Guns & 0.7 \\ 
+			53294 & Guns & 0.6 \\ 
+			54598 & Guns & 0.5 \\ 
+			53297 & Guns & 0.5 \\ 
+			176846 & Guns & 0.0 \\ 
+			54591 & Guns  & 0.0 \\  	 
+		\end{tabular}
+	\end{center}
 
 As per the Oracle, the scores are dependent on the context of the domain in question.
 Hence even though the article 54591 has words like "fire, suicide and survivors", it is an article about an incident, and not about guns.
-
 
 \subsection{Baseline}
 For the baseline we implemented the following:
@@ -109,10 +118,7 @@ For the baseline we implemented the following:
 	\item \textit {Impact Analysis:} Given the domain information in the form of some vocabulary, were the set of tokens against which the impact score was being calculated.  However the numbers were not great. We talk about these challenges in the following section
 \end{enumerate}
 
-\subsection {Oracle and Baseline Stats}
-We ran a baseline program for a brand like \textit{guns}. 
-
-We used the \textit{talk.politics.guns} category already provided in the Newsgroup20 dataset. 
+We ran a baseline program for a brand like \textit{guns}. We used the \textit{talk.politics.guns} category already provided in the Newsgroup20 dataset. 
 
 We took as domain input the following vocabulary: \textit{"guns", "shooting", "victim", "mass", "kill", "murder", "weapon", "gun", "nra", "handgun", "assault"}. The baseline performance can be noted down in the following way:
 
@@ -122,6 +128,7 @@ We took as domain input the following vocabulary: \textit{"guns", "shooting", "v
 	
 	\begin{center}
 		\begin{tabular}{ c c }
+			Article Index & Impact Score \\
 			7274 & 0.05 \\ 
 			3613 & 0.03 \\  
 			2668 & 0.03 \\ 
@@ -135,6 +142,8 @@ We took as domain input the following vocabulary: \textit{"guns", "shooting", "v
 		\end{tabular}
 	\end{center}
 \end{itemize}
+
+
 
 \maketitle 
 %---------i-------------------------------------------------------------------------------
