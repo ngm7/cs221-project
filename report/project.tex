@@ -77,16 +77,27 @@ We undertook basic exercise to identify upper and lower bounds for our system. T
 \subsection{Oracle}
 The Oracle will be a manual classification of articles, and impact score based on the content and its relevance to the subject.
 Following is a table of the results of the articles that have any impact to the subject of "guns".
-We are interested in articles that reflect a true impact to guns, in the context of gun control, gun legislation, NRA and 2nd amendment
+
+We are interested in articles that reflect a true impact to the brand of guns and NRA.
 The following list of articles are categorized and evaluated.
 
 Article Name    Category    Impact score(scale of 1 to 10)
-53297           Gun    10
-53294           Gun    10
-176846         Gun    0
+53297           Guns    0.5
+53294           Guns    0.6
+176846          Guns        0
+54580           Guns      0.7
+54591           Guns      0
+54598           Guns        0.5
+54606           Guns        0.8
+54670           Guns        0.7
+54735           Guns        0.8
+55241           Guns        0.9
+55251           Guns        0.6
+54555           Guns        0.2
 
 As per the Oracle, the scores are dependent on the context of the domain in question.
-Hence even though the article "crime-report" has words like shooting and homicide, it doesn't have any impact on the domain of "guns".\newline
+Hence even though the article 54591 has words like "fire, suicide and survivors", it is an article about an incident, and not about guns.
+
 
 \subsection{Baseline}
 For the baseline we implemented the following:
@@ -169,19 +180,32 @@ Following are some key challenges facing the project:
 %----------------------------------------------------------------------------------------
 
 \section{Infrastructure} % Unnumbered section
-Infrastructure for the project consists of building instrumentation for the model to run
+The details of the infrastructure required for this project is detailed below. The "Application and Interface" section provides a basic information about
+the core of the project (Ex: code and any api calls). Compute is used to specify the infrastructure used for the project. The section for "Dataset" will cover
+the source, preprocessing and cleanup of data done so far.
 
-\subsection{Application}
-The model will accept input from user on the category and will display the outputs as a stack rank of articles on the internet along with their potential impact scores. This application will interact with the model. This application will also be responsible for pulling articles from the internet in obtaining test data if required.
+\subsection{Application and interfaces}
+The project will be written in Python using Scikit-learn library as needed. \newline
+The model will accept input from user on the category and will display the outputs as a stack rank of articles on the internet along with their potential impact scores. \newline
+This application will interact with the model. \newline
+The application will also be responsible for pulling articles from the internet in obtaining test data if required.
 
 \subsection{Compute}
-Google cloud credits will be used to run this model and perform training of the model. 
+The project will be run on GCP (Google Cloud platform) using the google cloud credits.
 
 \subsection{Dataset}
-We will be using the “20 Newsgroup” data set. The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. To the best of my knowledge, it was originally collected by Ken Lang, probably for his Newsweeder: Learning to filter netnews paper, though he does not explicitly mention this collection. The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. This comes builtin with scikit learn. And can be used directly from there. 
+We will be using the “20 Newsgroup” data set from sklearn. The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. \newline
+To the best of our knowledge, it was originally collected by Ken Lang, probably for his Newsweeder: Learning to filter netnews paper, though he does not explicitly mention this collection.
+The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. This comes builtin with scikit learn. And can be used directly from there. \newline
+We are also looking to use the bbc data set which consists of 2225 documents from the BBC news website corresponding to stories in five topical areas business, entertainment, politics, sport, tech.
 
-We are also exploring to use the bbc data set which consists of 2225 documents from the BBC news website corresponding to stories in five topical areas business, entertainment, politics, sport, tech. 
+The data cleanup and preprocessing is done using the TFIDFVectorizer from Scikit-learn.
+We also explored the Bagofwords algorithm before finalizing on the tfidf for training, as this has additional capability of cleaning up words that are too common across documents.
+To provide impact analysis, we have manually built a vocabulary set to look for specific domain in the articles, for two categories.
 
+
+Vocab for medicine
+intestine, parasitic, hospital, lungs, ulcer, trauma, accident, illness, chigger, bug, hemorrhage, chronic, patient, clinic, medicine, cancer,health, cholesterol,drug, hdl,ldl, disease
 \maketitle % Print the title
 
 %----------------------------------------------------------------------------------------
