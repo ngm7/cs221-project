@@ -130,14 +130,15 @@ To the best of our knowledge, it was originally collected by Ken Lang, probably 
 The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. This comes builtin with scikit learn. And can be used directly from there. \newline
 We are also looking to use the bbc data set which consists of 2225 documents from the BBC news website corresponding to stories in five topical areas business, entertainment, politics, sport, tech.
 
-The baseline is doing the data cleanup and preprocessing using the TFIDFVectorizer from Scikit-learn.
+The data cleanup and preprocessing is done using the TFIDFVectorizer from Scikit-learn.
 We also explored the Bagofwords algorithm before finalizing on the tfidf for training, as this has additional capability of cleaning up words that are too common across documents.
 To provide impact analysis, we have manually built a vocabulary set to look for specific domain in the articles, for two categories.
 TODO Examples of the data here:
 Vocab for Guns:
 guns, shooting, victim, mass, kill, murder, weapon, gun, nra, handgun, assault
 
-
+Vocab for medicine
+intestine, parasitic, hospital, lungs, ulcer, trauma, accident, illness, chigger, bug, hemorrhage, chronic, patient, clinic, medicine, cancer,health, cholesterol,drug, hdl,ldl, disease
 \maketitle % Print the title
 
 %----------------------------------------------------------------------------------------
