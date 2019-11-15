@@ -18,13 +18,14 @@ import sys
 from collections import defaultdict
 from typing import List
 
+from sklearn import metrics
 from sklearn.datasets import fetch_20newsgroups
+from sklearn.feature_extraction import stop_words
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.pipeline import Pipeline
 from sklearn.linear_model import SGDClassifier
-from sklearn.naive_bayes import BernoulliNB
-import numpy as np
+from sklearn.naive_bayes import BernoulliNB, MultinomialNB
+from sklearn.pipeline import Pipeline
 
 CATEGORY_MAP = {
     'guns': 16
@@ -66,29 +67,68 @@ categories."""
                                                            early_stopping=True, tol=100))])
         text_clf_svm.fit(self.training_data.data, self.training_data.target)
         predicted_svm = text_clf_svm.predict(self.testing_data.data)
-        # print(np.mean(predicted_svm == self.testing_data.target))
-        # print(predicted_svm)
-        # Keeping this here to see if we can use it later.(if needed)TODO Cleanup
-        # naive_bayes = MultinomialNB()
-        # naive_bayes.fit(self.training_data.data, modified_predicted_svm)
-        # predict_nb = naive_bayes(self.testing_data.data)
+        score = metrics.accuracy_score(predicted_svm, self.testing_data.target)
+        print("Accuracy: {}".format(score))
         return predicted_svm
 
-    # If we were to use NaiveBayes as the training model
-    def trainmodelNaiveBayes(self):
-        count_vect, tfidf_transformer = self.extractfeatures()
 
-        text_clf_svm = Pipeline([('vect', count_vect),
-                                 ('tfidf', tfidf_transformer),
-                                 ('clf-svm', BernoulliNB(alpha=1))])
-        text_clf_svm.fit(self.training_data.data, [['guns']])
-        predicted_svm = text_clf_svm.predict(self.testing_data.data)
-        print(np.mean(predicted_svm == self.testing_data.target))
-        return predicted_svm
+    def naiveBayesMB(self):
+        count_vect = CountVectorizer(stop_words='english')
+        X_train_counts = count_vect.fit_transform(self.training_data.data)
+        X_test_data = count_vect.transform(self.testing_data.data)
+        Y_test_target = count_vect.transform(self.testing_data.data)
+
+        mnb = MultinomialNB()
+        mnb.fit(X_train_counts, self.training_data.target)
+        predict = mnb.predict(X_test_data)
+        score = metrics.accuracy_score(predict, self.testing_data.target)
+
+        print("Accuracy: {}".format(score))
+
+        return predict
+
 
 
 class ImpactScorer:
     """A class that contains generic methods for calculating impact scores"""
+    @staticmethod
+    def cleanupdata(doc):
+        testdata1 = doc.lower()
+        cleandata = ''
+
+        for word in testdata1.split(' '):
+            if word not in stop_words.ENGLISH_STOP_WORDS and len(word) > 1:
+                cleandata = cleandata + ' ' + word
+
+        # TODO can use this to do additional preprocessing
+        # symbols = "!\"#$%&()*+-./:;<=>?@[\]^_`{|}~\n"
+        # for i in symbols:
+        #     cleandata = np.char.replace(cleandata, i, ' ')
+        # cleandata = np.char.replace(cleandata, "'", '')
+        return cleandata
+
+    @staticmethod
+    def calculatetfidf(classifier, vocabulary, document_indices):
+        impact_score = {}
+        for dIndex in document_indices:
+            impact_score[dIndex] = 0
+            freq = defaultdict(float)
+            newdata = ImpactScorer.cleanupdata(classifier.testing_data.data[dIndex])
+
+            for word in newdata.split(' '):
+                freq[word] += 1.0
+
+            count_vocab_words = 0
+            for word in vocabulary:
+                count_vocab_words += freq[word]
+            tf = count_vocab_words/len(newdata.split(' '))
+            #since we have already computed the importance of these documents using classification, we stop here and get the score
+            impact_score[dIndex] = tf * 100
+        s = sum(score for i, score in impact_score.items())
+        for i, score in impact_score.items():
+            impact_score[i] = score / s
+
+        return sorted(impact_score.items(), key=lambda x: x[1], reverse=True)
 
     @staticmethod
     def get_stack_rank(classifier: Classifier, vocabulary: List[str], document_indices: List[int]):
@@ -115,15 +155,16 @@ class ImpactScorer:
 def main(category: str):
     """The Main function"""
     classifier = Classifier()
-    predictions = classifier.trainmodel()
+    predictions = classifier.naiveBayesMB()
 
     # identify indices for talk.politics.guns (index 16 in target_names)
     indices = [index for index, prediction in enumerate(predictions) if prediction == CATEGORY_MAP[category]]
 
     # identify the articles
-    stack = ImpactScorer.get_stack_rank(classifier=classifier,
+    stack = ImpactScorer.calculatetfidf(classifier=classifier,
                                         vocabulary=VOCABULARY[category],
                                         document_indices=indices)
+    # print(classifier.testing_data.data[6620])
     print(stack[0:10])  # print top N
 
 
