@@ -14,7 +14,7 @@
 \title{CS221: Project Progress Report} % Title of the assignment
 
 \author{	\textbf{Nimisha Tandon}\\  \texttt{nimisha@stanford.edu} \\
-		\textbf{Shaila Balaraddi}\\  \texttt{shailaab@stanford.edu} \\ 
+		\textbf{Shaila Balaraddi}\\  \texttt{shailaab@stanford.edu} \\
 		\textbf{Naman Muley}\\      \texttt{ngmuley@stanford.edu}}
 
 \date{\today} % University, school and/or department name(s) and a date
@@ -49,6 +49,16 @@ We still did look at using the Naive Bayes algorithm to perform classification, 
 \subsection {Impact Score}
 
 \textit{Talk a bit about how GloVe and NB are good fits to calculate the impact score}
+We explored and implemented a Naive Bayes classifier as an alternative classifier to build the model.
+
+The Naive Bayes algorithm provides a very simple framework that builds on the probabilistic model based on training data.
+The algorithm is based on a statistical classification method called Bayes Theorem.
+
+In order to understand how naive Bayes classifiers work, we can represent Bayes rule as the following probabilistic model as follows:
+
+\[Posteriorprobability = \frac{conditionalprobability * priorprobability}{evidence}\]
+Bayes’ theorem forms the core of the whole concept of naive Bayes classification. The posterior probability, in the context of a classification problem, can be interpreted as: “What is the probability that a particular object belongs to class i given its observed feature values?” The answer to this question gives us a score of how much a document is relevant to a given topic.
+
 
 Impact score needs to be a number that represents how relevant or impactful will a particular article be to the brand. Hence, we extended our previous approach of having a dictionary of words that are relevant to the brand and applying some NLP algorithms to come up with a score of how closely does the article's content relate to the dictionary relevant to the brand.
 
@@ -61,13 +71,47 @@ Impact score needs to be a number that represents how relevant or impactful will
 \subsubsection {GloVe}
 
 \subsubsection {Naive Bayes}
+The Naive Bayes algorithm:
+Naive Bayes consists of multiple algorithms, like Multinomial Naive Bayes and Multi-variate Bernoulli Naive Bayes.
 
-\maketitle 
+We found that the Multinomial Naive Bayes algorithm is well suited for our project. This is because this algorithm gives us the "term" frequency of a dictionary of words of a specific brand.
+The term frequency is defined as the "number of times a given term appears in a given document". In practice the term frequency is often normalized by dividing the raw term frequency by the length of the document.
+
+The term frequency can then be used to compute the max likelihood estimate based on the training data.
+
+The algorithm to use for training using Naive Bayes:
+
+function Train NaiveBayes(D, C)
+
+for each category:
+
+#Calculate the prior probability
+num-docs = number of docs in D
+
+num-category = number of docs in category
+
+\[priorprobability[category] \leftarrow log \frac{N_{c}}{N_{doc}}\]
+
+ V = vocabulary of D
+
+ docs[category] <- append d for d subset of D in specified category
+
+ for each word in V:
+
+    Count(w,c) <- num of occurences of w in docs[category]
+
+    \[priorprobability[category] \leftarrow log \frac{count(w,c) +1)}{\sum_{w} count(w,c) + |V|)}\]
+
+return priorprobability
+
+We can then use the priorprobability to test our data to get the maximum likleihood.
+
+\maketitle
 %---------i-------------------------------------------------------------------------------
 %	IMPLEMENTATION
 %----------------------------------------------------------------------------------------
 \section{Implementation} % Unnumbered section
- 
+
  \maketitle
 %----------------------------------------------------------------------------------------
 %	PRELIMINARY RESULTS
