@@ -6,6 +6,7 @@
 
 \input{structure.tex} % Include the file specifying the document structure and custom commands
 \usepackage{graphicx}
+\usepackage[ruled]{algorithm2e}
 
 %----------------------------------------------------------------------------------------
 %	ASSIGNMENT INFORMATION
@@ -39,7 +40,7 @@ This problem has a rich application of various algorithms for natural language p
 %----------------------------------------------------------------------------------------
 %	MODEL
 %----------------------------------------------------------------------------------------
-\section{Model} % Unnumbered section
+\section{Methodology} % Unnumbered section
 
 \subsection {Classification}
 In making progress for the project, we decided to give more weight to the impact score analysis section, since that's the more novel component of the solution approach. Our classification currently still uses a simple Stochastic Gradient Descent classifier. We found it's accuracy to be nearly 82 percent and thought we can improve upon that in the later parts of the project.
@@ -47,31 +48,59 @@ In making progress for the project, we decided to give more weight to the impact
 We still did look at using the Naive Bayes algorithm to perform classification, since that's what literature reported is it's primary use. It performed slightly better at classification than SGD but not by much.
 
 \subsection {Impact Score}
+Impact score needs to be a number that represents how relevant or impactful will a particular article be to the brand. Hence, we extended our previous approach of having a vocabulary of words that are relevant to the brand and applying a combination GloVe analysis and TF-IDF to come up with a score of how closely does the article's content relate to the dictionary relevant to the brand.
 
-\textit{Talk a bit about how GloVe and NB are good fits to calculate the impact score}
+\subsubsection {Vocabulary of a brand as an input}
+It was possible to decipher a set of words that are deemed contextually more dominant and important for a category like \textit{guns} by various methodologies including TF-IDF itself. But we believe finding relevancy to a brand should allow some input bias from the brand. For example, a brand may way to find articles relevant to a subset of their very specific products and those may not be popularly present in the testing dataset. 
 
-Impact score needs to be a number that represents how relevant or impactful will a particular article be to the brand. Hence, we extended our previous approach of having a dictionary of words that are relevant to the brand and applying some NLP algorithms to come up with a score of how closely does the article's content relate to the dictionary relevant to the brand.
+We allow a list of words to act as our vocabulary for finding articles with highest potential impact. For example, for a brand like NRA, we take the following set of words as a vocabulary:
+\begin{center}
+["guns", "shooting", "weapon", "nra", "handgun", "assault", "rifle", "america", "firearm"]
+\end {center}
 
-\maketitle
-%----------------------------------------------------------------------------------------
-%	ALGORITHM
-%----------------------------------------------------------------------------------------
-\section {Algorithm}
+\subsubsection {Similar Words using GloVe learning}
+A measure of how relevant an article is to a brand is to know how many of semantically or linguistically similar words occur in that article. For each of the words in the vocabulary, we get a list of \textit{similar words} using the GloVe learning algorithm [1]. We then use a simple TF algorithm to understand how commonly do these similar words occur in an article. 
 
-\subsubsection {GloVe}
+\begin{center}
+\begin{algorithm}[H]
+\SetAlgoLined
+ initialization\;
+ \While{While condition}{
+  instructions\;
+  \eIf{condition}{
+   instructions1\;
+   instructions2\;
+   }{
+   instructions3\;
+  }
+ }
+ \caption{Impact Score using similar words from GloVe }
+\end{algorithm}
+\end{center}
 
-\subsubsection {Naive Bayes}
+\subsubsection {Relevant words using TF-IDF}
+
+\subsubsection {Get Stack Rank of Articles}
 
 \maketitle 
 %---------i-------------------------------------------------------------------------------
 %	IMPLEMENTATION
 %----------------------------------------------------------------------------------------
 \section{Implementation} % Unnumbered section
+ \textit{Talk about how the models are trained, what data sets did we use for these models. how are the data sets relevant. Future work may involve using and creating better data sets}
  
  \maketitle
 %----------------------------------------------------------------------------------------
 %	PRELIMINARY RESULTS
 %----------------------------------------------------------------------------------------
 \section{Preliminary Results} % Unnumbered section
+\textit{Show similar words, maybe a fancy representation of similar words and important words as found by GloVe and TF-IDF respectively}
 
+\maketitle
+%----------------------------------------------------------------------------------------
+%	PRELIMINARY RESULTS
+%----------------------------------------------------------------------------------------
+\section {Future Work}
+1. Get better training data for the algorithms
+2. Have the application fetch testing data from today's newsfeed
 \end{document}
