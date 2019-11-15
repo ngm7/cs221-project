@@ -1,0 +1,77 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+\usepackage{graphicx}
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{CS221: Project Progress Report} % Title of the assignment
+
+\author{	\textbf{Nimisha Tandon}\\  \texttt{nimisha@stanford.edu} \\
+		\textbf{Shaila Balaraddi}\\  \texttt{shailaab@stanford.edu} \\ 
+		\textbf{Naman Muley}\\      \texttt{ngmuley@stanford.edu}}
+
+\date{\today} % University, school and/or department name(s) and a date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introduction} % Unnumbered section
+
+We are tackling the problem of identifying articles that could be potentially dangerous to a brand. Our approach has two steps. First, we take in a set of articles and classify them into categories. In the final application, this could be done by pulling articles from the internet daily. Once these categories are identified, in the second step, we create an impact score for the brand in question. The articles with top impact scores can be provided to the client as having high potential for impact to the brand.
+
+This problem has a rich application of various algorithms for natural language processing. Since proposing this project, we have explored a few algorithms to create a better sense of what an impact score can be. We looked into utilizing unsupervised learning algorithms like GloVe and supervised algorithm implementations like Naive Bayes. These have given us better impact scores. Further more, it feels like we could perform some more fine tuning to come up with better models to bring a richer understanding of the \textit{impact score}
+
+\maketitle % Print the title
+%----------------------------------------------------------------------------------------
+%	MODEL
+%----------------------------------------------------------------------------------------
+\section{Model} % Unnumbered section
+
+\subsection {Classification}
+In making progress for the project, we decided to give more weight to the impact score analysis section, since that's the more novel component of the solution approach. Our classification currently still uses a simple Stochastic Gradient Descent classifier. We found it's accuracy to be nearly 82 percent and thought we can improve upon that in the later parts of the project.
+
+We still did look at using the Naive Bayes algorithm to perform classification, since that's what literature reported is it's primary use. It performed slightly better at classification than SGD but not by much.
+
+\subsection {Impact Score}
+
+\textit{Talk a bit about how GloVe and NB are good fits to calculate the impact score}
+
+Impact score needs to be a number that represents how relevant or impactful will a particular article be to the brand. Hence, we extended our previous approach of having a dictionary of words that are relevant to the brand and applying some NLP algorithms to come up with a score of how closely does the article's content relate to the dictionary relevant to the brand.
+
+\maketitle
+%----------------------------------------------------------------------------------------
+%	ALGORITHM
+%----------------------------------------------------------------------------------------
+\section {Algorithm}
+
+\subsubsection {GloVe}
+
+\subsubsection {Naive Bayes}
+
+\maketitle 
+%---------i-------------------------------------------------------------------------------
+%	IMPLEMENTATION
+%----------------------------------------------------------------------------------------
+\section{Implementation} % Unnumbered section
+ 
+ \maketitle
+%----------------------------------------------------------------------------------------
+%	PRELIMINARY RESULTS
+%----------------------------------------------------------------------------------------
+\section{Preliminary Results} % Unnumbered section
+
+\end{document}
