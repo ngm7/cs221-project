@@ -41,6 +41,14 @@ This problem has a rich application of various algorithms for natural language p
 %	MODEL
 %----------------------------------------------------------------------------------------
 \section{Methodology} % Unnumbered section
+We extend our two step approach which we presented in the proposal. We have spent time exploring different algorithms for both these stages. We seem to have settled on to a methodology, which we explain in this section.
+
+\begin{figure}
+	\centering
+ 	 \includegraphics[width=0.6\linewidth]{impact_score.png}
+	  \caption{Process Overview}
+ 	 \label{fig:Impact Potential}
+\end{figure}
 
 \subsection {Classification}
 In making progress for the project, we decided to give more weight to the impact score analysis section, since that's the more novel component of the solution approach. Our classification currently still uses a simple Stochastic Gradient Descent classifier. We found it's accuracy to be nearly 82 percent and thought we can improve upon that in the later parts of the project.
@@ -48,92 +56,65 @@ In making progress for the project, we decided to give more weight to the impact
 We still did look at using the Naive Bayes algorithm to perform classification, since that's what literature reported is it's primary use. It performed slightly better at classification than SGD but not by much.
 
 \subsection {Impact Score}
-To calculate the impact score, we explored multiple algorithms. Once a document is classified based on categories using the CountVectorizer, TfidfTransformer and StochasticGradient Classifier, we could calculate the impact score of a given category in a given test data/document. Following are some of the algorithms we explored.
-\subsubsection{TFIDF}
+
+Impact score needs to be a number that represents how relevant or impactful will a particular article be to the brand. Hence, we extended our previous approach of having a vocabulary of words that are relevant to the brand and applying a combination GloVe analysis, TF-IDF and Naive Bayes to come up with a score of how closely does the article's content relate to the dictionary relevant to the brand.
+
+\subsubsection {Vocabulary of a brand as an input}
+It was possible to decipher a set of words that are deemed contextually more dominant and important for a category like \textit{guns} by various methodologies including TF-IDF itself. But we believe finding relevancy to a brand should allow some input bias from the brand. For example, a brand may way to find articles relevant to a subset of their very specific products and those may not be popularly present in the testing dataset. 
+
+We allow a list of words to act as our vocabulary for finding articles with highest potential impact. For example, for a brand like NRA, we take the following set of words as a vocabulary:
+\begin{center}
+["guns", "shooting", "weapon", "nra", "handgun", "assault", "rifle", "america", "firearm"]
+\end {center}
+
+\subsubsection {Similar Words using GloVe learning}
+A measure of how relevant an article is to a brand is to know how many of semantically or linguistically similar words occur in that article. For each of the words in the vocabulary, we get a list of \textit{similar words} using the GloVe learning algorithm [1]. We then use a simple TF algorithm to understand how commonly do these similar words occur in an article. 
+
+\begin{center}
+\begin{algorithm}[H]
+\SetAlgoLined
+ initialization\;
+ \While{While condition}{
+  instructions\;
+  \eIf{condition}{
+   instructions1\;
+   instructions2\;
+   }{
+   instructions3\;
+  }
+ }
+ \caption{Impact Score using similar words from GloVe }
+\end{algorithm}
+\end{center}
+
+\subsubsection {Relevant words using TF-IDF}
+
 Term Frequency-Inverse Document Frequency commonly known as TF-IDF can be used to find the frequency of vocabulary words in a document to perform sentiment analysis or extract relevancy from a document.
 
 This algorihm has 2 algorithms working together.
-\begin{itemize}
+\begin{enumerate}
 \item {Term Frequency}
 \[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
-\end{itemize}
+
 
 Before using this algorithm, we first do some preprocessing of the doc as follows:
 \begin{itemize}
 \item {Remove all stop words.(ex: in, the,are it)}
 \item {Convert all words to lowercase.}
-
+\end {itemize}
 Now using the term frequency alone will end up giving us words that are not unique (for ex: repeated words, should not add up to the relevance of the document)
- \item Inverse document frequency
-\end{itemize}
+
+\item Inverse document frequency
 
  This gives us the uniqueness of a word:
 
  \[idf(t,d) =  = log(\frac{no of times the term appears }{no of documents containing the word})\]
 
- The final step is to multiply the two together to get the TFIDF score which would give us the impact score:
+The final step is to multiply the two together to get the TFIDF score which would give us the impact score.
+\end{enumerate}
 
-
-
-\subsubsection{Naive Bayes}
-
-
-We explored and implemented a Naive Bayes classifier as an alternative classifier to build the model.
-
-The Naive Bayes algorithm provides a very simple framework that builds on the probabilistic model based on training data.
-The algorithm is based on a statistical classification method called Bayes Theorem.
-
-In order to understand how naive Bayes classifiers work, we can represent Bayes rule as the following probabilistic model as follows:
-
-\[Posteriorprobability = \frac{conditionalprobability * priorprobability}{evidence}\]
-Bayes’ theorem forms the core of the whole concept of naive Bayes classification. The posterior probability, in the context of a classification problem, can be interpreted as: “What is the probability that a particular object belongs to class i given its observed feature values?” The answer to this question gives us a score of how much a document is relevant to a given topic.
-
-
-Impact score needs to be a number that represents how relevant or impactful will a particular article be to the brand. Hence, we extended our previous approach of having a dictionary of words that are relevant to the brand and applying some NLP algorithms to come up with a score of how closely does the article's content relate to the dictionary relevant to the brand.
-
-\maketitle
-%----------------------------------------------------------------------------------------
-%	ALGORITHM
-%----------------------------------------------------------------------------------------
-\section {Algorithm}
-
-\subsubsection {GloVe}
-
-\subsubsection {Naive Bayes}
-The Naive Bayes algorithm:
-Naive Bayes consists of multiple algorithms, like Multinomial Naive Bayes and Multi-variate Bernoulli Naive Bayes.
-
-We found that the Multinomial Naive Bayes algorithm is well suited for our project. This is because this algorithm gives us the "term" frequency of a dictionary of words of a specific brand.
-The term frequency is defined as the "number of times a given term appears in a given document". In practice the term frequency is often normalized by dividing the raw term frequency by the length of the document.
-
-The term frequency can then be used to compute the max likelihood estimate based on the training data.
-
-The algorithm to use for training using Naive Bayes:
-
-function Train NaiveBayes(D, C)
-
-for each category:
-
-\textit{Calculate the prior probability}
-num-docs = number of docs in D
-
-num-category = number of docs in category
-
-\[priorprobability[category] \leftarrow log \frac{N_{c}}{N_{doc}}\]
-
- V = vocabulary of D
-
- docs[category] <- append d for d subset of D in specified category
-
- for each word in V:
-
-    Count(w,c) <- num of occurences of w in docs[category]
-
-    \[priorprobability[category] \leftarrow log \frac{count(w,c) +1)}{\sum_{w} count(w,c) + |V|)}\]
-
-return priorprobability
-
-We can then use the priorprobability to test our data to get the maximum likleihood.
+\subsubsection {Build a Stack Rank}
+\textit {use the above two sets of words to feed the stack rank}
 
 \maketitle
 %---------i-------------------------------------------------------------------------------
