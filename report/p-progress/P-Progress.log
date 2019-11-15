@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  14 NOV 2019 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 NOV 2019 12:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1390,51 +1390,51 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \c@Question=\count303
 )
 LaTeX Font Info:    Try loading font information for T1+XCharter-TLF on input l
-ine 24.
+ine 25.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/xcharter/T1XCharter-TLF.fd
 File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-
 TLF.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 24.
+(Font)              scaled to size 10.0pt on input line 25.
 
 (./P-Progress.aux)
 \openout1 = `P-Progress.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 25.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 25.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
 \AtBeginShipoutBox=\box74
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1507,60 +1507,76 @@ ABD: EveryShipout initializing macros
 \c@mv@tabular=\count311
 \c@mv@boldtabular=\count312
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 26.
+(Font)              scaled to size 17.28pt on input line 27.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 26.
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+(Font)              scaled to size 12.0pt on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 26.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 27.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 26.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 26.
+(Font)              scaled to size 12.0pt on input line 27.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 27.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 32.
+(Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 32.
+(Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 36.
+(Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 61.
- [1
+(Font)              scaled to size 10.0pt on input line 52.
+LaTeX Font Info:    Try loading font information for TS1+XCharter-TLF on input 
+line 57.
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-P-Progress.aux) ) 
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcharter/TS1XCharter-TLF.fd
+File: TS1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for TS1/XCharte
+r-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 57.
+
+[1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] (./P-Progress.aux) ) 
 Here is how much of TeX's memory you used:
- 28078 strings out of 492616
- 529597 string characters out of 6129482
- 559071 words of memory out of 5000000
- 31568 multiletter control sequences out of 15000+600000
- 589176 words of font info for 63 fonts, out of 8000000 for 9000
+ 28118 strings out of 492616
+ 530437 string characters out of 6129482
+ 560071 words of memory out of 5000000
+ 31598 multiletter control sequences out of 15000+600000
+ 592160 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,6n,65p,908b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/xcharter/x
-ch_tuu2ww.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-s
-uper-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/xcharter/xch_a3
-psji.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XChart
-er-Bold.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCh
-arter-Italic.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/xcharte
-r/XCharter-Roman.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-
-super/sftt1200.pfb>
-Output written on P-Progress.pdf (2 pages, 121852 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips
+/xcharter/xch_q7u3cc.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/xc
+harter/xch_tuu2ww.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-su
+per/cm-super-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/xcharte
+r/xch_a3psji.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/xcharte
+r/XCharter-Bold.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/xcha
+rter/XCharter-Italic.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
+/xcharter/XCharter-Roman.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm
+-super/sftt1200.pfb>
+Output written on P-Progress.pdf (3 pages, 168890 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

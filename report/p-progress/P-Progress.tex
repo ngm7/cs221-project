@@ -6,6 +6,7 @@
 
 \input{structure.tex} % Include the file specifying the document structure and custom commands
 \usepackage{graphicx}
+\usepackage[ruled]{algorithm2e}
 
 %----------------------------------------------------------------------------------------
 %	ASSIGNMENT INFORMATION
@@ -39,7 +40,7 @@ This problem has a rich application of various algorithms for natural language p
 %----------------------------------------------------------------------------------------
 %	MODEL
 %----------------------------------------------------------------------------------------
-\section{Model} % Unnumbered section
+\section{Methodology} % Unnumbered section
 
 \subsection {Classification}
 In making progress for the project, we decided to give more weight to the impact score analysis section, since that's the more novel component of the solution approach. Our classification currently still uses a simple Stochastic Gradient Descent classifier. We found it's accuracy to be nearly 82 percent and thought we can improve upon that in the later parts of the project.
@@ -52,17 +53,19 @@ To calculate the impact score, we explored multiple algorithms. Once a document 
 Term Frequency-Inverse Document Frequency commonly known as TF-IDF can be used to find the frequency of vocabulary words in a document to perform sentiment analysis or extract relevancy from a document.
 
 This algorihm has 2 algorithms working together.
-\item
-Term Frequency
-
+\begin{itemize}
+\item {Term Frequency}
 \[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
+\end{itemize}
 
 Before using this algorithm, we first do some preprocessing of the doc as follows:
-\item Remove all stop words.(ex: in, the,are it)
-\item Convert all words to lowercase.
+\begin{itemize}
+\item {Remove all stop words.(ex: in, the,are it)}
+\item {Convert all words to lowercase.}
 
 Now using the term frequency alone will end up giving us words that are not unique (for ex: repeated words, should not add up to the relevance of the document)
  \item Inverse document frequency
+\end{itemize}
 
  This gives us the uniqueness of a word:
 
@@ -111,7 +114,7 @@ function Train NaiveBayes(D, C)
 
 for each category:
 
-#Calculate the prior probability
+\textit{Calculate the prior probability}
 num-docs = number of docs in D
 
 num-category = number of docs in category
@@ -137,11 +140,20 @@ We can then use the priorprobability to test our data to get the maximum likleih
 %	IMPLEMENTATION
 %----------------------------------------------------------------------------------------
 \section{Implementation} % Unnumbered section
+ \textit{Talk about how the models are trained, what data sets did we use for these models. how are the data sets relevant. Future work may involve using and creating better data sets}
 
  \maketitle
 %----------------------------------------------------------------------------------------
 %	PRELIMINARY RESULTS
 %----------------------------------------------------------------------------------------
 \section{Preliminary Results} % Unnumbered section
+\textit{Show similar words, maybe a fancy representation of similar words and important words as found by GloVe and TF-IDF respectively}
 
+\maketitle
+%----------------------------------------------------------------------------------------
+%	PRELIMINARY RESULTS
+%----------------------------------------------------------------------------------------
+\section {Future Work}
+1. Get better training data for the algorithms
+2. Have the application fetch testing data from today's newsfeed
 \end{document}
