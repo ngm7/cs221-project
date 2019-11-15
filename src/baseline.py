@@ -23,6 +23,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import SGDClassifier
+from sklearn.naive_bayes import BernoulliNB
 import numpy as np
 
 CATEGORY_MAP = {
@@ -66,6 +67,23 @@ categories."""
         text_clf_svm.fit(self.training_data.data, self.training_data.target)
         predicted_svm = text_clf_svm.predict(self.testing_data.data)
         # print(np.mean(predicted_svm == self.testing_data.target))
+        # print(predicted_svm)
+        # Keeping this here to see if we can use it later.(if needed)TODO Cleanup
+        # naive_bayes = MultinomialNB()
+        # naive_bayes.fit(self.training_data.data, modified_predicted_svm)
+        # predict_nb = naive_bayes(self.testing_data.data)
+        return predicted_svm
+
+    # If we were to use NaiveBayes as the training model
+    def trainmodelNaiveBayes(self):
+        count_vect, tfidf_transformer = self.extractfeatures()
+
+        text_clf_svm = Pipeline([('vect', count_vect),
+                                 ('tfidf', tfidf_transformer),
+                                 ('clf-svm', BernoulliNB(alpha=1))])
+        text_clf_svm.fit(self.training_data.data, [['guns']])
+        predicted_svm = text_clf_svm.predict(self.testing_data.data)
+        print(np.mean(predicted_svm == self.testing_data.target))
         return predicted_svm
 
 
