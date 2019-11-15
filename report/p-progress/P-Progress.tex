@@ -47,8 +47,34 @@ In making progress for the project, we decided to give more weight to the impact
 We still did look at using the Naive Bayes algorithm to perform classification, since that's what literature reported is it's primary use. It performed slightly better at classification than SGD but not by much.
 
 \subsection {Impact Score}
+To calculate the impact score, we explored multiple algorithms. Once a document is classified based on categories using the CountVectorizer, TfidfTransformer and StochasticGradient Classifier, we could calculate the impact score of a given category in a given test data/document. Following are some of the algorithms we explored.
+\subsubsection{TFIDF}
+Term Frequency-Inverse Document Frequency commonly known as TF-IDF can be used to find the frequency of vocabulary words in a document to perform sentiment analysis or extract relevancy from a document.
 
-\textit{Talk a bit about how GloVe and NB are good fits to calculate the impact score}
+This algorihm has 2 algorithms working together.
+\item
+Term Frequency
+
+\[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
+
+Before using this algorithm, we first do some preprocessing of the doc as follows:
+\item Remove all stop words.(ex: in, the,are it)
+\item Convert all words to lowercase.
+
+Now using the term frequency alone will end up giving us words that are not unique (for ex: repeated words, should not add up to the relevance of the document)
+ \item Inverse document frequency
+
+ This gives us the uniqueness of a word:
+
+ \[idf(t,d) =  = log(\frac{no of times the term appears }{no of documents containing the word})\]
+
+ The final step is to multiply the two together to get the TFIDF score which would give us the impact score:
+
+
+
+\subsubsection{Naive Bayes}
+
+
 We explored and implemented a Naive Bayes classifier as an alternative classifier to build the model.
 
 The Naive Bayes algorithm provides a very simple framework that builds on the probabilistic model based on training data.
