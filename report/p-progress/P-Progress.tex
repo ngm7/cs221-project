@@ -159,9 +159,13 @@ The final step is to multiply the two together to get the TFIDF score which woul
 %	IMPLEMENTATION
 %----------------------------------------------------------------------------------------
 \section{Implementation} % Unnumbered section
- \textit{Talk about how the models are trained, what data sets did we use for these models. how are the data sets relevant. Future work may involve using and creating better data sets}
+Following are some important points to mention about implementation details:
+\begin {itemize}
+\item \textit{Application} Currently we have a python application that performs the training of the supervised algorithms and data transformations. We are working on a single \textit {guns} category. We also use a static set of vocabulary mentioned above, assuming we got that as input from a fictitious National Rifles Association (NRA) client
+\item \textit {GloVe training} We trained GloVe on the \textit{Wikipedia 2014 + Gigaword 5} dataset mentioned on the project's website (\textit{https://nlp.stanford.edu/projects/glove/})
+\item \textit {Compute} We noticed that running GloVe on a laptop is not fast. Going forward we will use the compute credits provided to us.
+\end {itemize}
 
-Currently, we have a small python application that performs both sets of actions. 
  \maketitle
 %----------------------------------------------------------------------------------------
 %	PRELIMINARY RESULTS
