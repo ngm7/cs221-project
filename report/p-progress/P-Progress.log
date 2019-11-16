@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 NOV 2019 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 NOV 2019 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1560,35 +1560,32 @@ r-TLF.
 LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 142.
 
-[3] [4] [5] (./P-Progress.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[3] [4] (./P-Progress.aux) ) 
 Here is how much of TeX's memory you used:
- 28159 strings out of 492616
- 531567 string characters out of 6129482
- 563082 words of memory out of 5000000
- 31637 multiletter control sequences out of 15000+600000
+ 28158 strings out of 492616
+ 531553 string characters out of 6129482
+ 562090 words of memory out of 5000000
+ 31636 multiletter control sequences out of 15000+600000
  615214 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,16n,65p,908b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/xcharter/xch_q7u3cc.enc}{
-/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/xcharter/xch_tuu2ww.enc}{/us
-r/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/
-local/texlive/2019/texmf-dist/fonts/enc/dvips/xcharter/xch_a3psji.enc}</usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.p
-fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on P-Progress.pdf (5 pages, 190654 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips
+/xcharter/xch_q7u3cc.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/xc
+harter/xch_tuu2ww.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-su
+per/cm-super-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/xcharte
+r/xch_a3psji.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/xcharte
+r/XCharter-Bold.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/xcha
+rter/XCharter-Italic.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
+/xcharter/XCharter-Roman.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/c
+m-super/sftt1200.pfb>
+Output written on P-Progress.pdf (4 pages, 187336 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
