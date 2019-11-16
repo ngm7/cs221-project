@@ -44,13 +44,6 @@ This problem has a rich application of various algorithms for natural language p
 \section{Methodology} % Unnumbered section
 We extend our two step approach which we presented in the proposal. We have spent time exploring different algorithms for both these stages. We seem to have settled on to a methodology, which we explain in this section.
 
-\begin{figure}
-	\centering
- 	 \includegraphics[width=0.6\linewidth]{impact_score.png}
-	  \caption{Process Overview}
- 	 \label{fig:Impact Potential}
-\end{figure}
-
 \subsection {Classification}
 In making progress for the project, we decided to give more weight to the impact score analysis section, since that's the more novel component of the solution approach. Our classification currently still uses a simple Stochastic Gradient Descent classifier. We found it's accuracy to be nearly 82 percent and thought we can improve upon that in the later parts of the project.
 
@@ -91,9 +84,16 @@ A measure of how relevant an article is to a brand is to know how many of semant
 \end{algorithm}
 \end{center}
 
-Once the vocabulary is extended, we use this extended vocabulary to identify articles that have the most occurrences of these words. In the Proposal, we had used a similar algorithm to calculate our baseline but with the vocabulary as the raw input set of words. 
+Once the vocabulary is extended, we use this extended vocabulary to identify articles that have the most occurrences of these words. In the Proposal, we had used a similar algorithm to calculate our baseline but with the vocabulary as the raw input set of words. Following is a figure that shows how the expanded vocabulary behaves for a brand like NRA and input vocabulary = \textit {["guns", "weapons", "nra"]}. 
 
-Our algorithm that performs this to come up with an impact score for each article in the category is given below. The score dictionary contains the impact score calculated for each article in the set of articles. We will combine this score with another score we calculate using the TF-IDF methods.
+\begin{figure}[ht]
+	\centering
+ 	 \includegraphics[width=0.5\linewidth]{similar_words_nra.png}
+	  \caption{Similar Words obtained from GloVe Learning for \textit{NRA}}
+ 	 \label{fig:Similar Words for NRA}
+\end{figure}
+
+We use this extended vocabulary to come up with an impact score by simply counting frequencies of these words. Our algorithm that performs this to come up with an impact score for each article in the category is given below. The score dictionary contains the impact score calculated for each article in the set of articles. 
 
 \begin {center}
 \begin {algorithm}[ht]
@@ -124,6 +124,8 @@ Our algorithm that performs this to come up with an impact score for each articl
 }
 \end {algorithm}
 \end {center}
+
+We have detailed our results of the above score dictionary in the Results section.
 
 \subsubsection {Relevant words using TF-IDF}
 
@@ -159,17 +161,99 @@ The final step is to multiply the two together to get the TFIDF score which woul
 \section{Implementation} % Unnumbered section
  \textit{Talk about how the models are trained, what data sets did we use for these models. how are the data sets relevant. Future work may involve using and creating better data sets}
 
+Currently, we have a small python application that performs both sets of actions. 
  \maketitle
 %----------------------------------------------------------------------------------------
 %	PRELIMINARY RESULTS
 %----------------------------------------------------------------------------------------
 \section{Preliminary Results} % Unnumbered section
 \textit{Show similar words, maybe a fancy representation of similar words and important words as found by GloVe and TF-IDF respectively}
+We ran the above algorithms and ran comparisons on various impact score results on the documents.
+
+\begin{table}[ht]
+\caption{Impact Score chart} % title of Table
+\centering % used for centering table
+\begin{tabular}{|p{10cm}|p{3cm}| } % centered columns (4 columns)
+\hline\hline %inserts double horizontal lines
+Top 5 relevant docs & ImpactScore\ \\ [0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+Subject: Re: Gun Talk -- State legislative update. 
+
+One might well ask if CA gun owners have given up on the NRA/CRPA.
+
+The national NRA doesn't march in and get things passed.  They provide
+a convenient label for local activities/activists.
+  & 0.20 \\ % inserting body of the table
+  
+  \hline % inserts single horizontal line
+  Subject: Re: The Dayton Gun "Buy Back" (Re: Boston Gun Buy Back) 
+  Is there something similar pro-gun people can do ?  For example, pay 100 dollars
+ to anyone who lawfully protects their life with a firearm ?  Sounds a bit
+ tacky, but hey, whatever works.
+
+How about a gun buy-back/charity?  Get some sponsors to fund the
+purchase of used firearms, have a gunsmith check them over, and give
+or sell them at a low price to poor persons wishing to own firearms. ;-)
+
+  & 0.19 \\ % inserting body of the table
+  \hline % inserts single horizontal line
+ Our Gun Club has organized several of these (we just finished
+teaching another one last night, in fact) and they have been
+very well received.  We get a lot of people who are novices
+interested in guns.  We even get a few who are anti-gun, but
+feel they should know something about "gun safety" since members
+of their family keep guns at home.
+
+  & 0.18 \\
+   \hline % inserts single horizontal line
+ Well Joe, I suggest that you talk to the Center to Prevent Handgun Violence
+or the Centers for Disease Control.  If YOU look carefully you will see
+that YOU greatly underestimate the presence of guns in the lives of youths.
+The CPHV reports that 135,000 youth bring GUNS to school DAILY and that
+400,000 bring GUNS to school at least once a year.  The CDC estimates
+that 1 out 0f 25 high school students carried a gun to school at least once
+in 1990.  The CDC also says that 1.2 million elementary-aged, latch-key
+children (kids who come home from school to an empty house), have access
+to guns in their home.  California schools reported a 200% increase in
+student gun confiscations between 1986 and 1990, and a 40% increase between
+1988 and 1990.  Florida reported a 61% percent increase in gun incidents in
+schools between 1986/87 amd 1987/88.  These are the "statistics".
+
+
+  & 0.17 \\
+   \hline % inserts single horizontal line
+   Jim, I'm just saying how it is.  I'm not saying if that is a good thing
+or not. From the police who I have talked with who run some of these gun
+buyback programs, I get the impression that they really think they are
+having an impact on the community.  When I ask them if they have an evaluatory
+component to the program, they say "well no..."  So, in answer to your
+question, no, false hope is not the intent.  I think the intent is to
+show folks that police are attempting to do something to curb interpersonal
+gun violence whether its effective or not.  Look, if you can't measure
+the impact of these programs using some sort of pre-test and post-test
+evaluation, what is the point?  It must be symbolic in nature.  The police are
+essentially saying "look, if you have a gun lying around and you don't
+want it, we'll give you 50 dollars for it...because we care about the community".
+If you, I and Joe could think of a way to measure the effectiveness or
+ineffectiveness of these programs we could become rich and famous.
+
+
+  & 0.15 \\
+  [1ex] % [1ex] adds vertical space
+\hline %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
 
 \maketitle
 %----------------------------------------------------------------------------------------
 %	PRELIMINARY RESULTS
 %----------------------------------------------------------------------------------------
 \section {Future Work}
-While we have some results obtained from the  2. Have the application fetch testing data from today's newsfeed
+This impact score, we feel, still does not capture all the richness we can provide using natural language processing algorithms. We intend to improve in the following areas:
+\begin {enumerate}
+\item \textit {Better Trained Models}: Currently the GloVe model we use is trained from the wikipedia dataset. We intend to see if training it on a more relevant dataset creates a better set of similar words that we can use to calculate impact scores.
+\item \textit {More Factors in Calculating Impact Score}: Currently, we're using fairly simple ways of calculating impact based on contextual similarity between words. Adding more sophisticated ways to identify important articles is desirable.
+\end {enumerate}
 \end{document}
