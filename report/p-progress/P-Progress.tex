@@ -167,8 +167,31 @@ Currently, we have a small python application that performs both sets of actions
 %	PRELIMINARY RESULTS
 %----------------------------------------------------------------------------------------
 \section{Preliminary Results} % Unnumbered section
-\textit{Show similar words, maybe a fancy representation of similar words and important words as found by GloVe and TF-IDF respectively}
-We ran the above algorithms and ran comparisons on various impact score results on the documents.
+We will outline the impact scores we identified using both the methods below. We are yet to come up with a justifiable way to combine these scores to present a single final score:
+
+\subsection {Similar Words using GloVe}
+	\begin{center}
+		\begin{tabular}{ c c }
+			Article Index & Impact Score \\
+			5893 & 0.021 \\ 
+			692 & 0.017 \\  
+			6763 & 0.016 \\ 
+			7274 & 0.014\\ 
+			326 & 0.014 \\  
+			3613 & 0.014 \\ 
+			3831 & 0.013 \\ 
+			1665 & 0.011 \\  
+			3781 & 0.011 \\ 
+			2135 & 0.010 \\ 
+		\end{tabular}
+	\end{center}
+
+If we compare it with the impact scores presented in the Proposal, we notice that articles have shuffled up a bit. Here are some points to consider:
+\begin {enumerate}
+\item Article index 7274 was at the top, now it is in 4th place, whereas 5893 is at the top now.
+\item Article 5893 is a long article about 2nd ammendment, which is extremely relevant to NRA while 7274 is an article about gun buy backs, which is also fairly relevant. 
+\item Article 2135 has remained at the 10th place.
+\end {enumerate}
 
 \maketitle
 %----------------------------------------------------------------------------------------
