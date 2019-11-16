@@ -7,7 +7,8 @@
 \input{structure.tex} % Include the file specifying the document structure and custom commands
 \usepackage{graphicx}
 \usepackage[ruled]{algorithm2e}
-
+\usepackage{amsmath}
+\SetCommentSty{mycommfont}
 %----------------------------------------------------------------------------------------
 %	ASSIGNMENT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -59,7 +60,7 @@ We still did look at using the Naive Bayes algorithm to perform classification, 
 
 Impact score needs to be a number that represents how relevant or impactful will a particular article be to the brand. Hence, we extended our previous approach of having a vocabulary of words that are relevant to the brand and applying a combination GloVe analysis, TF-IDF and Naive Bayes to come up with a score of how closely does the article's content relate to the dictionary relevant to the brand.
 
-\subsubsection {Vocabulary of a brand as an input}
+\subsubsection {Input Brand Vocabulary}
 It was possible to decipher a set of words that are deemed contextually more dominant and important for a category like \textit{guns} by various methodologies including TF-IDF itself. But we believe finding relevancy to a brand should allow some input bias from the brand. For example, a brand may way to find articles relevant to a subset of their very specific products and those may not be popularly present in the testing dataset. 
 
 We allow a list of words to act as our vocabulary for finding articles with highest potential impact. For example, for a brand like NRA, we take the following set of words as a vocabulary:
@@ -71,21 +72,58 @@ We allow a list of words to act as our vocabulary for finding articles with high
 A measure of how relevant an article is to a brand is to know how many of semantically or linguistically similar words occur in that article. For each of the words in the vocabulary, we get a list of \textit{similar words} using the GloVe learning algorithm [1]. We then use a simple TF algorithm to understand how commonly do these similar words occur in an article. 
 
 \begin{center}
-\begin{algorithm}[H]
-\SetAlgoLined
- initialization\;
- \While{While condition}{
-  instructions\;
-  \eIf{condition}{
-   instructions1\;
-   instructions2\;
-   }{
-   instructions3\;
+\begin{algorithm}
+  \caption{Extend Vocabulary with Similar Words using Glove Model}
+  \SetKwInOut{Input}{inputs}
+  \SetKwInOut{Output}{output}
+  \SetKwProg{GetGloveWords}{GetGloveWords}{}{}
+  
+ $Vocabulary \gets ["guns", "rifle", "weapon", "nra", "handgun", "firearm"] $\;
+ $model \gets train\_glove(\textit{glove.6B.300d.w2vformat.tx}) $\;
+ \GetGloveWords{$(Vocabulary, model)$} {
+      $extended\_vocab \gets Vocabulary $\;
+     \ForEach{word $w \in Vocabulary$}{%
+       $similar\_words \gets model.get\_similar\_words($word=w, $topN=10) $\;
+       $extended\_vocab.extend($similar\_words$) $\;
+      }
+    \KwRet{$extended\_vocab$}\;
   }
- }
- \caption{Impact Score using similar words from GloVe }
 \end{algorithm}
 \end{center}
+
+Once the vocabulary is extended, we use this extended vocabulary to identify articles that have the most occurrences of these words. In the Proposal, we had used a similar algorithm to calculate our baseline but with the vocabulary as the raw input set of words. 
+
+Our algorithm that performs this to come up with an impact score for each article in the category is given below. The score dictionary contains the impact score calculated for each article in the set of articles. We will combine this score with another score we calculate using the TF-IDF methods.
+
+\begin {center}
+\begin {algorithm}[ht]
+\SetNoFillComment
+\caption{Calculate Impact Score for each article from a list of articles, given extended vocabulary}
+\SetKwInOut{Input}{inputs}
+\SetKwInOut{Output}{output}
+\SetKwProg{CalculateVocabImpactScore}{CalculateVocabImpactScore}{}{}
+\CalculateVocabImpactScore{$(V, D)$} {
+    \Input{A list of words that form ExtendedVocabulary V; a list of articles D}
+    \Output{A dictionary representing impact scores for all articles in D}
+    $score \gets \emptyset $\;
+    $RangeD \gets range(0, len(D)) $\;
+    \ForEach {index $i \in RangeD$} {
+    	score[i] = 0 \;
+	freq = [] \;
+	\tcc{iterate over all words in $i_{th}$ article to count frequency}
+	\ForEach {word $w \in D[i]$} {
+		freq[word] += 1 \;
+	}
+	\tcc{iterate over all words in V to build a score for article $i$}
+	\ForEach {word $w \in V$} {
+		score[i] += freq[w] \;
+	}
+    }
+    score.Normalize() \;
+    \KwRet{$score$}\;
+}
+\end {algorithm}
+\end {center}
 
 \subsubsection {Relevant words using TF-IDF}
 
@@ -113,8 +151,6 @@ Now using the term frequency alone will end up giving us words that are not uniq
 The final step is to multiply the two together to get the TFIDF score which would give us the impact score.
 \end{enumerate}
 
-\subsubsection {Build a Stack Rank}
-\textit {use the above two sets of words to feed the stack rank}
 
 \maketitle
 %---------i-------------------------------------------------------------------------------
@@ -135,6 +171,5 @@ The final step is to multiply the two together to get the TFIDF score which woul
 %	PRELIMINARY RESULTS
 %----------------------------------------------------------------------------------------
 \section {Future Work}
-1. Get better training data for the algorithms
-2. Have the application fetch testing data from today's newsfeed
+While we have some results obtained from the  2. Have the application fetch testing data from today's newsfeed
 \end{document}
