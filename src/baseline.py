@@ -36,7 +36,7 @@ CATEGORY_MAP = {
 }
 
 VOCABULARY = {
-    'guns': ["guns", "shooting", "victim", "mass", "kill", "murder", "weapon", "gun", "nra", "handgun", "assault"]
+    'guns': ["guns", "shooting", "victim", "mass", "lobby", "murder", "weapon", "gun", "nra", "handgun", "assault"]
 }
 
 
@@ -199,7 +199,7 @@ class ImpactScorer:
 def cleanUpURLs(out):
     cleanUrls = []
     for url in out:
-        if not url: # some URLs are empty
+        if not url:  # some URLs are empty
             continue
         cleanUrls.append(url)
     return cleanUrls
@@ -214,6 +214,8 @@ def buildTestDataFromNYT(download=True, articlesDir=".", writeToDir=False):
         print("Building test dataset from NYT's archive of 12/2018.")
         print(f"Loading articles from f{articlesDir}")
         files = os.listdir(articlesDir)
+        files = [os.path.join(articlesDir, f) for f in files]
+        files.sort(key=lambda x: os.path.getmtime(x))
         for file in files:
             with open(articlesDir + '/' + file, "r") as f:
                 dataArr.append(f.read())
@@ -233,8 +235,8 @@ def buildTestDataFromNYT(download=True, articlesDir=".", writeToDir=False):
         cleanUrls = cleanUpURLs(out)
 
         for url in cleanUrls:
-            # if count > 10:   # if you don't want to download 6200 articles
-            #   break
+            # if count > 3000:  # if you don't want to download 6200 articles
+            #     break
             a = Article(url=url)
             try:
                 a.download()
@@ -261,8 +263,7 @@ def main(category: str):
     classifier_training_data.setData(testData.data)
     classifier_training_data.setTarget(testData.target)
 
-    classifier_testing_data = buildTestDataFromNYT(download=True, articlesDir="../../data/nyt", writeToDir=True)
-    classifier_testing_data.setTarget(classifier_training_data.target)
+    classifier_testing_data = buildTestDataFromNYT(download=False, articlesDir="../../data/nyt", writeToDir=True)
 
     classifier = SgdClassifier()
     classifier.trainModel(classifier_training_data)
@@ -277,7 +278,7 @@ def main(category: str):
     gloveVectors = ImpactScoreUtil.find_similar_words_using_glove(word="gun")
     enhanced_vocab = VOCABULARY[category]
     for word, score in gloveVectors:
-        enhanced_vocab.extend(word)
+        enhanced_vocab.append(word)
 
     print(f"current vocab: {VOCABULARY[category]}")
     print(f"enhanced vocab: {enhanced_vocab}")
