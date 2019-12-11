@@ -1,0 +1,7 @@
+Apple said it would update the software of iPhones in China to try to resolve a legal dispute that threatens to stop the company from selling older iPhones in the country.
+
+Apple and its longtime chip supplier, Qualcomm, have been fighting in court over Apple’s use of Qualcomm’s technology. On Nov. 30, a Chinese court ruled Apple must immediately stop selling seven older iPhone models in China because it infringed on two Qualcomm patents.
+
+But Apple has not stopped selling those iPhones there. The company has argued the phones are not subject to the ruling because they are running new software that was not discussed at trial.
+
+On Friday, Apple said in a statement that it would update its iPhones in China early next week “to address any possible concern about our compliance with the order.” Apple said its update would change the iPhones’ software so it did not infringe on Qualcomm patents, which relate to switching between apps and changing the size and appearance of photographs.

@@ -1,0 +1,149 @@
+Massacres are frequently carried out by killers using military-grade equipment that’s easier to obtain when buying on credit.
+
+Stephen Paddock had two dozen guns inside the Mandalay Bay Resort when he rained fire on a music festival below. Police found four credit cards.
+
+James Holmes used credit to help buy more than $11,000 in guns, grenades, a gas mask and other military gear to attack a movie theater.
+
+Omar Mateen used six credit cards to buy two guns and thousands of rounds of ammunition before he opened fire inside the Pulse nightclub.
+
+The New York Times reviewed hundreds of documents including police reports, bank records and investigator notes from a decade of mass shootings. Many of the killers built their stockpiles of high-powered weapons with the convenience of credit. No one was watching.
+
+Two days before Omar Mateen killed 49 people and wounded 53 more at the Pulse nightclub in Orlando, he went on Google and typed “Credit card unusual spending.”
+
+Mr. Mateen had opened six new credit card accounts — including a Mastercard, an American Express card and three Visa cards — over the previous eight months. Twelve days before the shooting, he began a $26,532 buying spree: a Sig Sauer MCX .223-caliber rifle, a Glock 17 9-millimeter semiautomatic pistol, several large magazines, thousands of rounds of ammunition and a $7,500 ring for his wife that he bought on a jewelry store card. His average spending before that, on his only card, was $1,500 a month.
+
+His web browsing history chronicled his anxiety: “Credit card reports all three bureaus,” “FBI,” and “Why banks stop your purchases.”
+
+He needn’t have worried. None of the banks, credit-card network operators or payment processors alerted law enforcement officials about the purchases he thought were so suspicious.
+
+Mass shootings routinely set off a national debate on guns, usually focused on regulating firearms and on troubled youths. Little attention is paid to the financial industry that has become an instrumental, if unwitting, enabler of carnage.
+
+A New York Times examination of mass shootings since the Virginia Tech attack in 2007 reveals how credit cards have become a crucial part of the planning of these massacres. There have been 13 shootings that killed 10 or more people in the last decade, and in at least eight of them, the killers financed their attacks using credit cards. Some used credit to acquire firearms they could not otherwise have afforded.
+
+Those eight shootings killed 217 people. The investigations undertaken in their aftermath uncovered a rich trove of information about the killers’ spending. There were plenty of red flags, if only someone were able to look for them, law enforcement experts say.
+
+James E. Holmes spent over $11,000 on weapons and military gear before killing 12 people inside a Colorado movie theater in 2012. Karl Gehring/The Denver Post, via Getty Images
+
+“Banks will complain this is the government’s job and it’s not our job, but you know what? They are the only ones with the ability to do this,” said Kevin Sullivan, a former New York Police fraud investigator who consults with banks as president of the Anti-Money Laundering Training Academy.
+
+After the shooting last February at Marjory Stoneman Douglas High School in Parkland, Fla., where 17 students and staff members were killed, this column suggested that financial firms had an opportunity to help reduce violence by pushing for more responsible practices by the gun industry. As a result, some banks ended their relationships with gunmakers and some investors pushed manufacturers for more transparency.
+
+Financial firms have so far resisted changing the way they deal with the sale of guns.
+
+Banks and credit-card networks say it is not their responsibility to create systems to track gun purchases that would allow them to report suspicious patterns.
+
+“We do not believe Visa should be in the position of setting restrictions on the sale of lawful goods or services,” said Amanda Pires, a Visa spokeswoman. “Our role in commerce is to efficiently process, protect and settle all legal payments. Asking Visa or other payment networks to arbitrate what legal goods can be purchased sets a dangerous precedent.”
+
+A spokesman for Mastercard echoed that sentiment, emphasizing its protection of “cardholders’ independence” and the “privacy of their own purchasing decisions.”
+
+But the financial industry is uniquely positioned to see, if it chose to do so, a potential killer’s behavior in a way that retailers, law enforcement officials, concerned family members or mental health professionals cannot.
+
+57 Purchases in 61 Days USAA Mastercard May 10 2012 Gas mask James Holmes bought an assortment of guns, ammunition and tactical equipment in the weeks before the Aurora shooting Glock handgun 12-gauge shotgun June 1 .223 caliber AR-15 Handcuffs Shotgun sling 100-round AR-15 magazine June 15 Paper targets Bulletproof jacket Point Loma Visa Debit PayPal Combat helmet Pistol magazine July 1 Missile tube Glock handgun July 9 By The New York Times | Source: Appellate Unit Office of the District Attorney, 18th Judicial District
+
+A little more than a month before James E. Holmes killed 12 people and injured 70 others at a Century 16 movie theater in Aurora, Colo., in 2012, a psychiatrist was considering having him involuntarily committed. Mr. Holmes quit his job, filed for unemployment benefits and used a new Mastercard issued by USAA to help buy more than $11,000 in weapons and military gear. He bought two tear-gas grenades, a gas mask and filter, a .40-caliber Glock handgun, a 12-gauge shotgun, a .223-caliber AR-15, a 100-round drum magazine, two 40-round magazines, a laser sight, a bulletproof vest, 5,000 rounds of ammunition, two sets of handcuffs and “road stars” meant to slice through car tires.
+
+“This was a civilian making these orders, not the police and not the military,” said Sandy Phillips, whose daughter, Jessica, died in the attack. “Someone should have noticed.”
+
+Read the Previous Columns:
+
+How Banks Could Control Gun Sales if Washington Won’t
+
+Big Investors Have Clout. They Can Use It With Gun Makers.
+
+Citigroup Acted. Now, Two New Ideas on How Banks Can Limit Gun Sales.
+
+Finding Fraud, but Not Firearms
+
+When it comes to certain crimes, banks are on the front lines. They crunch transaction data to protect their customers from fraudulent purchases — often identifying stolen credit cards within seconds — and to detect money laundering, funding of terrorist organizations and other crimes.
+
+Banks are required to report transactions of $10,000 or more by a single person, even if those transactions are legal. And after the Sept. 11 terror attacks, the government enacted even stricter rules under the Patriot Act: Banks must file so-called Suspicious Activity Reports for transactions involving more than $5,000 that the financial institution “has reason to suspect” are part of a plan to “violate or evade any federal law.”
+
+A labyrinth of rules prevents banks and credit-card networks — many of which also handle debit card transactions — from seeing exactly what customers are buying. Retailers have historically resisted providing item-by-item information — known as SKU-level data, a reference to the stock-keeping unit number of an item — for fear that banks would sell that information or use it to steer customers to rival merchants.
+
+In the case of gun purchases, even the nature of the retailer can be obscure: The Merchant Category Code, which identifies the type of store that sold an item, is the same for gun shops and sporting goods stores.
+
+But retailers have the ability to send far more detailed transaction information.
+
+A feature known as a “boxcar” allows retailers to tag transactions with extra data. It is often used by online retailers to send the bank details about consumer behavior, such as the device used to make a purchase and the location of the buyer.
+
+If banks required retailers to transmit details on sales of guns and ammunition, they would be able to make more informed decisions about transactions.
+
+Walmart and Dick’s Sporting Goods this year announced that they would not sell firearms to anyone under 21. If banks chose to use the systems they already have in place, they might decide to monitor such customers, perhaps preventing them from buying multiple guns in a short period of time.
+
+“They can fine-tune their own systems, because in these cases the suspicious purchasing patterns could have been picked up on and quite frankly should have been picked up on,” said Mr. Sullivan, the Anti-Money Laundering Training Academy president.
+
+Banks could also add information about gun sales to the infrastructure they already use to help the government investigate other criminal activity.
+
+“We need to step back and think about what tools we use to combat terrorism and money-laundering and think about the financial rules associated with the Patriot Act,” said John Streur, chief executive of Calvert Investments, a mutual fund firm that is an advocate for responsible investing. “In a very real sense, I think these mass shootings are terrorism.”
+
+Moving Money and Buying Guns
+
+The shooting at the Route 91 Harvest music festival in Las Vegas last year was described as the worst mass murder on American soil since the Sept. 11 terror attacks. The gunman, Stephen Paddock, killed 58 people and injured more than 800.
+
+When his body was found on the 32nd floor of the Mandalay Bay Resort and Casino, the police noticed four credit cards scattered across the kitchenette countertop next to his hotel key card.
+
+His rooms were filled with two dozen firearms and thousands of rounds of ammunition. He spent nearly $95,000 on firearms and gun-related purchases in the year before the massacre, buying some 55 guns, according to the Las Vegas Metropolitan Police Department’s report. Police have not disclosed details of how Mr. Paddock paid for his guns. Some transactions were in cash, but law enforcement officials said he also bought firearms online.
+
+Unlike most other mass killers, Mr. Paddock was wealthy. He spent over $600,000 at casinos in the two years leading up to the massacre, and paid over $170,000 to credit card companies. Law enforcement officials saw the full picture of his gun purchases only after they talked to the banks, but they wish they could have connected the dots in advance.
+
+Stephen Paddock had two dozen guns and four credit cards inside his hotel room when he opened fire on a music festival in Las Vegas last year. David Becker/Getty Images
+
+“They have all the infrastructure in place,” said Joseph Moreno, a former federal counterterrorism prosecutor and a staff member of the F.B.I.’s 9/11 Review Commission who is now a partner at Cadwalader. “A.T.F. is already involved in S.A.R.s task forces,” he said, referring to suspicious-activity reports. “It would just be tweaking it to consider firearm-related information.”
+
+An Industry Falls Silent
+
+Over the last several months, I have spoken to senior executives at the country’s largest banks and credit card companies who were taken aback when I presented them with the list of shootings that involved their cards: Virginia Tech in 2007, Binghamton in 2009, Fort Hood in 2009, Aurora in 2012, San Bernardino in 2015, Orlando in 2016, Sutherland Springs in 2017 and Las Vegas in 2017. That list is based on interviews and hundreds of documents including police reports and credit card receipts. It may actually underreport the use of credit cards in shootings: In some cases the payment method could not be learned.
+
+While some executives expressed grief and were open to discussing possible solutions, virtually none were willing to speak about them on the record for fear of upsetting gun-rights advocates and politicians invoking the Second Amendment. Some raised the prospect that by trying to help they would be held responsible if the system failed. Others made a slippery-slope argument: If they were to police gun sales, should they do the same for alcohol in an effort to prevent drunk-driving deaths?
+
+After the school shooting in Parkland, Citibank and Bank of America said they would no longer finance or advise gun manufacturers, while investment firms like BlackRock and pension funds like Calpers, the retirement fund for public employees in California, said they would demand more information from the gunmakers they invested in.
+
+Several payment systems — including PayPal, Square and Apple Pay — already had established rules that ban the sale of guns and gun-related items using their systems.
+
+But no bank has instituted a ban or committed to tracking gun purchases.
+
+The inside of the nightclub where Mr. Mateen killed 49 people. Orlando Police Department
+
+John Shrewsberry, chief financial officer of Wells Fargo — which counts the National Rifle Association as a client — has dismissed the notion that banks should regulate the use of its credit cards for gun purchases.
+
+“The best way to make progress on these issues is through the political and legislative process,” he said in April on a conference call with investors.
+
+There may be good reason that no bank executive wants to talk out loud about guns: In October, Senator John Kennedy, Republican of Louisiana, introduced a bill, the No Red and Blue Banks Act, which would “prohibit the federal government from giving contracts to banks that discriminate against lawful businesses based solely on social policy considerations.”
+
+The bill was directed at banks that changed their policies regarding guns.
+
+“Our friends at Citigroup and Bank of America apparently aren’t busy enough with their banking business; they have decided that they are going to set policy for the Second Amendment,” Mr. Kennedy wrote on Twitter.
+
+And a policy expert at the American Civil Liberties Union recently expressed concern about how efforts to prevent mass shootings could infringe on individual rights.
+
+“The implication of expecting the government to detect and prevent every mass shooting is believing the government should play an enormously intrusive role in American life,” Jay Stanley, senior policy analyst at the A.C.L.U. Speech, Privacy, and Technology Project, wrote in July.
+
+Not all the concerns involve privacy or politics. Some are practical.
+
+George Brauchler, the district attorney who oversaw the investigation of Mr. Holmes after the Aurora shooting, said the deluge of data the police receive already presents challenge.
+
+“To some extent we are looking for a needle in a haystack and that haystack keeps getting bigger and bigger,” he said.
+
+The data could inform old-fashioned police work that might or might not lead to something more, he said.
+
+“Do I wish someone from law enforcement had been able to go to his door and knock on his door and figure out a way to talk their way into it or to freak him out?" he said of Mr. Holmes. “Yeah, absolutely.”
+
+Lives and Opportunities Lost
+
+A vigil after the Pulse shooting. Carolyn Cole/Los Angeles Times, via Getty Images
+
+Jared L. Loughner had the Chase Visa he used to buy a 9-millimeter Glock handgun in the pocket of his jeans when he shot Representative Gabrielle Giffords in the head outside a Tucson supermarket on Jan. 8, 2011. She survived, but six people died.
+
+“There are a lot of steps that credit card companies can take that could prevent some of the tragic gun violence in the country,” said Adam Skaggs, chief counsel of the Giffords Law Center to Prevent Gun Violence. “For companies to say they can’t solve the entire problem and therefore shouldn’t take any steps is just blindly ignoring what they can contribute to the solution.”
+
+Elected officials could force the financial system to act.
+
+In 29 states, consumers cannot use credit cards to buy lottery tickets because legislators don’t want consumers racking up debt gambling. And under the Gun Control Act of 1968, firearms dealers must report if someone buys two or more handguns in a span of five business days.
+
+That requirement can be evaded simply by buying at more than one store, but a system involving the banks and credit card networks could have the opportunity to flag the purchases.
+
+After the Pulse shooting, JPMorgan Chase committed more than $300,000 to support the victims and their families. One of the 49 people killed was a Chase employee: Christopher Sanfeliz, 24, a personal banker at a branch in Tampa who had worked his way up from teller after taking business classes at Hillsborough Community College.
+
+Mr. Sanfeliz’s father, Carlos, was surprised to learn that the same industry that once employed his son had unwittingly bankrolled other shootings.
+
+“Something needs to be done to prevent more attacks,” he said. “I live with this torment every day of my life.”

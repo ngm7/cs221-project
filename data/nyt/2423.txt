@@ -1,0 +1,7 @@
+For the past two decades, scientists have been exploring the genetics of schizophrenia, autism and other brain disorders, looking for a path toward causation. If the biological roots of such ailments could be identified, treatments might follow, or at least tests that could reveal a person’s risk level.
+
+In the 1990s, researchers focused on genes that might possibly be responsible for mental distress, but then hit a wall. Choosing so-called candidate genes up front proved to be fruitless. In the 2000s, using new techniques to sample the entire genome, scientists hit many walls: Hundreds of common gene variants seemed to contribute some risk, but no subset stood out.
+
+Even considered together, all of those potential contributing genes — s ome 360 have been identified for schizophrenia — offered nothing close to a test for added risk. The inherited predisposition was real; but the intricate mechanisms by which all those genes somehow led to symptoms such as psychosis or mania were a complete mystery.
+
+Now, using more advanced tools, brain scientists have begun to fill out the picture. In a series of 11 papers, published in Science and related journals, a consortium of researchers has produced the most richly detailed model of the brain’s genetic landscape to date, one that incorporates not only genes but also gene regulators, cellular data and developmental information across the human life span.

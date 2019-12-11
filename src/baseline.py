@@ -14,12 +14,8 @@ Input
 Output
  - A subset of articles and a corresponding impact score.
  """
-import os
 import sys
 import gensim
-import requests
-import pyjq
-from newspaper import Article
 from collections import defaultdict
 from typing import List
 
@@ -27,8 +23,9 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction import stop_words
 
 from commons.datamodel import DataModel
-from classifier import SgdClassifier
+from classifier.sgdClassifier import SgdClassifier
 from classifier import Classifier
+from commons.data.nyt import buildTestDataFromNYT
 
 CATEGORY_MAP = {
     'guns': 16
@@ -117,66 +114,6 @@ class ImpactScorer:
         return sorted(impact_score.items(), key=lambda x: x[1], reverse=True)
 
 
-def cleanUpURLs(out):
-    cleanUrls = []
-    for url in out:
-        if not url:  # some URLs are empty
-            continue
-        cleanUrls.append(url)
-    return cleanUrls
-
-
-def buildTestDataFromNYT(download=True, articlesDir=".", writeToDir=False):
-    testData = DataModel()
-    dataArr = []
-    count = 0
-
-    if not download:
-        print("Building test dataset from NYT's archive of 12/2018.")
-        print(f"Loading articles from f{articlesDir}")
-        files = os.listdir(articlesDir)
-        files = [os.path.join(articlesDir, f) for f in files]
-        files.sort(key=lambda x: os.path.getmtime(x))
-        for file in files:
-            with open(articlesDir + '/' + file, "r") as f:
-                dataArr.append(f.read())
-                count += 1
-    else:
-        print("Building test dataset from NYT's archive of 12/2018. Downloading ...")
-        key = "5AE0mAEtH2uXTpUjUnNr4kS9GVTVco8M"
-
-        url = 'https://api.nytimes.com/svc/archive/v1/2018/12.json?&api-key=' + key
-        r = requests.get(url)
-        json_data = r.json()
-
-        jq = f".response .docs [] | .web_url"
-        out = pyjq.all(jq, json_data)
-
-        # some URLs are empty, clean up
-        cleanUrls = cleanUpURLs(out)
-
-        for url in cleanUrls:
-            # if count > 3000:  # if you don't want to download 6200 articles
-            #     break
-            a = Article(url=url)
-            try:
-                a.download()
-                a.parse()
-            except Exception as ex:
-                print(f"caught {ex} continuing")
-            if len(a.text):
-                print(f"{len(dataArr)} - downloaded {len(a.text)} bytes")
-                dataArr.append(a.text)
-                if writeToDir:
-                    with open(articlesDir + "/" + f"{count}.txt", "w") as f:
-                        f.write(a.text)
-                count += 1
-
-    print(f"working with {len(dataArr)} articles")
-    testData.setData(dataArr)
-    return testData
-
-
 def main(category: str):
     """The Main function"""
     testData = fetch_20newsgroups(subset='train', shuffle=True)
@@ -184,13 +121,11 @@ def main(category: str):
     classifier_training_data.setData(testData.data)
     classifier_training_data.setTarget(testData.target)
 
-    classifier_testing_data = buildTestDataFromNYT(download=False, articlesDir="../../data/nyt", writeToDir=True)
+    classifier_testing_data = buildTestDataFromNYT(download=False, articlesDir="/Users/ngm9/dev/stanford/cs221-project/data/nyt", writeToDir=True)
 
     classifier = SgdClassifier()
     classifier.trainModel(classifier_training_data)
     predictions_sgd = classifier.classify(classifier_testing_data)
-
-    # predictions_nb = classifier.naiveBayesMB()
 
     # identify indices for talk.politics.guns (index 16 in target_names)
     indices_sgd = [index for index, prediction in enumerate(predictions_sgd) if prediction == CATEGORY_MAP[category]]
@@ -200,9 +135,6 @@ def main(category: str):
     enhanced_vocab = VOCABULARY[category]
     for word, score in gloveVectors:
         enhanced_vocab.append(word)
-
-    print(f"current vocab: {VOCABULARY[category]}")
-    print(f"enhanced vocab: {enhanced_vocab}")
 
     # identify the articles
     stack = ImpactScorer.calculatetfidf(classifier=classifier,

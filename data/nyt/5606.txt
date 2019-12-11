@@ -1,0 +1,9 @@
+If you thought 2018 was a bad year for tech, 2019 might turn out to be even worse. This year was filled with revelations about privacy, security and cyberwarfare. Next year, the consequences of those revelations will unfold. And we should be very worried about what the future holds.
+
+Privacy Is Dead
+
+In 2018, it became very clear that Americans have no control over their digital information. We discovered that our cellphones could be monitored, and many of the apps on our phones are tracking us. We found out that Facebook shared our private messages with third parties and let developers using its platform harvest and exploit our data in order to influence political elections. Our data is perpetually being gathered, leaked, exploited, breached and sold.
+
+And perhaps worse is what the future holds. We most likely aren’t aware of all the companies that hold our personal data and what they are doing with it: the social media companies that know us as well as our friends do, the financial technology companies that sell our bank account transaction data, the messaging apps that hold our private photos and texts.
+
+But 2018 was also the first year of privacy protection in Europe: The General Data Protection Regulation went into effect in May. Despite the protestations of those who complain that G.D.P.R. places an undue organizational burden on start-ups, it could return privacy to millions of people living in the European Union.

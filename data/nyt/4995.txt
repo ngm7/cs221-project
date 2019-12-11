@@ -1,0 +1,19 @@
+The charts below show the full range of playoff scenarios for teams that are already in or have a mathematical shot at a playoff berth. Some teams' trees are wildly convoluted, while others are more straightforward. Note: We did not include ties — which exponentially increase the charts' complexity — because teams rarely tie.
+
+These trees are based on our interactive playoff simulator, which was created to let you explore all the ways the season could end for your team. We’ll be updating them throughout today’s games.
+
+A.F.C. East
+
+A.F.C. North
+
+A.F.C. South
+
+A.F.C. West
+
+N.F.C. East
+
+N.F.C. North
+
+N.F.C. South
+
+N.F.C. West

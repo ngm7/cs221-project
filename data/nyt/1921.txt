@@ -1,0 +1,13 @@
+Apple beat the other tech giants to this cost-saving trend four years ago when it unveiled its first custom-built chip for the iPhone. Google and Microsoft are also building the chips that go into devices like smartphones and virtual-reality headsets.
+
+Amazon has upped the ante. In 2015, it spent a reported $350 million to acquire a chip maker, Annapurna Labs, which helped build the new central processing unit, or C.P.U.
+
+A C.P.U. — the centerpiece of a computer’s operations — is the sort of chip that Intel has made for decades to run personal computers and servers. Building these chips requires rare expertise and hundreds of millions of dollars in capital. It is a big step up in complexity from building chips tailored to certain tasks.
+
+“The belief was that you needed some magic to build a processor, particularly a server processor,” said Andrew Feldman, the chief executive of the chip start-up Cerebras and a former executive at the chip maker AMD. “You had to be Intel or AMD — and that was about it.”
+
+Amazon executives believe the chip, which was designed to be more energy efficient, will help reduce the cost of electrical power in its data centers. It said it was offering a cloud-computing service that would allow business customers to use its new chip. The cost of the service could be 45 percent lower than other options.
+
+And when Amazon buys chips from other companies, a homegrown option gives it even more sway over prices. “They can now say to Intel, ‘We will just move the workloads to other chips,’” Mr. Feldman said.
+
+Amazon has also designed a chip for artificial intelligence, called the Inferentia. In a recent blog post, James Hamilton, vice president and distinguished engineer inside Amazon’s cloud computing arm, said the company would continue building new chips for artificial intelligence and other specialized tasks.

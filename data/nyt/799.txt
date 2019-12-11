@@ -1,0 +1,7 @@
+In one of those exercises that you think should be impossible or perhaps a punishment for some infraction, a team of astronomers has now measured the total amount of light that has ever been produced by all the stars in our universe.
+
+The answer, expressed in terms of quantum particles of light known as photons, is 4 trillion trillion trillion trillion trillion trillion trillion. In scientific notation that is 4 x 10⁸⁴, or, if you like, a 4 followed by 84 zeros: 4,000,000,000,000,000,000,000, 000,000,000,000,000,000,000, 000,000,000,000,000,000,000, 000,000,000,000,000,000,000.
+
+That number, reported Friday in the journal Science by Marco Ajello, an astrophysicist at Clemson University, and his colleagues, sounds big. But the universe is inconceivably vast, and in the grand cosmic scheme of things all of this light provides about as much illumination as a 60-watt bulb seen from 2.5 miles away.
+
+Astronomers estimate that the observable universe — a bubble 14 billion light-years in radius, which represents how far we have been able to see since its beginning — contains at least two trillion galaxies and a trillion trillion stars. Most of these stars and galaxies are too far and too faint to be seen with any telescope known to humans. But that doesn’t matter, Dr. Ajello and his colleagues say: All the energy ever radiated by these stars is still with us, filling the universe with a sort of fog, a sea of photons known as the extragalactic background light.

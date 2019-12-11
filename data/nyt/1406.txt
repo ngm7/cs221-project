@@ -1,0 +1,13 @@
+Instead, Dr. He went ahead and disabled a perfectly normal gene, CCR₅. While people who are born with both copies of CCR₅ disabled are resistant to H.I.V., they are more susceptible to West Nile virus and Japanese encephalitis. And there are simpler and safer ways to prevent H.I.V. infection.
+
+More worrying, Crispr often inadvertently alters genes other than the one being targeted, and there are also circumstances, called mosaicism, where some cells contain the edited gene and others do not. Dr. He claimed in a video that Crispr did not affect other genes in the twins and that the babies were “born normally and healthy,” but there is no way to know if that is true.
+
+In fact, some of the data Dr. He presented at a conference in Hong Kong, after he announced the birth of the twins, is concerning, several scientists said. For one thing, it indicates that he was able to disable both copies of the CCR₅ gene in only one of the twins, whom Dr. He identified as “Nana.” In the other twin, “Lulu,” only one copy of CCR₅ was disabled, providing limited, if any, protection against H.I.V., but Dr. He implanted the embryo anyway. He said he informed the parents and they wanted both embryos implanted.
+
+Some scientists said the data Dr. He presented also suggested several potential issues resulting from the editing process.
+
+Most importantly, said Dr. Kiran Musunuru, a geneticist at the University of Pennsylvania who reviewed the data, “there’s clear evidence of mosaicism” in the edited embryos of both twins. “I was so furious,” Dr. Musunuru said. “This would have been disturbing anyway — gene-edited babies. It made it a hundred times worse knowing that he had totally mosaic embryos. It’s as if you took the embryos and dipped them in acid and said ‘You know what, I’m just going to go ahead with the implantation anyway.’ It’s not that much different.”
+
+While it is unclear if the babies themselves ended up with a mosaic patchwork of cells, Dr. Musunuru said the data shows that Lulu’s placenta was mosaic, which is not a good sign.
+
+Finally, it is not known if his study subjects knew what they were agreeing to. The consent they signed was for an AIDS vaccine development project, and it did not mention all the risks of disabling CCR₅. It said that if Crispr altered other genes, “the project team is not responsible for the risk.”

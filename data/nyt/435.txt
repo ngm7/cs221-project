@@ -1,0 +1,7 @@
+A new study by Microsoft researchers casts a light on the actual use of high-speed internet across the country, and the picture it presents is very different from the F.C.C. numbers. Their analysis, presented at a Microsoft event on Tuesday in Washington, D.C., suggests that the speedy access is much more limited than the F.C.C. data shows.
+
+Over all, Microsoft concluded that 162.8 million people do not use the internet at broadband speeds, while the F.C.C. says broadband is not available to 24.7 million Americans. The discrepancy is particularly stark in rural areas. In Ferry County, for example, Microsoft estimates that only 2 percent of people use broadband service, versus the 100 percent the federal government says have access to the service.
+
+Fast internet service is crucial to the modern economy, and closing the digital divide is seen as a step toward shrinking the persistent gaps in economic opportunity, educational achievement and health outcomes in America. In some areas with spotty or no service, children do their homework in Wi-Fi-equipped buses or fast-food restaurants, small businesses drive to internet hot spots to send sales pitches and medical records are transported by hand on thumb-drive memory sticks.
+
+Accurate measurements on the reach of broadband matter because the government’s statistics are used to guide policy and channel federal funding for underserved areas.

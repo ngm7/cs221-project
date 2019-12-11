@@ -1,0 +1,17 @@
+To Joy Buolamwini, Timnit Gebru and Anima Anandkumar, for calling out A.I. bias.
+
+Artificial intelligence will be one of the most important areas of computer science in the coming years. It’s also one of the least diverse. Just 12 percent of A.I. researchers are women, and the number of black and Latino executives in the field is vanishingly small. Three leading A.I. researchers are trying to change that.
+
+Ms. Buolamwini, a researcher at the M.I.T. Media Lab, is the founder of the Algorithmic Justice League, an organization trying to fight what it calls the “coded gaze” of biased algorithms. This year, she and Ms. Gebru — a Google researcher and co-founder of a group called Black in A.I. — released a study that showed that three leading facial recognition algorithms were substantially worse at classifying darker faces than lighter faces, and worse at classifying women’s faces than men’s faces. The study set off alarm bells at leading tech companies, and was widely cited as evidence of the need for more diversity in the field.
+
+Separately, Ms. Anandkumar, Nvidia’s director of machine learning research and a professor at Caltech, saw that the name of the A.I. field’s marquee annual event — the Neural Information Processing Systems conference, or NIPS — had been used as fodder for sexist jokes. So she started a #ProtestNIPS campaign to change the name, and drew up a petition that gathered more than 2,000 signatures. Eventually, the conference’s board relented, and the event is now abbreviated as “NeurIPS.” It was a small gesture of inclusion that could go a long way toward making women feel more welcome in the field for years to come.
+
+To Promise, Uptrust and Clear My Record, for helping solve our prison problem.
+
+Ending mass incarceration has long been seen as a political challenge. But these three companies are trying to show that technology can help.
+
+Promise is an app built to keep people out of jail. Aimed at pretrial defendants who cannot afford to post cash bail, it creates customized care plans for each user, sends them reminders of court dates and other critical appointments and allows courts to monitor their progress. The company, which participated in the YCombinator start-up program, recently raised $3 million from investors including Jay-Z’s Roc Nation fund and First Round Capital.
+
+Another start-up, Uptrust, offers a similar text message-based system that sends personalized appointment reminders to low-income clients, and can connect them to services that make getting to court easier, such as rides or child care. The service is already up and running in a handful of states, including Baltimore County, Md., and Palm Beach County, Fla.
+
+Code for America, a nonprofit organization modeled after Teach for America, built Clear My Record, a tool that helps people with old criminal convictions get them reduced or expunged, which makes it easier for them to find housing and get jobs. This year, the team formed a partnership with George Gascón, the San Francisco district attorney, to work on a new program that automates the process of expunging marijuana-related convictions under the state’s legalization laws. The group aims to remove 250,000 convictions by the end of 2019.

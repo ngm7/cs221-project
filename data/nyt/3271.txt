@@ -1,0 +1,19 @@
+Twitter
+
+In statements submitted in September to the Senate Intelligence Committee as part of a hearing with Jack Dorsey, the chief executive of Twitter, the company said that it “unequivocally condemns the use of our platform for any election interference activity.” Referring to Tailored Audiences, an advertising feature that can target certain users, the company said it had uncovered a voter suppression effort:
+
+“Twitter is not aware of any advertisements targeted with Tailored Audiences that appear to be designed to discourage any United States citizen from voting.”
+
+■ In the same submission, Twitter elaborated on that statement, referring to the Russian Internet Research Agency, a notorious troll factory:
+
+“Twitter did not see that content created by the Russian Internet Research Agency that constituted voter suppression.”
+
+Twitter removed more than 10,000 accounts in September and October that were posing as those of Democrats and posting messages to discourage voting. The company said it had reviewed and removed hundreds of misleading posts about voting rights, including some suggesting that it is possible to vote via text message.
+
+Facebook
+
+■ In October, Facebook also submitted answers to questions from the Senate committee, including one that asked about advertisements that discouraged voting. Facebook said that its policies prohibit ads and other content from misrepresenting information about voting. The company said that it allows authorized advertisers who confirm their identities and locations to run ads in the United States about elections. It did not directly answer questions about whether it knew of ads that focused on members of a particular race or political party.
+
+“Facebook is committed to transparency for all ads, including ads with political or issue content. Facebook believes that people should be able to easily understand why they are seeing ads, who paid for them, and what other ads those advertisers are running.”
+
+■ When asked whether content created by the Russian Internet Research Agency was designed to discourage voters, Facebook told the Senate committee that “this is an assessment that can be made only by investigators with access to classified intelligence and information from all relevant companies and industries.”

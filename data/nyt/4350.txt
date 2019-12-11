@@ -1,0 +1,7 @@
+Facebook shared user data with tech giants
+
+The social network gave more than 150 companies access to users’ personal data, effectively exempting them from its usual privacy rules. Some of those partners were able to conceal that they were asking for the information, making it impossible for Facebook users to disable sharing — nor were users informed by Facebook that their data had been shared. Companies like Spotify, Netflix and the Royal Bank of Canada were given extraordinary access, such as the ability to read, write and delete users’ private messages.
+
+How we know: The Times obtained internal Facebook documents and interviewed about 50 former employees of Facebook and its corporate partners, which provided the most complete picture yet of the company’s data-sharing practices.
+
+Why it matters: It is the latest example of how personal data has become the most prized commodity of the digital age. (Here are the five main takeaways from our investigation.) The details have also raised questions about whether Facebook ran afoul of a Federal Trade Commission agreement. Social media companies have had to adapt to stricter regulations in Europe, but the U.S. has no general consumer privacy law, giving tech companies free rein to monetize most personal data.

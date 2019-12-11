@@ -1,0 +1,13 @@
+If an organization has spent decades recommending low-fat diets, it can be hard for that group to acknowledge the potential benefits of a low-carb diet (and vice versa). If a group has been pushing for very low-sodium diets for years, it can be hard for it to acknowledge that this might have been a waste of time, or even worse, bad advice.
+
+There are things we can do to help mitigate the effects of biases. We can ask researchers to declare their methods publicly before conducting research so that they can’t later change outcomes or analyses in ways that might influence the results. Think of this as a type of disclosure.
+
+A 2015 study published in PLOS ONE followed how many null results were found in trials funded by the National Heart, Lung and Blood Institute before and after researchers were required to register their protocols at a public website. This rule was introduced in 2000 in part because of a general sense that researchers were subtly altering their work — after it was begun — to achieve positive results. In the 30 years before 2000, 57 percent of trials published showed a “significant benefit.” Afterward, only 8 percent did.
+
+Moves toward open science, and for a change in the academic environment that currently incentivizes secrecy and the hoarding of data, are perhaps our best chance to improve research reproducibility Recent studies have found that an alarmingly high share of experiments that have been rerun have not produced results in line with the original research.
+
+We could also require disclosure of other potential conflicts just as we do with ties to companies. In early 2018, the journal Nature began requiring authors to disclose all competing interests, both financial and nonfinancial. The nonfinancial interests could include memberships in organizations; unpaid activities with companies; work with educational companies; or testimony as expert witnesses.
+
+When results are clear and methods are robust, we probably don’t need to worry too much about the subtle biases affecting researchers. When the results are minimally significant, however, and interpretations among experts differ, the biases of those who discuss them probably do matter.
+
+Unfortunately, many results fall into this group. A new drug is minimally better than another, so anyone’s associations with the companies that produce them matter when people are making decisions about their use or in writing guidelines. The overall effect of individual nutrient changes is small, but it might have built careers, so it’s easy for groups to be too dismissive of new findings that might ask them to change their tunes.

@@ -1,0 +1,9 @@
+At least 75 companies receive people’s precise location data from hundreds of apps whose users enable location services for benefits such as weather alerts, The New York Times found. The companies use, store or sell the information to help advertisers, investment firms and others.
+
+[Read the full investigation: Your Apps Know Where You Were Last Night, and They’re Not Keeping It Secret]
+
+You can head off much of the tracking on your own device by spending a few minutes changing settings. The information below applies primarily to people in the United States.
+
+How can I tell if apps are sharing my location?
+
+It’s difficult to know for sure whether location data companies are tracking your phone. Any app that collects location data may share your information with other companies, as long as it mentions that somewhere in its privacy policy.

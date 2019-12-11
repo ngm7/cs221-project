@@ -1,0 +1,11 @@
+Good Wednesday. Want this by email? Sign up here.
+
+How Facebook let Big Tech peers inside its privacy wall
+
+Facebook let some of the world’s largest technology companies have more intrusive access to users’ personal data than it had previously disclosed. That’s according to an investigation by Gabriel J.X. Dance, Michael LaForgia and Nicholas Confessore of the NYT, based on 270 pages of Facebook’s internal documents and interviews with more than 60 people.
+
+The breadth of the data-sharing was vast. “Facebook allowed Microsoft’s Bing search engine to see the names of virtually all Facebook users’ friends without consent, the records show, and gave Netflix and Spotify the ability to read Facebook users’ private messages. The social network permitted Amazon to obtain users’ names and contact information through their friends.”
+
+Users often didn’t know. “Facebook empowered Apple to hide from Facebook users all indicators that its devices were asking for data. Apple devices also had access to the contact numbers and calendar entries of people who had changed their account settings to disable all sharing, the records show.”
+
+In fact, even Facebook had trouble keeping track. “By 2013, Facebook had entered into more such partnerships than its midlevel employees could easily track, according to interviews with two former employees,” explains the report. “So they built a tool that did the technical work of turning special access on and off.” It doesn’t seem to have solved the problem; as of last year, for instance, Yahoo “could view real-time feeds of friends’ posts for a feature that the company had ended in 2011.”

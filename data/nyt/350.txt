@@ -1,0 +1,13 @@
+“It was essentially coffee shop work,” Mr. Kass said. “I was messing around with this stuff in my spare time.”
+
+So were others across the city.
+
+Mr. Kass, now 28, is part of a new crop of hackers building easy-to-use, data-driven tools to empower tenants and take on notoriously bad landlords. The goal behind this wave of what coders call “civic technology” is to create low cost solutions to some of New York City’s most pressing civic problems, like affordable housing.
+
+Examples include an app called Heatseek, created by students at a coding academy, that allows tenants to record and report the temperature in their homes to ensure that landlords don’t skimp on the heat. There’s also the Displacement Alert Project, built by a coalition of affordable housing groups, that maps out buildings and neighborhoods at risk of displacement.
+
+Now, many of these civic coders are trying to band together and formalize a community.
+
+For more than a year, Mr. Kass and other housing-data wonks have met each month at a shared work space in Brooklyn to exchange ideas about projects and talk about data sets over beer and snacks. Some come from prominent housing advocacy groups; others work unrelated day jobs. They informally call themselves the Housing Data Coalition.
+
+“The real estate industry has many more programmers, many more developers, many more technical tools at their disposal,” said Ziggy Mintz, 30, a computer programmer who is part of the coalition. “It never quite seems fair that the tenant side of the equation doesn’t have the same tools.”

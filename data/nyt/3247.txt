@@ -1,0 +1,27 @@
+Today’s Theme
+
+The first thing to note is that there are five gray squares in Mr. Ezersky’s (and his housemate, Nick’s) grid. Why are they there, you should be asking yourself, and how will this help me solve?
+
+The answer to that lies in the revealer. There are hidden elements in this puzzle, but you might not see them until you get to 108A, where the clue is “Immediately … or where this puzzle’s five shaded squares appear?”
+
+They appear AT THE DROP OF A HAT, according to Mr. Ezersky (and his housemate, Nick), and dropping hats is precisely what we are going to do. There are five different words for “hat” in the puzzle, but you will have to look for them. The word “drop” is a hint that these hats will be Down entries, and it turns out that they drop at the gray square in each of the theme entries.
+
+For example, at 27A, the clue is “ Casting doubt on ,” and the answer should be CALLING INTO QUESTION. But that’s not what we wrote in there, is it? No, we wrote in the mysterious CALLINGINTSTION , with the first T landing in the gray square. How could Mr. Ezersky (and his housemate, Nick) do this to us?
+
+Fear not, the above entry — as well as the other theme entries — are not really gibberish. The whole phrase is there. Take a closer look at that T in the gray square, and then follow it down five squares: There’s a TOQUE in Mr. Ezersky’s (and his housemate, Nick’s) grid! It’s part of the 9D entry, ADD TO QUEUE.
+
+Now you drop the other four hats, but take a moment as you solve to appreciate how tough it must have been to find crossings that had these hats in them, and still allowed Mr. Ezersky (but not his housemate, Nick) to fill the puzzle as well as he did.
+
+Constructor Notes
+
+Today’s puzzle is dedicated to my housemate, Nick. The revealer was all his idea; I just happened to flesh out the exact wordplay and build the whole thing myself instead of including him in a collaborative effort. (Sorry, Nick!) Note to aspiring puzzle makers: Be wary of interlocking theme answers. They. Will. RUIN. You. Really, though, crossing ADD TO QUEUE with CALLING IN (T)STION adds so much more of a constraint to the rest of the grid. Then there’s crossing SAFE ZONES with the symmetrically placed revealer, and having to connect BOOK O(F) RA at the F. Don’t forget that CY(B)HICS / BERETTA still needs to find its way into the grid somewhere … and now we’re up to three theme answers being accounted for. TL;DR: I played a giant game of Tetris in order to fit all the thematic pieces into one 21x21 puzzle, while still holding myself to the usual high fill standards throughout. Thus, this took tons of reworking, but the time and effort to produce a particularly enjoyable grid versus one that just fit the bill felt worth it. As I said in my latest article on crosswords, keeping the solver in mind is what matters most. Now … grab yourself a print copy of The Times, and enjoy this year’s Puzzle Mania!
+
+The Tipping Point
+
+Almost finished solving but need a bit more help? We’ve got you covered.
+
+Warning: There be spoilers ahead, but subscribers can take a peek at the answer key.
+
+Trying to get back to the puzzle page? Right here.
+
+Your thoughts?

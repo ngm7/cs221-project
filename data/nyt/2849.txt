@@ -1,0 +1,9 @@
+Facial recognition is proliferating both as a technology to help law enforcement identify criminals and as a convenient feature to help consumers unlock their phones, among other functions. Its use is also growing in the entertainment realm: Madison Square Garden is among the venues employing it.
+
+The Swift security team’s reported use of facial recognition, however, could represent a new tactic: luring people to step in front of the camera, rather than just scanning a crowd or waiting for fans to pass by. It was not clear which company designed the kiosk, whether it was used at other concerts, whether any potential stalkers were identified and, if so, what was done about them. The Oak View Group and Swift’s representatives did not respond to requests for comment.
+
+Only a couple of states have laws restricting the use of facial recognition, and California is not among them. Nonetheless, many civil liberties advocates consider it to be among the most invasive surveillance technologies because it can be used to recognize people at a distance without their knowledge or permission, curtailing their ability to go about their business anonymously in public.
+
+“Obviously, stalking of celebrities is a real problem,” Jay Stanley, a senior policy analyst for the American Civil Liberties Union, said in an interview. “This is a somewhat sympathetic deployment of the technology, but nonetheless, there are a number of concerns about where this goes.”
+
+Microsoft has called on Congress to regulate facial recognition. In a blog post on Dec. 6, Brad Smith, the president of Microsoft, went further, saying that such a law should require companies to “place conspicuous notice” where the technology is being used. That way people who don’t want to be subjected to facial recognition might avoid it.

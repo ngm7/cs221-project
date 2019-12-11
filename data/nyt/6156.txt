@@ -1,0 +1,11 @@
+The online editions of the news organizations were not affected, and Tribune Publishing said no data about its subscribers was compromised.
+
+“Every market across the company was impacted,” Marisa Kollias, a spokeswoman for Tribune Publishing, told The Los Angeles Times. The Tribune’s remaining publications include its flagship, The Chicago Tribune, and newspapers in Florida, Hartford and Maryland. It also owns The Daily News in New York.
+
+Missing from Tribune’s statements were any details about the nature of the malware or evidence for its assertion that the attack originated overseas. Anonymous sources cited by The Los Angeles Times suggested that the malware may have been a form of ransomware — a pernicious attack that scrambles computer programs and files before demanding that the victim pay a ransom to unscramble them.
+
+Even if the attack was the work of foreign hackers, that does not necessarily mean it was backed by a government. Ransomware attacks are frequently the work of criminal groups, with three notable exceptions: a huge attack by hackers in North Korea in 2017, an attack months later against Ukraine by Russian hackers and, more recently, attacks against American hospitals and even the City of Atlanta by hackers in Iran. Those latest attacks were believed to be the work of individuals and not directed by Tehran.
+
+Neither Tribune Publishing nor The Los Angeles Times said the attack was linked to a ransom demand.
+
+But a news article in The Los Angeles Times, and one outside computer expert, said the attack shared characteristics with a form of ransomware called Ryuk, which was used to target a North Carolina water utility in October and other critical infrastructure. Some experts have linked that malware to a sophisticated North Korean group, but CrowdStrike, a security firm that has been tracking the group behind Ryuk, said it believed cybercriminals in Eastern Europe were responsible.

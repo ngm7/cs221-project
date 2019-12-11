@@ -1,0 +1,15 @@
+While this approach can be more efficient than manually searching a site like LinkedIn, it has drawbacks. Applicants can game the process by larding their résumés with terms the machines are likely to be looking for. Conversely, poorly worded job listings could cause computers to overlook qualified candidates.
+
+But recent advances in a form of artificial intelligence known as deep learning have made the machines used by some companies, like Eightfold and the online job hub ZipRecruiter, far more powerful. Instead of simply scanning words on a page and matching them to words in a job description, a machine can now identify skills and aptitudes that don’t explicitly appear on a candidate’s résumé.
+
+To illustrate, Mr. Garg points out that about 90 percent of software engineers at the financial software company Intuit in Mountain View, Calif., know the programming language Java, according to data Eightfold has analyzed. That means the machine is on safe ground inferring that an Intuit software engineer knows Java, even if he or she doesn’t list the skill on a résumé.
+
+By performing a similar exercise across an entire résumé, the company’s software can build a detailed profile of a job applicant. It can extract more than the usual amount of information from categories like education (certain disciplines at less prominent universities, like natural-language processing at the University of Massachusetts, Amherst, produce high-achieving workers) and even hobbies (chess players tend to be good at coding, basketball players at sales).
+
+Eightfold, which is based in Silicon Valley, also makes a clever trade with clients: to improve its results, Eightfold asks clients to use its human-resources software, which imports employee data in anonymous form. This includes information on how workers with different backgrounds perform in different jobs, and how much they earn.
+
+Eightfold can then use this data to better predict performance — say, how well an Intuit software engineer who plays chess and graduated from the University of Massachusetts might do at Amazon or Microsoft.
+
+Intuit did not respond to a request for comment.
+
+The software tool can be especially powerful to an employer intent on expanding a search beyond candidates with conventional experience and qualifications. In that case, a recruiter can specify criteria (like industry and location, and even how likely the candidate is to accept an offer) that would turn up less traditional résumés.

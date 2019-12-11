@@ -1,0 +1,9 @@
+By all accounts, the hack was not as widespread or sophisticated as the Russian effort to take over the computer systems of the Democratic National Committee in 2016. In that instance, the Russians implanted malware into the computer server that ran many of the Democratic committee’s operations and had free run of its communications networks. It was an operation American intelligence officials have testified was personally ordered by Mr. Putin.
+
+The breach of the Republican campaign committee, first reported by Politico, appears to have been more limited. The intrusion into the four email accounts was detected in April by a vendor for the committee.
+
+“The N.R.C.C. can confirm that it was the victim of a cyberintrusion by an unknown entity,” Ian Prior, a spokesman for the organization, said in a statement. “The cybersecurity of the committee’s data is paramount, and upon learning of the intrusion, the N.R.C.C. immediately launched an internal investigation and notified the F.B.I., which is now investigating the matter.”
+
+Mr. Prior declined to comment further, citing the continuing investigation. None of the emails appear to have been published. That could suggest that the hackers were just testing to see if they could break into the committee, or that they found the trove of stolen material insufficiently interesting.
+
+This was not the first time the Republicans had been a target. In 2016, Russian hackers broke into the servers of an outside vendor who appeared to have largely outdated documents from past presidential campaigns, James B. Comey, then the director of the F.B.I., told Congress in January 2017.

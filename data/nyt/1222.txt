@@ -1,0 +1,13 @@
+Good Thursday. Want this by email? Sign up here.
+
+A rare glimpse into how Facebook really works
+
+A cache of emails and other internal Facebook documents made public by a British parliamentary committee on Wednesday revealed how the social media giant used people’s personal data to favor some of its partners and to punish rivals.
+
+The 250 pages of material, from 2012 to 2015, had been sealed by a U.S. judge as part of a lawsuit filed against Facebook by an app developer, but they were obtained by British lawmakers as part of a parliamentary investigation into the company’s practices.
+
+Some highlights:
+
+Facebook engineered ways to collect data without telling users. In one exchange, employees discussed a possible app update that would log users’ phone calls. “This is a pretty high risk thing to do from a P.R. perspective but it appears that the growth team will charge ahead and do it,” Michael LeBeau, an employee, said in one email.
+
+Mark Zuckerberg approved cutting off a competitor’s data access. In 2013, after Twitter released the video app Vine, Facebook ended Twitter’s access to friends data. “Unless anyone raises objections, we will shut down their friends API access today,” Justin Osofsky, a Facebook executive, said in an email at the time. The response from Mr. Zuckerberg, Facebook’s founder and chief executive: “Yup, go for it.”

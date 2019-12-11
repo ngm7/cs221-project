@@ -1,0 +1,9 @@
+Recently, officials in California announced that the Camp Fire, the deadliest wildfire in the state’s history, had been fully contained. The achievement was made possible through the hard work of firefighters on the ground, with some help from above: a swarm of tiny, orbiting satellites that represent the next phase of the space age.
+
+The satellites are operated by Planet Labs, a company in San Francisco that runs the world’s largest fleet of Earth-observing satellites. Its craft number around 140. All of them carry cameras and telescopes. In size, most rival a loaf of bread.
+
+As a group, the satellites can view the same spot on the ground once or even twice a day. Until now, commercial satellites could observe a location only weekly or monthly, if at all. The quicker pace enables the close monitoring of rapid environmental change, including fires, floods, volcanic eruptions, earthquakes, hurricanes and the effects of such events on urban areas .
+
+“You can’t fix what you can’t see,” said Will Marshall, the company’s chief executive.
+
+The Camp Fire started Thursday, Nov. 8. The next day, a Planet Labs team in Sacramento began streaming surveillance data to the war room where state officials coordinated the response.

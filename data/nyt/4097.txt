@@ -1,0 +1,11 @@
+Google has come under mounting scrutiny for its promotion of children’s apps in its Play store. In April, cybersecurity researchers reported that more than half of about 6,000 free Android children’s apps they tested shared personal data in ways that may violate the children’s privacy law. In September, the attorney general of New Mexico filed a lawsuit against Google and other companies over children’s apps. The complaint said that Google had violated a state law on unfair practices by marketing certain children’s apps as family-friendly even when the company knew the apps failed to comply with its own policies on children’s apps.
+
+Image In an app called New Girl in High School for children ages 6-12, researchers found an ad for a game involving beer, the complaint said. Credit... Brent Lewis for The New York Times
+
+Image Beer in the ads for New Girl at School. Credit... Brent Lewis for The New York Times
+
+In early October, two Democratic senators called for a federal investigation to examine how app stores like Google Play vet the apps they categorize as child-friendly and ensure they comply with the privacy law. And on Wednesday morning those senators — Richard Blumenthal of Connecticut and Ed Markey of Massachusetts — along with Senator Tom Udall, Democrat of New Mexico, sent another letter to the chairman of the F.T.C. pressing for “a comprehensive investigation into the Google Play store and its compliance” with children’s privacy and advertising rules.
+
+“There are massive, at-scale problems with Android apps for children,” said Josh Golin, executive director of the Campaign for a Commercial-Free Childhood, a children’s advocacy group in Boston that led the latest complaint along with the Center for Digital Democracy, a nonprofit in Washington. “Google is failing to do the proper vetting of apps in the family section,” he said.
+
+Google said that it removed thousands of apps from its Designed for Families program this year when it found policy violations, and had begun to take action on the apps cited in the consumer groups’ complaint.

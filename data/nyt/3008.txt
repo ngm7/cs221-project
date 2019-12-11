@@ -1,0 +1,7 @@
+Each week, technology reporters and columnists from The New York Times review the week’s news, offering analysis and maybe a joke or two about the most important developments in the tech industry.
+
+Hello, dear readers. I’m Daisuke Wakabayashi, a reporter covering Google in our San Francisco bureau. This past week, however, I spent my time in the nation’s capital covering the congressional hearing for Sundar Pichai, Google’s chief executive. He faced questions about the company’s data-collection practices, about accusations of bias against conservatives in search results and about Google’s possible plans to provide a censored search engine for China.
+
+It was the first congressional hearing I had attended, and the spectacle was eye-opening. It underscored, to me, how Silicon Valley and Washington exist in their bubbles without really understanding each other. Lawmakers seemed like out-of-touch old people with little grasp of how technology works and where the real risks lie. Mr. Pichai came across as evasive and unwilling to acknowledge the legitimate concerns about Google’s business practices.
+
+At holiday parties and informal discussions in Washington, the conversation often turned to big tech and privacy. There seemed to be a growing wariness among lawmakers, regulators and aides about data collection and the unrelenting push by companies to gather more information about us.

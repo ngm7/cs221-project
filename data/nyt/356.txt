@@ -1,0 +1,11 @@
+Users of Quora, the question-and-answer site, are asking today:
+
+Did my personal data just get stolen?
+
+The social platform said late Monday that the account information and private messages of around 100 million users may have been exposed when its computer systems were compromised by “a malicious third party.” Quora discovered the data breach on Friday, the company’s chief executive, Adam D’Angelo, wrote in a blog post, and it is still investigating how it happened.
+
+“It is our responsibility to make sure things like this don’t happen, and we failed to meet that responsibility,” Mr. D’Angelo wrote.
+
+The company noted that the incident was unlikely to result in identity theft, as the site does not collect sensitive information such as credit card or Social Security numbers.
+
+Still, coming less than a week after the hotel chain Marriott announced that hackers had stolen the personal data of up to 500 million guests, the incident serves as another reminder that a vast and expanding swath of our lives is vulnerable to digital intrusion.

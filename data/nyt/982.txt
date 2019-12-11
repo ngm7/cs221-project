@@ -1,0 +1,7 @@
+LONDON — Facebook used the mountains of data it collected on users to favor certain partners and punish rivals, giving companies such as Airbnb and Netflix special access to its platform while cutting off others that it perceived as threats.
+
+The tactics came to light on Wednesday from internal Facebook emails and other company documents released by a British parliamentary committee that is investigating online misinformation. The documents spotlight Facebook’s behavior from roughly 2012 to 2015, a period of explosive growth as the company navigated how to manage the information it was gathering on users and debated how best to profit from what it was building.
+
+The documents show how Facebook executives treated data as the company’s most valuable resource and often wielded it to gain a strategic advantage. Mark Zuckerberg, Facebook’s chief executive, and Sheryl Sandberg, the chief operating officer, were intimately involved in decisions aimed at benefiting the social network above all else and keeping users as engaged as possible on the site, according to emails that were part of the document trove.
+
+In one exchange from 2012 when Mr. Zuckerberg discussed charging developers for access to user data and persuading them to share their data with the social network, he wrote: “It’s not good for us unless people also share back to Facebook and that content increases the value of our network. So ultimately, I think the purpose of platform — even the read side — is to increase sharing back into Facebook.”

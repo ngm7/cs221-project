@@ -1,0 +1,11 @@
+Image
+
+The risk of getting a hospital-acquired infection is decreasing.
+
+In a study published in The New England Journal of Medicine, researchers surveyed almost 200 hospitals caring for about 12,000 patients across the country in 2011 and again in 2015, reviewing medical records to find cases of health care-associated infection. They found that in 2015, hospital-acquired infections had declined to 3.2 percent of patients, from 4 percent in 2011. They calculate that a patient’s risk of getting infected during a hospital stay was 16 percent lower in 2015 than in 2011.
+
+Most of the reductions were in urinary tract and surgical site infections. However, there were no declines in pneumonia and infections with C. difficile, a germ that can cause severe gastrointestinal disease.
+
+The researchers propose some possible reasons for the decrease. Between 2011 and 2015, 603 American hospitals implemented new safety guidelines for catheter use, which may have contributed to the reduction in urinary tract infections. And the more effective use of prophylactic antibiotics before operations may have helped reduce the number of surgical infections.
+
+“We are seeing progress, but that doesn’t mean we’re done,” said the lead author, Dr. Shelley S. Magill, a medical officer with the Centers for Disease Control and Prevention. “There are infection types where we’re not seeing reductions. So there is more work to be done.”

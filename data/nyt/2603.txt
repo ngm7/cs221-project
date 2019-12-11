@@ -1,0 +1,19 @@
+I.C.O. manipulation
+
+On the same day the S.E.C. issued its statement last month, it also settled two cases with issuers of digital tokens for violating the securities laws, requiring them to pay penalties of $250,000 each and work to refund money to investors in their illegal offerings.
+
+In another case, Maksim Zaslavskiy, who was charged with criminal securities fraud involving an I.C.O., pleaded guilty in a Federal District Court in Brooklyn. This was the first case in which a judge found that the digital coins were a type of security, and therefore subject to the associated antifraud rules.
+
+The S.E.C. settled a case against Zachary Coburn, the founder of a company called EtherDelta that facilitated trading in digital coins, because it operated as an unregistered national securities exchange. For those looking to offer a trading platform in the United States, registering with the S.E.C. as an exchange is also an expensive and time-consuming process.
+
+By the end of the month, the S.E.C. had also settled charges with the boxer Floyd Mayweather Jr. and the music producer Khaled Khaled, known as DJ Khaled, for their promotion of digital tokens issued by a start-up called Centra Tech. The men did not disclose that they received payments for making online postings that hyped the digital coin, the regulators said. Mr. Mayweather agreed to give back the $300,000 he received, pay an additional $300,000 penalty and adhere to a three-year ban on promoting other investments. Mr. Khaled will pay back the $50,000 he got, as well as a $100,000 penalty.
+
+The crypto slowdown
+
+But even before the government began its crackdown, there was a big sign that euphoria was evaporating from the market: the decline in cryptocurrency “mining” that generates additional digital tokens. Giga Watt, a digital currency mining operation in Washington state, filed for bankruptcy recently due in large part to the collapse in Bitcoin’s price. Nvidia, which makes graphics chips that are important for mining cryptocurrencies, forecast a 20 percent drop in revenue in its next quarter because of “the sharp falloff in cryptocurrency mining demand.”
+
+For the naysayers of cryptocurrencies and initial coin offerings, this is the anticipated end of a speculative bubble, much like the tulip mania in 17th-century Holland or the dot.com implosion. That does not necessarily mean that this type of investment will disappear, but greater government scrutiny will raise the costs for trading platforms and could effectively eliminate initial coin offerings if they must be registered with the S.E.C.
+
+Blockchain, the underlying technology for cryptocurrencies, is useful, and unlikely to disappear. But whether cryptocurrencies survive as a viable means of conducting business is a different question. Nathaniel Popper pointed out recently in The New York Times that Bitcoin and its brethren were designed to make payments easier but have been “hobbled by technical problems that make their tokens hard to use in real-world transactions. Those working on the cryptocurrencies have promised solutions, but they have been slow to produce them.”
+
+Just like penny stocks, digital tokens have seen their fair share of scam artists and questionable uses. As the government puts more resources into policing the trading of digital assets, the decline in cryptocurrency prices may well accelerate as those who fear being a target of fraudulent conduct wait for a time when there are greater protections for investors. The question is: Will cryptocurriences survive for long enough for us to ever see that day?

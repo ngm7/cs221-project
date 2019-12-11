@@ -1,0 +1,5 @@
+Scientists and engineers have been building and programming piano-playing robots for decades. But there’s something different about a new robotic hand that tickles the ivories with techniques usually reserved for humans.
+
+Rather than relying on a maze of motors, as decades of piano bots have, the hand — introduced Wednesday in a paper in Science Robotics — operates passively, meaning its fingers are not individually connected to any motors. Instead, a simple mechanical arm controls only the wrist, and the rest of the hand follows in a design inspired by human anatomy.
+
+“Our aim is to move away from the traditional approach in robotics, where one motor gives one behavior, because that doesn’t scale,” said Josie Hughes, a researcher in the Department of Engineering at the University of Cambridge who led the development of the hand.

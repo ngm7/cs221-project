@@ -1,0 +1,3 @@
+The business of location data has grown dramatically in recent years, a New York Times investigation found. Apps on smartphones send precise location data sometimes thousands of times a day. Companies prize the information, which can help advertisers target consumers and investments funds understand trends.
+
+Though the raw data is anonymous, it can often be linked to people’s identities by comparing movements to publicly available information like home addresses.

@@ -1,0 +1,11 @@
+Coders who don’t mind a little blood and gore
+
+The next day, back at company headquarters, I sat in one of the less Montessori-style conference rooms with Steve Dickmann, 72, the chief administrative officer. He became animated when explaining some of the more functional, less fantastical features of the space. “The whole campus is designed to promote productivity, creativity, comfort,” he said.
+
+There was a philosophy behind everything. All employees have offices, because studies show that workers in open floor plans get interrupted frequently. Stairs promote socialization, but buildings can’t be more than three stories, because workers are reluctant to climb more than a flight or two. Every conference room must have windows so that visitors don’t feel hemmed in during days and days of training.
+
+The overriding mission, Mr. Dickmann said, was to ensure the safety of patients at facilities that use Epic software. If health care programmers make mistakes, he said, “bad things can happen.”
+
+Epic’s coders often leave campus to embed in operating and recovery rooms, where they watch nurses ripping the tops off blood bags and surgeons opening up people’s chest cavities. It’s an experience that young engineers are unlikely to get at, say, Facebook or Snap, working on algorithms that tailor ads to demographic groups or insert rainbow vomit into photographs.
+
+Programmers regularly faint at the sight of beating hearts, scalpels and bodily fluids. “There were people that would pass out in the hallway” of hospitals, said Aaron Webb, who worked at Epic for 10 years as a software developer. He watched “hundreds” of surgeries, often with his team in tow, before moving to Seattle, where he now works for a business that matches companies with storage space. “But if you can’t understand what your users are going through, you’re not going to design a good system.”

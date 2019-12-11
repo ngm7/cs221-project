@@ -1,0 +1,7 @@
+SAN FRANCISCO — Eight months after one of Uber’s self-driving cars struck and killed a pedestrian, the ride-hailing company is close to putting its autonomous vehicles back on the road in a drastically reduced version of earlier efforts.
+
+Uber was driving its autonomous vehicles on public roads in four cities — sometimes at night — at speeds as high as 55 miles an hour when testing was halted after the accident. Starting within a few weeks, it plans to run the vehicles on a mile loop between two company offices in Pittsburgh. They won’t operate at night or in wet weather, and they won’t exceed 25 m.p.h., Uber said Wednesday.
+
+But even as the company has lowered expectations, its autonomous car technology has faced considerable issues. The cars have reacted more slowly than human drivers and struggled to pass so-called track validation tests, the last step before returning to city streets, according to a dozen Uber documents and emails as well as interviews with seven current and former employees, who spoke on the condition of anonymity because they were not allowed to talk publicly about the company.
+
+The scaled-down street testing would be a humble return for a cutting-edge effort that Uber’s executives once considered a key to its prosperity. While Uber is growing fast and is expected to make its debut on Wall Street next year, it is wildly unprofitable. The company lost $1 billion in its most recent quarter.

@@ -1,0 +1,15 @@
+The 5G speeds will be particularly noticeable in higher-quality streaming video. And downloading a typical movie at the median speeds cited by Qualcomm would take 17 seconds with 5G, compared with six minutes for 4G.
+
+Rather than remembering to download a season of a favorite TV show before heading to the airport, for example, you could do it while in line to board a plane, said Justin Denison, a Samsung senior vice president.
+
+Is that the only speed that matters?
+
+No. There’s another kind of speed, a lag known as latency, that may become even more important with 5G.
+
+Issue a command now on a smartphone — like starting a web search — and the response isn’t exactly immediate. A lag of 50 to several hundred milliseconds is common, partly because signals often must pass between different carrier switching centers; 5G, which uses newer networking technology, was designed to r educe latency to a few milliseconds. It was also designed to deliver signals more reliably than earlier cellular networks, which today frequently drop bits of data that aren’t essential for tasks like watching movies on a phone.
+
+That improvement could bring many benefits, notably in fields such as virtual reality. The highest-quality VR applications now typically require bulky headsets that are connected by wire to nearby personal computers that generate 3-D images. With 5G, that would be offloaded wirelessly to other machines, freeing users to move and making it easier to develop goggles the size of eyeglasses, said Cristiano Amon, president of Qualcomm’s semiconductor business.
+
+In the related field of augmented reality, people could point a smartphone camera at a football game and see both live video on the display and superimposed player statistics or other data, said Patrick Moorhead, an analyst at Moor Insights & Strategy.
+
+And 5G’s impact extends to medicine and other fields that increasingly rely on high-speed connections.

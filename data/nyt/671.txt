@@ -1,0 +1,7 @@
+SAN FRANCISCO — The world’s leading technology companies, from Google to Alibaba in China, are racing to build the first quantum computer, a machine that would be far more powerful than today’s computers.
+
+This device could break the encryption that protects digital information, putting at risk everything from the billions of dollars spent on e-commerce to national secrets stored in government databases.
+
+An answer? Encryption that relies on the same concepts from the world of physics. Just as some scientists are working on quantum computers, others are working on quantum security techniques that could thwart the code-breaking abilities of these machines of the future.
+
+It is a race with national security implications, and while building quantum computers is still anyone’s game, China has a clear lead in quantum encryption. As it has with other cutting-edge technologies, like artificial intelligence, the Chinese government has made different kinds of quantum research a priority.

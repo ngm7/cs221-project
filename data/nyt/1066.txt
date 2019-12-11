@@ -1,0 +1,19 @@
+_________
+
+Updated: December 13, 2018
+
+Does Nike’s Zoom Vaporfly, a $250 running shoe with a carbon-fiber plate that some say acts as a catapult, a spring or a lever, really make runners run faster? A qualified yes. The New York Times article “Nike Says Its $250 Running Shoes Will Make You Run Much Faster. What if That’s Actually True?” reports on its extensive statistical analysis of this claim based on race time data. Note when you hover over a data point, the name of the shoe appears.
+
+This pricey shoe was released in the summer of 2017. Nike claims that it is 4 percent better than some of its best racing shoes, as measured by how much energy runners expend when running in them. That’s more than 7 minutes in a 3-hour marathon. But, the Times article’s authors Kevin Quealy and Josh Katz dug deeply into marathon running data from Strava, a fitness app that calls itself the social network for athletes. Based on this self-reported data from about 4,000 runners, they pulled out times from runners who changed the brand or model of their shoes in successive races. Then, they compared the two times. After grouping the differences by which shoe they switched to, the authors calculated the average increase or decrease in race time. The result is shown in the graph. In this study, the Vaporflys were about 3.75 percent faster than whatever shoe the runner had worn in the prior race. The journalists also used three other methods of analysis. In all four methods, the runners in Vaporflys ran 3 to 4 percent faster than when running in other shoes.
+
+The article only gives a “qualified” yes to the Vaporflys’ superiority because statisticians assert that you can only prove that a particular running shoe (the cause) results in a faster time (the effect) if an experiment were carried out. For this to be an experiment, different running shoes must be assigned randomly to runners. How practical would it be to do this? Is Mr. Quealy and Mr. Katz’s analysis sufficient to declare that the observed increase in speed because of the Vaporflys is statistically significant?
+
+On Dec. 11, the New York Times Science Times published the article “Running Slower? Slip These On” which reported on two experiments testing the efficiency of the Vaporflys. These experiments confirmed the 4 percent improvement. Read the article to see how experiments support the claim that running in Vaporflys results in faster times.
+
+Here are some of the student headlines that really capture the meaning of this graph: “Running Off the Charts” by Emily & Richard of Hanover, Mich., “Vaporfly ‘Flying’ Faster Than the Competition” by Daniel of Hopkinton, N.H., and “Nike 4% on FLEEK” by Miggyboom of Philadelphia.
+
+You may want to think critically about these additional questions:
+
+■ Describe the distribution of percentage change in race times. What is the approximate center of the data? The minimum and maximum of all of the data? The min and max of the middle 50% of the data (the 1st and 3rd quartile)? Unusual points (outliers)?
+
+■ This graph displays the percentage change in race times for runners who run two races with different shoe brands or models. What are the pros and cons for using this approach to determine if a shoe makes a runner run faster?

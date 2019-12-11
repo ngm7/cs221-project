@@ -1,0 +1,15 @@
+Such information is exactly what the Chinese use to root out spies, recruit intelligence agents and build a rich repository of Americans’ personal data for future targeting. With those details and more that were stolen from insurers like Anthem, the Marriott data adds another critical element to the intelligence profile: travel habits.
+
+James A. Lewis, a cybersecurity expert at the Center for Strategic Studies in Washington, said the Chinese have collected “huge pots of data” to feed a Ministry of State Security database seeking to identify American spies — and the Chinese people talking to them.
+
+“Big data is the new wave for counterintelligence,” Mr. Lewis said.
+
+“It’s big-data hoovering,” said Dmitri Alperovitch, the chief technology officer at CrowdStrike, who first highlighted Chinese hacking as a threat researcher in 2011. “This data is all going back to a data lake that can be used for counterintelligence, recruiting new assets, anticorruption campaigns or future targeting of individuals or organizations.”
+
+In the Marriott case, Chinese spies stole passport numbers for up to 327 million people — many of whom stayed at Sheraton, Westin and W hotels and at other Starwood-branded properties. But Marriott has not said if it would pay to replace those passports, an undertaking that would cost tens of billions of dollars.
+
+Instead, Connie Kim, a Marriott spokeswoman, said the hotel chain would cover the cost of replacement if “fraud has taken place.” That means the company would not cover the cost of having exposed private data to the Chinese intelligence agencies if they did not use it to conduct commercial transactions — even though that is a breach of privacy and, perhaps, security.
+
+And even for those guests who did not have passport information on file with the hotels, their phone numbers, birth dates and itineraries remain vulnerable.
+
+That data, Mr. Lewis and others said, can be used to track which Chinese citizens visited the same city, or hotel, as an American intelligence agent who was identified in data taken from the Office of Personnel Management or from American health insurers that document patients’ medical histories and Social Security numbers.

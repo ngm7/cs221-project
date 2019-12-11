@@ -1,0 +1,7 @@
+The social network let Amazon obtain users’ names and contact information through their friends, and allowed Spotify and Netflix to read, write and delete users’ private messages. Facebook shared data with more than 150 companies, including The Times.
+
+A 2011 agreement with the Federal Trade Commission banned the social network from sharing user data without explicit permission. Here are the five main takeaways from our investigation.
+
+How we know: The Times interviewed more than 60 people, including former employees of Facebook and its partners, former government officials and privacy advocates. It also reviewed more than 270 pages of internal Facebook documents and performed technical tests and analysis to monitor the information being passed between Facebook and its partners.
+
+Response: Steve Satterfield, Facebook’s director of privacy and public policy, said none of the partnerships violated users’ privacy or the F.T.C. agreement. “We know we’ve got work to do to regain people’s trust,” he said.

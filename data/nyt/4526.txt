@@ -1,0 +1,11 @@
+You are the product: That is the deal many Silicon Valley companies offer to consumers. The users get free search engines, social media accounts and smartphone apps, and the companies use the personal data they collect — your searches, “likes,” phone numbers and friends — to target and sell advertising.
+
+But an investigation by The New York Times, based on hundreds of pages of internal Facebook documents and interviews with about 50 former employees of Facebook and its partners, reveals that the marketplace for that data is even bigger than many consumers suspected. And Facebook, which collects more information on more people than almost any other private corporation in history, is a central player.
+
+Here are five takeaways from our investigation.
+
+Facebook deals in data
+
+“We don’t sell data to anyone,” Mark Zuckerberg, Facebook’s founder, told Congress during a hearing in April. His pledge — that the torrent of data Facebook collects from its 2.2 billion users will always remain safely in Facebook’s hands — has been a cornerstone of the company’s defensive strategy this year, as lawmakers, regulators and activists have pummeled the social network over a series of privacy breaches and public relations blunders.
+
+While it is true that Facebook hasn't sold users’ data, for years it has struck deals to share the information with dozens of Silicon Valley companies. These partners were given more intrusive access to user data than Facebook has ever disclosed. In turn, the deals helped Facebook bring in new users, encourage them to use the social network more often, and drive up advertising revenue.

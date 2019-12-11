@@ -1,0 +1,49 @@
+Each N.F.L. team has only two games remaining, but there are about four billion ways the season could end. That may sound like a lot, but only a few games really matter for each contending team, and it’s possible for us to depict all the remaining playoff paths as the branches of a tree.
+
+The charts below list the full range of outcomes for teams that are already in or have a mathematical shot at the playoffs. Some teams’ trees are wildly convoluted, while others are more straightforward. Note: We did not include ties — which exponentially increase the charts’ complexity — because teams rarely tie.
+
+These trees are based on our interactive playoff simulator, which was created to let you explore all the ways the season could end for your team.
+
+A.F.C. East
+
+A.F.C. North
+
+Pittsburgh Steelers (8-5-1) Best possible playoff outcome: No. 2 seed Worst possible outcome: Out The Steelers are on top of the A.F.C. North, and winning out would guarantee a playoff berth and the division title. But if the Steelers lose one of their remaining games — one of which is at the 11-2 Saints in Week 16 — they will need help. Pinch to zoom Explore all of the Steelers’ playoff scenarios in our simulator.
+
+Cleveland Browns (6-7-1) Best possible playoff outcome: No. 6 seed Worst possible outcome: Out The Cleveland Browns (the Cleveland Browns!) are mathematically in the playoff hunt with two weeks remaining in the N.F.L. season. That is no small feat. Unfortunately, their playoff hopes start at the prospect of a Week 17 tie between the Colts and Titans. That result would be just one part of the Browns’ unlikely dream scenario: a three-way tie for the No. 6 seed between the Colts, Titans and Browns, each with a 8-7-1 record, and the Browns winning a playoff berth on a tiebreaker. (For the sake of simplification, our playoff trees normally do not depict ties. We are making an exception for the Browns, whose path requires a tie.) Pinch to zoom Explore all of the Browns’ playoff scenarios in our simulator.
+
+A.F.C. South
+
+Houston Texans (10-4) Best possible playoff outcome: No. 1 seed Worst possible outcome: Out The Texans hold a comfortable two-game lead in the A.F.C. South, but have not quite clinched a playoff berth, which is still extremely likely even if they lose their remaining games. The most likely outcome for the Texans is the No. 2 seed. Pinch to zoom Explore all of the Texans’ playoff scenarios in our simulator.
+
+Tennessee Titans (8-6) Best possible playoff outcome: No. 2 seed Worst possible outcome: Out The Titans share the Colts’ 8-6 record but find themselves in third place in the A.F.C. South. As with the Colts, a 10-6 season would probably put them in the playoffs. Like the Colts, the Titans must win in Week 17 to keep their playoff hopes alive. Pinch to zoom Explore all of the Titans’ playoff scenarios in our simulator.
+
+A.F.C. West
+
+Kansas City Chiefs (11-3) Best possible playoff outcome: No. 1 seed Worst possible outcome: No. 5 seed The Chiefs are on top of the A.F.C. and have clinched a playoff berth. Their most likely postseason outcome is a No. 1 seed, with a bye week and home-field advantage throughout the playoffs. But the Chargers share the Chiefs’ 11-3 record, which means the Chiefs must win out or hope for at least one Chargers loss to guarantee the division title. There is a world in which a 12-4 Chiefs team would be the No. 5 seed in the A.F.C., playing its first playoff game on the road. Pinch to zoom Explore all of the Chiefs’ playoff scenarios in our simulator.
+
+Los Angeles Chargers (11-3) Best possible playoff outcome: No. 1 seed Worst possible outcome: No. 5 seed The Chargers’ scenarios mirror those of the Chiefs. They are in the playoffs and will most likely be the No. 1 seed or the No. 5 seed. Pinch to zoom Explore all of the Chargers’ playoff scenarios in our simulator.
+
+N.F.C. East
+
+Dallas Cowboys (8-6) Best possible playoff outcome: No. 3 seed Worst possible outcome: Out The Cowboys are on top of the N.F.C. East, and a win in either of their next two games would clinch the division. Even with two consecutive losses, an 8-8 Cowboys team would still be more likely than not to make the playoffs. Pinch to zoom Explore all of the Cowboys’ playoff scenarios in our simulator.
+
+Philadelphia Eagles (7-7) Best possible playoff outcome: No. 4 seed Worst possible outcome: Out The Eagles’ upset victory over the Rams on Sunday night helped their playoff chances, but they’ll still need help to make the postseason. Though it’s possible for an 8-8 Eagles team to make the playoffs, winning out would give the team a much more realistic chance. Because the Eagles lost twice to the division-leading Cowboys, a wild-card berth is much more likely than a division title. Eagles fans should be rooting against the other wild-card contenders: the Panthers, the Seahawks and especially the Vikings. Pinch to zoom Explore all of the Eagles’ playoff scenarios in our simulator.
+
+Washington Redskins (7-7) Best possible playoff outcome: No. 4 seed Worst possible outcome: Out The safest bet is that the Redskins will not make the playoffs. But they could. To do so, they must win in Week 17, a home game against the Eagles. (No matter what happens this week, a Week 17 loss would eliminate them.) If they do that — and win in Week 16 against the Titans — they have a chance but would still need help. A Vikings loss would do it. Pinch to zoom Explore all of the Redskins’ playoff scenarios in our simulator.
+
+N.F.C. North
+
+Chicago Bears (10-4) Best possible playoff outcome: No. 1 seed Worst possible outcome: No. 4 seed The Bears have clinched the N.F.C. North and a berth in the postseason. But the team faces a range of outcomes, including an outside chance at the No. 1 seed in the N.F.C. and home-field advantage throughout the playoffs. The most likely scenario for the Bears is a No. 3 seed. Pinch to zoom Explore all of the Bears’ playoff scenarios in our simulator.
+
+Minnesota Vikings (7-6-1) Best possible playoff outcome: No. 5 seed Worst possible outcome: Out The Vikings must win one of their remaining two games to have a realistic chance to make the playoffs (There is a scenario in which a 7-8-1 record allows the Vikings to sneak in, but don’t cross your fingers.) A win on Sunday at the 5-9 Lions would make a playoff berth much more likely than not, even if the Vikings lose their final game, against the 10-4 Chicago Bears. Winning out guarantees the Vikings a playoff berth. Pinch to zoom Explore all of the Vikings’ playoff scenarios in our simulator.
+
+N.F.C. South
+
+New Orleans Saints (12-2) Best possible playoff outcome: No. 1 seed Worst possible outcome: No. 3 seed At 12-2, the Saints have already clinched the N.F.C. South and are in a strong position to secure a first-round bye. A win in either of their next two games would clinch the No. 1 seed and home-field advantage throughout the playoffs. Pinch to zoom Explore all of the Saints’ playoff scenarios in our simulator.
+
+Carolina Panthers (6-8) Best possible playoff outcome: No. 6 seed Worst possible outcome: Out The Panthers face a narrow path to the playoffs. Their only hope is to rely on the last wild-card berth. Unfortunately for Carolina, there are four other teams — the Seahawks, Vikings, Eagles and Redskins — ahead of them. Pinch to zoom Explore all of the Panthers’ playoff scenarios in our simulator.
+
+N.F.C. West
+
+Los Angeles Rams (11-3) Best possible playoff outcome: No. 1 seed Worst possible outcome: No. 3 seed The Rams have won the N.F.C. West and have clinched a playoff berth. Their most likely outcome is a No. 2 seed, with a bye week and home-field advantage for at least their first playoff game. Rams fans hoping for the No. 1 seed should root against the Saints. Pinch to zoom Explore all of the Rams’ playoff scenarios in our simulator.

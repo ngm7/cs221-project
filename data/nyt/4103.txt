@@ -1,0 +1,5 @@
+Netflix and Spotify received access to people’s Facebook messages as part of features that allowed people to suggest movies, TV shows and music to friends. On Netflix, for example, after watching a show, a viewer would be prompted to connect to Facebook and recommend it.
+
+Netflix promoted the arrangement in 2014 as more privacy-sensitive than posting people’s viewing habits on their Facebook pages. Using Facebook Messenger allowed people to “ easily, and privately, recommend the shows you love to the people you care about,” Netflix said in a 2014 blog post.
+
+To accomplish such sharing, the Netflix application had to be able to send Facebook messages. But Netflix was given the ability not only to send private messages but also to read, write and delete them, and to see all participants on a thread. A Netflix spokesman said the company was not aware it had been granted such broad powers and had used the access only for messages sent by the recommendation feature.

@@ -1,0 +1,17 @@
+Here are four revelations from the emails that detail Facebook’s aggressive quest for growth:
+
+1. The company engineered ways to collect Android users’ data without alerting them.
+
+In February 2015, Facebook had a privacy dilemma.
+
+The company’s growth team — a powerful force within Facebook — wanted to release an update to the Android app that would continually collect users’ entire SMS and call log history. That data would be uploaded to Facebook’s servers, and would help Facebook make better recommendations, such as suggesting new friends to Android users based on the people they’d recently called or texted. (This feature, called “People You May Know,” has been the subject of much controversy.)
+
+But there was a problem: Android’s privacy policies meant that Facebook would need to ask users to opt in to having this data collected. Facebook’s executives worried that asking users for this data could bring a public backlash.
+
+“This is a pretty high risk thing to do from a PR perspective but it appears that the growth team will charge ahead and do it,” one executive, Michael LeBeau, wrote.
+
+He outlined the nightmare scenario: “Screenshot of the scary Android permissions screen becomes a meme (as it has in the past), propagates around the web, it gets press attention, and enterprising journalists dig into what exactly the new update is requesting, then write stories about ‘Facebook uses new Android update to pry into your private life in ever more terrifying ways.’”
+
+Ultimately, Facebook found a workaround. Yul Kwon, the head of Facebook’s privacy program, wrote in an email that the growth team had found that if Facebook’s upgraded app asked only to read Android users’ call logs, and not request other types of data from them, users would not be shown a permission pop-up.
+
+“Based on their initial testing, it seems that this would allow us to upgrade users without subjecting them to an Android permissions dialog at all,” Mr. Kwon wrote.

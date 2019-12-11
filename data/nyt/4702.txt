@@ -1,0 +1,15 @@
+Why is the federal consent agreement relevant now?
+
+In March 2018, The New York Times reported that a voter-profiling company, Cambridge Analytica, had harvested the personal data of millions of Facebook users without their knowledge or permission.
+
+The voter-profiling company obtained the data from a researcher who had offered a personality survey app on Facebook. Although only about 270,000 Facebook users agreed to share their data to participate in the survey, the Facebook platform enabled the app to improperly harvest the personal details of millions of those users’ friends — consumers who had not agreed to share their information with the survey app, The Times reported.
+
+Privacy experts, law professors and at least one former F.T.C. official have argued that Facebook’s failure to prevent the survey app from obtaining the data of users’ friends violated the federal consent agreement. So did Facebook’s failure to prevent the app developer from sharing both users’ data and the data of users’ friends with Cambridge Analytica, these critics said.
+
+They said the Cambridge Analytica episode suggested that Facebook had failed to adequately conduct the risk assessments the agreement required it to do. It also failed to obtain required, explicit consent from users’ friends for the sharing of their data with third parties, the privacy experts said.
+
+They also argued that Facebook had failed to operate a comprehensive privacy protection program and take reasonable precautions — steps the company was obligated to take under the consent decree.
+
+“The consent decree requires Facebook to always be vigilant to possible privacy problems and try to solve them,” said David C. Vladeck, a professor at Georgetown Law and a former director of consumer protection at the F.T.C. who oversaw the investigation that led to the consent decree. “Cambridge Analytica made clear that Facebook was not auditing third-party apps.”
+
+On March 26, the F.T.C. said it was conducting an investigation into Facebook’s privacy practices. An agency spokeswoman declined to comment last week on the progress of the investigation.

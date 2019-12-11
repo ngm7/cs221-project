@@ -1,0 +1,11 @@
+That failure taught Mr. Jobs the lesson. He returned to Apple in 1997, and the next year, he hired Tim Cook as Apple’s senior vice president for worldwide operations. Mr. Cook had mastered the art of global manufacturing supply chains, first in IBM’s personal computer business and then at Compaq Computer.
+
+Apple, like many companies in Silicon Valley, had begun outsourcing manufacturing early on. Not long after Silicon Valley emerged in the 1970s, labor-intensive assembly, such as the process of packaging semiconductor chip s, was moved to Asia, to countries with progressively lower labor costs. That trend only accelerated as the company grew.
+
+“When I started my career, all my flights were to Japan,” said Tony Fadell, one of the hardware designers of the iPod and iPhone at Apple. “Then all my flights went Korea, then Taiwan, then China.”
+
+Today, Silicon Valley has retained a relatively small manufacturing work force, as electronics manufacturing has exploded globally, creating millions of jobs. The small amount of manufacturing still done in the Valley is largely done by specialized contract firms that focus on fast-turnaround prototype systems.
+
+The challenge today is that an enormous manufacturing ecosystem is required to make products for mass market s, and that ecosystem has largely moved to mainland China, where some 450,000 people have worked at a single iPhone plant.
+
+In the early 1990s, when Andrew Hargadon was a product designer at Apple with a portable computer called the Macintosh Powerbook Duo , the ecosystem had already moved to Asia. He worked with a complex web of suppliers.

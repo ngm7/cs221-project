@@ -1,0 +1,139 @@
+We’re using augmented reality, a new approach to digital storytelling. Read about how to use it on your phone or tablet here. If you want to skip it for now, you can view an alternate immersive experience instead.
+
+MEYRIN, Switzerland — There is silence on the subatomic firing range.
+
+A quarter-century ago, the physicists of CERN, the European Center for Nuclear Research, bet their careers and their political capital on the biggest and most expensive science experiment ever built, the Large Hadron Collider.
+
+The collider is a kind of microscope that works by flinging subatomic particles around a 17-mile electromagnetic racetrack beneath the French-Swiss countryside, smashing them together 600 million times a second and sifting through the debris for new particles and forces of nature. The instrument is also a time machine, providing a glimpse of the physics that prevailed in the early moments of the universe and laid the foundation for the cosmos as we see it today.
+
+The reward came in 2012 with the discovery of the Higgs boson, a long-sought particle that helps explain why there is mass, diversity and life in the cosmos. The discovery was celebrated with champagne and a Nobel prize.
+
+The collider will continue smashing particles and expectations for another 20 years. But first, an intermission. On December 3rd, the particle beams stopped humming. The giant magnets that guide the whizzing protons sighed and released their grip. The underground detectors that ring the tunnel stood down from their watch.
+
+Over the next two years, during the first of what will be a series of shutdowns, engineers will upgrade the collider to make its beams more intense and its instruments more sensitive and discerning. And theoretical physicists will pause to make sense of the tantalizing, bewildering mysteries that the Large Hadron Collider has generated so far.
+
+Drag image to explore Engineers work on the CMS detector.
+
+When protons collide
+
+The collider gets its mojo from Einstein’s dictum that mass and energy are the same. The more energy that the collider can produce, the more massive are the particles created by the collisions. With every increase in the energy of their collider, CERN physicists are able to edge farther and farther back in time, closer to the physics of the Big Bang, when the universe was much hotter than today.
+
+Inside CERN’s subterranean ring, some 10,000 superconducting electromagnets, powered by a small city’s worth of electricity, guide two beams of protons in opposite directions around the tunnel at 99.99999 percent of the speed of light, or an energy of 7 trillion electron volts. Those protons make the 17-mile circuit 11,000 times a second. (In physics, mass and energy are both expressed in terms of units called electron volts. A single proton, the building block of ordinary atoms, weighs about a billion electron volts.)
+
+The protons enter the collider as atoms in a puff of hydrogen gas squirted from a bottle. As the atoms travel, electrical fields strip them of electrons, leaving bare, positively charged protons. These are sped up by a series of increasingly larger and more energetic electromagnets, until they are ready to enter the main ring of the collider.
+
+When protons finally enter the main ring, they have been boosted into flying bombs of primordial energy, primed to smash apart — and recombine — when they strike their opposite numbers head-on, coming from the other direction.
+
+This particle collision happened inside the Atlas detector on June 10, 2012. It is one of many that proved the existence of the Higgs boson. Glancing collisions between protons produce sprays of debris that are tracked and stopped in the inner detector. But a head-on collision created something incredibly rare: four muons, which are like electrons but heavier. They punched through lead and iron and exited the detector completely. Scientists backtracked the two pairs of muons to their source. An elusive and unseen Higgs boson very likely flashed into existence and instantly decayed into two particles, then four.
+
+The protons circulate inside vacuum pipes – one running clockwise, the other counterclockwise – and these are surrounded by superconducting electromagnets strung together around the tunnel like sausages. To generate enough force to bend the speeding protons, the magnets must be uncommonly strong: 8.3 Tesla, or more than a hundred thousand times stronger than Earth’s magnetic field — and more than strong enough to wreck a fancy Swiss watch.
+
+Such a field in turn requires an electrical current of 12,000 amperes. That’s only feasible if the magnets are superconducting, meaning that electricity flows without expensive resistance. For that to happen, the magnets must be supercold; they are bathed in 150 tons of superfluid helium at a temperature of 1.9 Kelvin, making the Large Hadron Collider literally one of the coldest places in the universe.
+
+If things go wrong down here, they can go very wrong. In 2008, as the collider was still being tuned up, the link between a pair of magnets exploded, delaying operations for almost two years.
+
+The energy stored in the magnetic fields is equivalent to a fully loaded jumbo jet going 500 miles per hour; if a magnet loses its cool and heats up, all that energy must go someplace. And the proton beam itself can cut through many feet of steel.
+
+A tale of four detectors
+
+The beams cross at four points around the racetrack.
+
+At each juncture, gigantic detectors — underground mountains of electronics, cables, computers, pipes, magnets and even more magnets — have been erected. The two biggest and most expensive experiments, CMS (the Compact Muon Solenoid) and Atlas (A Toroidal L.H.C. Apparatus) sit, respectively, at the noon and 6 o’clock positions of the circular track.
+
+Drag image to explore The Atlas detector fills an enormous cavern under the Swiss countryside.
+
+Wrapped around them, like the layers of an onion, are instruments designed to measure every last spark of energy or matter that might spew from the collision. Silicon detectors track the paths of lightweight, charged particles such as electrons. Scintillation crystals capture the energies of gamma rays. Chambers of electrified gas track more far-flung particles. And powerful magnets bend the paths of these particles so that their charges and masses can be determined.
+
+The proton beams cross 40 million times per second in each of the four detectors, resulting in about a billion actual collisions every second.
+
+What’s the antimatter?
+
+Why is there something instead of nothing in the universe?
+
+Answering that question is the mission of the detector known as LHCb, which sits at about 4 o’clock on the collider dial. The “b” stands for beauty — and for the B meson, a subatomic particle that is crucial to the experiment.
+
+Drag image to explore The LHCb detector studies the imbalance between matter and antimatter.
+
+When matter is created — in a collider, in the Big Bang — equal amounts of matter and its opposite, antimatter, should be formed, according to the laws of physics As We Know Them. When matter and antimatter meet, they annihilate each other, producing energy.
+
+By that logic, when matter and antimatter formed in the Big Bang, they should have cancelled out each other, leaving behind an empty universe. But it’s not empty: We are here, and our antimatter is not.
+
+Why not? Physicists suspect that some subtle imbalance between matter and antimatter is responsible. The LHCb experiment looks for that imbalance in the behavior of B mesons, which are often sprayed from the proton collisions.
+
+B mesons have an exotic property: They flicker back and forth between being matter and antimatter. Sensors record their passage through the LHCb room, seeking differences between the particles and their antimatter twins. Any discrepancy between the two could be a clue to why matter flourished billions of years ago and antimatter perished.
+
+Turning back the cosmic clock
+
+At about 8 o’clock on the collider dial is Alice, another detector with a special purpose. It, too, is fixed on the distant past: the brief moment a couple of microseconds after the Big Bang, before the first protons and neutrons congealed out of a “primordial soup” of quarks and gluons.
+
+Drag image to explore The Alice detector studies the composition of the early universe.
+
+Alice’s job is to study tiny droplets of that distant past that are created when the collider bangs together lead ions instead of protons. Researchers expected this material, known in the lingo as a quark-gluon plasma, to behave like a gas, but it turns out to behave more like a liquid.
+
+Sifting the data
+
+The collider’s enormous detectors are like 100 megapixel cameras that take 40 million pictures a second. Most of the data from that deluge is immediately thrown away. Triggers, programmed to pick out events that physicists thought might be interesting, save only about a thousand collision events per second. Even still, an enormous pool of data winds up in the CERN computer banks.
+
+Drag image to explore CERN’s data center.
+
+According to the casino rules of modern quantum physics, anything that can happen will happen eventually. Before a single proton is fired through the collider, computers have calculated all the possible outcomes of a collision according to known physics. Any unexpected bump in the real data at some energy could be a signal of unknown physics, a new particle.
+
+That was how the Higgs was discovered, emerging from the statistical noise in the autumn of 2011. Only one of every 10 billion collisions creates a Higgs boson. The Higgs vanishes instantly and can’t be observed directly, but it decays into fragments that can be measured and identified.
+
+What eventually stood out from the data was evidence for a particle that weighs all by itself as much as an iodine atom: a flake of an invisible force field that permeates space like molasses, impeding motion and assigning mass to objects that pass through it.
+
+And so in 2012, after half a century and billions of dollars, thousands of physicists toasted over champagne. Peter Higgs, for whom the elusive boson was named, shared the Nobel prize with François Englert, who had independently predicted the particle’s existence.
+
+An intermission underground
+
+The current shutdown is the first of a pair of billion-dollar upgrades intended to boost the productivity of the Large Hadron Collider tenfold by the end of the decade.
+
+The first shutdown will last for two years, until 2021; during that time, engineers will improve the series of smaller racetracks that speed up protons and inject them into the main collider. The collider then will run for two years and shut down again, in 2024, for two more years, so that engineers can install new magnets to intensify the proton beams and collisions.
+
+Reincarnated in 2026 as the High Luminosity L.H.C., the collider is scheduled to run for another decade, until 2035 or so, which means its career probing the edge of human knowledge is still beginning. Judging by the collider’s productivity, measured in terms of trillions of subatomic smashups, more than 95 percent of its scientific potential lies ahead.
+
+Both the Atlas and CMS experiments will receive major upgrades during the next two shutdowns, including new silicon trackers, to replace the olds ones burned out by radiation.
+
+To keep up with the increased collision rate, both Atlas and CMS have had to upgrade the finicky trigger systems that decide which collision events to keep and study. Currently, of a billion events per second, they can keep 1,500; the upgrade will raise that figure to 10,000.
+
+And what a flow of collisions it will be. Physicists measure the productivity, or luminosity, of their colliders in terms of collisions. It took about 3,000 trillion collisions to confirm the Higgs boson. As of the December shutdown the collider had logged about 20,000 trillion collisions. But those were, and are, early days.
+
+By 2037, the Large Hadron Collider should have produced roughly 4 million trillion primordial fireballs, bristling with who knows what. The whole universe is still up for grabs.
+
+Drag image to explore The office of John Ellis, a theoretical physicist.
+
+After the Higgs
+
+Discovering the Higgs was an auspicious start. But the champagne came with a mystery.
+
+Over the last century, physicists have learned to explain some of the grandest and subtlest phenomena in nature — the arc of a rainbow, the scent of a gardenia, the twitch of a cat’s whiskers — as a handful of elementary particles interacting through four basic forces, playing a game of catch with force-carrying particles called bosons according to a set of equations called the Standard Model.
+
+But why these particles and these forces? Why is the universe made of matter but not antimatter? What happens at the center of a black hole, or happened at the first instant of the Big Bang? If the Higgs boson determines the masses of particles, what determines the mass of the Higgs?
+
+Who, in other words, watches the watchman?
+
+The Standard Model, for all its brilliance and elegance, does not say. Particles that might answer these questions have not shown up yet in the collider. Fabiola Gianotti, the director-general of CERN, expressed surprise. “I would have expected new physics to manifest itself at the energy scale of the Large Hadron Collider,” she said.
+
+Some physicists have responded by speculating about multiple universes and other exotic phenomena. Some clues, Dr. Gianotti said, might come from studying the new particle on the block, the Higgs.
+
+“We physicists are happy when we understand things, but we are even happier when we don’t understand,” she said. “And today we know that we don’t understand everything. We know that we are missing something important and fundamental. And this is very exciting.”
+
+Drag image to explore The circular tunnel of the Large Hadron Collider.
+
+Colliders of tomorrow
+
+Humans soon must decide which machines, if any, will be built to augment or replace the Large Hadron Collider. That collider had a “killer app” of sorts: it was designed to achieve an energy at which, according to the prediction of the Standard Model, the Higgs or something like it would become evident and provide an explanation for particle masses.
+
+But the Standard Model doesn’t predict a new keystone particle in the next higher energy range. Luckily, nobody believes the Standard Model is the last word about the universe, but as the machines increase in energy, particle physicists will be shooting in the dark.
+
+For a long time, the leading candidate for Next Big Physics Machine has been the International Linear Collider, which would fire electrons and their antimatter opposites, positrons, at each other. The collisions would produce showers of Higgs bosons. The experiment would be built in Japan, if it is built at all, but Japan has yet to commit to hosting the project, which would require them to pay for about half of the $5.5 billion cost.
+
+In the meantime, Europe has convened meetings and workshops to decide on a plan for the future of particle physics there. “If there is no word from Japan by the end of the year, then the I.L.C. will not figure in the next five-year plan for Europe,” Lyn Evans, a CERN physicist who was in charge of building the Large Hadron Collider, said in an email.
+
+CERN has proposed its own version of a linear collider, the Compact Linear Collider, that could be scaled up gradually from Higgs bosons to higher energies. Also being considered is a humongous collider, 100 kilometers around, that would lie under Lake Geneva and would reach energies of 100 trillion electron volts — seven times the power of the Large Hadron Collider.
+
+And in November the Chinese Academy of Sciences released the design for a next-generation collider of similar size, called the Circular Electron Positron Collider. The machine could be the precursor for a still more powerful machine that has been dubbed the Great Collider. Politics and economics, as well as physics, will decide which, if any, of these machines will see a shovel.
+
+“If we want a new machine, nothing is possible before 2035,” Frederick Bordry, CERN’s director of accelerators, said of European plans. Building such a machine is a true human adventure, he said: “Twenty-five years to build and another 25 to operate.”
+
+Noting that he himself is 64, he added, “I’m working for the young people.”

@@ -1,0 +1,7 @@
+Last spring, soon after Facebook acknowledged that the data of tens of millions of its users had improperly been obtained by the political consulting firm Cambridge Analytica, a top enforcement official at the Federal Trade Commission drafted a memo about the prospect of disciplining the social network.
+
+Lawmakers, consumer advocates and even former commission officials were clamoring for tough action against Facebook, arguing that it had violated an earlier F.T.C. consent decree barring it from misleading users about how their information was shared.
+
+But the enforcement official, James A. Kohm, took a different view. In a previously undisclosed memo in March, Mr. Kohm — echoing Facebook’s own argument — cautioned that Facebook was not responsible for the consulting firm’s reported abuses. The social network seemed to have taken reasonable steps to address the problem, he wrote, according to someone who read the memo, and most likely had not broken its promises to the F.T.C.
+
+The Cambridge Analytica data leak set off a reckoning for Facebook and a far-reaching debate about the tech industry, which has collected more information about more people than almost any other in history. At the same time, the F.T.C., which is investigating Facebook, is under growing attack for what critics say is a systemic failure to police Silicon Valley’s giants and their enormous appetite for personal data.

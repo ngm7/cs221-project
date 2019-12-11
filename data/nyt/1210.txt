@@ -1,0 +1,7 @@
+Winds blowing between 10 and 15 miles per hour over InSight’s solar panels caused the spacecraft to vibrate, and short-period seismometers recorded the vibrations.
+
+“You can think of it rather in the same way as the human ear, how we in fact listen,” said Thomas Pike, a scientist at Imperial College London who is leading research with the instruments. “The solar panels are like the ear drum. The spacecraft structure is like the inner ear.”
+
+The seismometers act as the cochlea, the parts of your ears that convert the vibrations into nerve signals. They are able to record vibrations up to a frequency of 50 Hertz — audible to human ears as a low rumble.
+
+NASA also produced a version of the recording that lifted the sounds by two octaves.

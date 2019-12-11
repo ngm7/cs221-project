@@ -1,0 +1,13 @@
+Facebook’s agreement with regulators is a result of the company’s early experiments with data sharing. In late 2009, it changed the privacy settings of the 400 million people then using the service, making some of their information accessible to all of the internet. Then it shared that information, including users’ locations and religious and political leanings, with Microsoft and other partners.
+
+Facebook called this “instant personalization” and promoted it as a step toward a better internet, where other companies would use the information to customize what people saw on sites like Bing. But the feature drew complaints from privacy advocates and many Facebook users that the social network had shared the information without permission.
+
+The F.T.C. investigated and in 2011 cited the privacy changes as a deceptive practice. Caught off guard, Facebook officials stopped mentioning instant personalization in public and entered into the consent agreement.
+
+Under the decree, the social network introduced a “comprehensive privacy program” charged with reviewing new products and features. It was initially overseen by two chief privacy officers, their lofty title an apparent sign of Facebook’s commitment. The company also hired PricewaterhouseCoopers to assess its privacy practices every two years.
+
+But the privacy program faced some internal resistance from the start, according to four former Facebook employees with direct knowledge of the company’s efforts. Some engineers and executives, they said, considered the privacy reviews an impediment to quick innovation and growth. And the core team responsible for coordinating the reviews — numbering about a dozen people by 2016 — was moved around within Facebook’s sprawling organization, sending mixed signals about how seriously the company took it, the ex-employees said.
+
+Critically, many of Facebook’s special sharing partnerships were not subject to extensive privacy program reviews, two of the former employees said. Executives believed that because the partnerships were governed by business contracts requiring them to follow Facebook data policies, they did not require the same level of scrutiny. The privacy team had limited ability to review or suggest changes to some of those data-sharing agreements, which had been negotiated by more senior officials at the company.
+
+Facebook officials said that members of the privacy team had been consulted on the sharing agreements, but that the level of review “depended on the specific partnership and the time it was created.”

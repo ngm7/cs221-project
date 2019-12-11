@@ -1,0 +1,9 @@
+The update, which was quickly reversed, appeared to affect iPhone users but not those with Androids or those using the app on desktop.
+
+In a series of tweets, Adam Mosseri, the head of Instagram, explained that the new feature was a “test” that was released widely by mistake.
+
+“Just a test that went to a few orders of magnitude more people than intended... sorry about that,” he wrote in one tweet.
+
+The company affirmed Mr. Mosseri’s explanation and apologized.
+
+“Due to a bug, some users saw a change to the way their feed appears today,” Instagram said. “We quickly fixed the issue and feed is back to normal. We apologize for any confusion.”
