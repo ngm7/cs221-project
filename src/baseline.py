@@ -121,7 +121,7 @@ def main(category: str):
     classifier_training_data.setData(testData.data)
     classifier_training_data.setTarget(testData.target)
 
-    classifier_testing_data = buildTestDataFromNYT(download=False, articlesDir="/Users/ngm9/dev/stanford/cs221-project/data/nyt", writeToDir=True)
+    classifier_testing_data = buildTestDataFromNYT(download=False, articlesDir="../data/nyt", writeToDir=True)
 
     classifier = SgdClassifier()
     classifier.trainModel(classifier_training_data)
