@@ -31,12 +31,14 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 from sklearn.pipeline import Pipeline
 
+from commons.datamodel import DataModel
+
 CATEGORY_MAP = {
     'guns': 16
 }
 
 VOCABULARY = {
-    'guns': ["guns", "shooting", "victim", "mass", "lobby", "murder", "weapon", "gun", "nra", "handgun", "assault"]
+    'guns': ["guns", "shooting", "lobby", "rifles", "weapon", "nra", "handgun", "politics"]
 }
 
 
@@ -52,21 +54,6 @@ class ImpactScoreUtil:
         # gensim.scripts.glove2word2vec.glove2word2vec(gloveFile, word2VecFile)
         model = gensim.models.KeyedVectors.load_word2vec_format(word2VecFile, binary=False)
         return model.most_similar(positive=[word], topn=20)
-
-
-class DataModel:
-    data = []
-    target = []
-
-    def __init__(self):
-        self.data = None
-        self.target = None
-
-    def setData(self, data):
-        self.data = data
-
-    def setTarget(self, target):
-        self.target = target
 
 
 class Classifier:
