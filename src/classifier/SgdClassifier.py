@@ -2,8 +2,6 @@
 
 from .Classifier import Classifier
 from commons.datamodel import DataModel
-from sklearn.datasets import fetch_20newsgroups
-from sklearn.feature_extraction import stop_words
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import SGDClassifier
