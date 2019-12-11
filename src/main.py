@@ -71,6 +71,10 @@ class ImpactScorer:
 
     @staticmethod
     def calculatetfidf(classifier, vocabulary, document_indices):
+        """For a given set of domain words and corresponding indices, the impact
+           score for an article is the average of the frequencies of the words in the vocabulary. Returns a List sorted
+           in descending order of these impact scores"""
+
         impact_score = {}
         for dIndex in document_indices:
             impact_score[dIndex] = 0
@@ -86,27 +90,6 @@ class ImpactScorer:
             tf = count_vocab_words / len(newdata.split(' '))
             # since we have already computed the importance of these documents using classification, we stop here and get the score
             impact_score[dIndex] = tf * 100
-        s = sum(score for i, score in impact_score.items())
-        for i, score in impact_score.items():
-            impact_score[i] = score / s
-
-        return sorted(impact_score.items(), key=lambda x: x[1], reverse=True)
-
-    @staticmethod
-    def get_stack_rank(classifier: Classifier, vocabulary: List[str], document_indices: List[int]):
-        """For a given set of domain words and corresponding indices, the impact
-        score for an article is the average of the frequencies of the words in the vocabulary. Returns a List sorted
-        in descending order of these impact scores"""
-
-        impact_score = {}
-        for dIndex in document_indices:
-            impact_score[dIndex] = 0
-            freq = defaultdict(float)
-            for word in classifier.testing_data.data[dIndex].split(' '):
-                freq[word] += 1.0
-            for word in vocabulary:
-                impact_score[dIndex] += freq[word]
-
         s = sum(score for i, score in impact_score.items())
         for i, score in impact_score.items():
             impact_score[i] = score / s
@@ -129,7 +112,6 @@ def main(category: str):
 
     # identify indices for talk.politics.guns (index 16 in target_names)
     indices_sgd = [index for index, prediction in enumerate(predictions_sgd) if prediction == CATEGORY_MAP[category]]
-    # indices_nb = [index for index, prediction in enumerate(predictions_nb) if prediction == CATEGORY_MAP[category]]
 
     gloveVectors = ImpactScoreUtil.find_similar_words_using_glove(word="gun")
     enhanced_vocab = VOCABULARY[category]
@@ -146,6 +128,6 @@ def main(category: str):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Incorrect parameters. \n USAGE: $python3 baseline.py <CATEGORY:{guns}>")
+        print("Incorrect parameters. \n USAGE: $python3 main.py <CATEGORY:{guns}>")
     else:
         main(category=sys.argv[1])
