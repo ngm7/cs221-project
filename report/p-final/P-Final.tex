@@ -99,9 +99,8 @@ This project focuses on using classifying the documents into various categories 
 \paragraph{20-News} We used the 20-News group data set.
 \paragraph{Newyork Times articles} A set of 6200 articles from New York Times archive.
 
-\section{Project Overview}
-\paragraph{Heading on level 4 (paragraph)}
-\subsection{Highlevel approach}
+\section{Method Overview}
+\paragraph{Approach}
 This project can be broken down into two stages: a) Classification and b) Impact analysis. Both these operations will deploy ML techniques. The system will take as input some domain data which represents the brand. It will also present to the user certain categories or news groups that the brand is interested in.
 
 \begin{figure}
@@ -111,6 +110,22 @@ This project can be broken down into two stages: a) Classification and b) Impact
  	 \label{fig:Impact Potential}
 \end{figure}
 \section{Classification}
+\subsubsection {Stochastic Gradient Descent with TFIDF Vectorizer}
+For classification of the documents into categories, we used the SGD classifier with TfIdf vectorizer. SGD is a simple and efficient optimization algorithm for learning of linear classifiers.
+SGD randomly chooses training data, gradually decreases the learning rate, and penalizes data points which deviate significantly from what's predicted. Since we had a large dataset to go through, SGD was the optimal and simplest algorithm to use.
+
+\subsubsection{Feature Extracton process}
+TF-IDF which stands for Term Frequency – Inverse Document Frequency. It is one of the most important techniques used for information retrieval to represent how important a specific word or phrase is to a given document.
+
+The tf-idf value increases in proportion to the number of times a word appears in the document but is often offset by the frequency of the word in the corpus, which helps to adjust with respect to the fact that some words appear more frequently in general.
+\[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
+
+\subsubsection{Model fitting}
+We then fit the model with preprocessed training data and labels. We feed the model with training data and their categories to train it to accurately classify the documents into respective categories.
+\paragraph{Classify} We then run classification of test data on this trained model to get dataset categorized into various topics.
+
+
+
 \section{Impact score analysis}
 \subsubsection {Similar Words using GloVe learning}
 A measure of how relevant an article is to a brand is to know how many of semantically or linguistically similar words occur in that article. For each of the words in the vocabulary, we get a list of \textit{similar words} using the GloVe learning algorithm [1]. We then use a simple TF algorithm to understand how commonly do these similar words occur in an article.
