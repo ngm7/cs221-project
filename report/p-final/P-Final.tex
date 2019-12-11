@@ -1,0 +1,228 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Example: Project Report
+%
+% Source: http://www.howtotex.com
+%
+% Feel free to distribute this example, but please keep the referral
+% to howtotex.com
+% Date: March 2011
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX:
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Edit the title below to update the display in My Documents
+%\title{Project Report}
+%
+%%% Preamble
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+\usepackage[ruled]{algorithm2e}
+
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\title{
+		%\vspace{-1in}
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{Stanford University} \\ [25pt]
+		\horrule{0.5pt} \\[0.4cm]
+		\huge CS221 Final Project - Impact Lens \\
+		\horrule{2pt} \\[0.5cm]
+}
+\author{
+		\normalfont 								\normalsize
+        Nimisha Tandon\\[-3pt]		\normalsize
+        Naman Muley\\[-3pt]		\normalsize
+        Shaila Balaraddi\\[-3pt]		\normalsize
+        \today
+}
+\date{}
+
+
+%%% Begin document
+\begin{document}
+\maketitle
+\section{Introduction}
+There is an abundance of documents/news articles/social media posts that could be meaningful and relevant to a business. Identifying news that could impact a brand is extremely useful for large brands or analytics divisions to get ahead of the PR cycle and formulate an early response. However it is extremely difficult to filter out the documents relevant and impactful to a particular brand. There have been a number of advances in getting sentiment analysis of a set of documents, however limited work has been done on opinion mining and impact analysis of news articles for a specific brand. We decided to tackle this problem by using classification algorithms and impact analysis methods.
+This project focuses on using classifying the documents into various categories and then look through the lens of a specific brand to calculate an impact score of the document.
+
+
+
+
+
+\section{Data}
+\paragraph{20-News} We used the 20-News group data set.
+\paragraph{Newyork Times articles} A set of 6200 articles from New York Times archive.
+
+\section{Method Overview}
+\paragraph{Approach}
+This project can be broken down into two stages: a) Classification and b) Impact analysis. Both these operations will deploy ML techniques. The system will take as input some domain data which represents the brand. It will also present to the user certain categories or news groups that the brand is interested in.
+
+\begin{figure}
+	\centering
+ 	 \includegraphics[width=0.6\linewidth]{impact_score.png}
+	  \caption{Process Overview}
+ 	 \label{fig:Impact Potential}
+\end{figure}
+\section{Classification}
+\subsubsection {Stochastic Gradient Descent with TFIDF Vectorizer}
+For classification of the documents into categories, we used the SGD classifier with TfIdf vectorizer. SGD is a simple and efficient optimization algorithm for learning of linear classifiers.
+SGD randomly chooses training data, gradually decreases the learning rate, and penalizes data points which deviate significantly from what's predicted. Since we had a large dataset to go through, SGD was the optimal and simplest algorithm to use.
+
+\subsubsection{Feature Extracton process}
+TF-IDF which stands for Term Frequency – Inverse Document Frequency. It is one of the most important techniques used for information retrieval to represent how important a specific word or phrase is to a given document.
+
+The tf-idf value increases in proportion to the number of times a word appears in the document but is often offset by the frequency of the word in the corpus, which helps to adjust with respect to the fact that some words appear more frequently in general.
+\[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
+
+\subsubsection{Model fitting}
+We then fit the model with preprocessed training data and labels. We feed the model with training data and their categories to train it to accurately classify the documents into respective categories.
+\paragraph{Classify} We then run classification of test data on this trained model to get dataset categorized into various topics.
+
+
+
+\section{Impact score analysis}
+\subsubsection {Similar Words using GloVe learning}
+A measure of how relevant an article is to a brand is to know how many of semantically or linguistically similar words occur in that article. For each of the words in the vocabulary, we get a list of \textit{similar words} using the GloVe learning algorithm [1]. We then use a simple TF algorithm to understand how commonly do these similar words occur in an article.
+
+\begin{center}
+\begin{algorithm}
+  \caption{Extend Vocabulary with Similar Words using Glove Model}
+  \SetKwInOut{Input}{inputs}
+  \SetKwInOut{Output}{output}
+  \SetKwProg{GetGloveWords}{GetGloveWords}{}{}
+
+ $Vocabulary \gets ["guns", "rifle", "weapon", "nra", "handgun", "firearm"] $\;
+ $model \gets train\_glove(\textit{glove.6B.300d.w2vformat.tx}) $\;
+ \GetGloveWords{$(Vocabulary, model)$} {
+      $extended\_vocab \gets Vocabulary $\;
+     \ForEach{word $w \in Vocabulary$}{%
+       $similar\_words \gets model.get\_similar\_words($word=w, $topN=10) $\;
+       $extended\_vocab.extend($similar\_words$) $\;
+      }
+    \KwRet{$extended\_vocab$}\;
+  }
+\end{algorithm}
+\end{center}
+Once the vocabulary is extended, we use this extended vocabulary to identify articles that have the most occurrences of these words. In the Proposal, we had used a similar algorithm to calculate our baseline but with the vocabulary as the raw input set of words. Following is a figure that shows how the expanded vocabulary behaves for a brand like NRA and input vocabulary = \textit {["guns", "weapons", "nra"]}.
+
+\begin{figure}[ht]
+	\centering
+ 	 \includegraphics[width=0.5\linewidth]{similar_words_nra.png}
+	  \caption{Similar Words obtained from GloVe Learning for \textit{NRA}}
+ 	 \label{fig:Similar Words for NRA}
+\end{figure}
+
+We use this extended vocabulary to come up with an impact score by simply counting frequencies of these words. Our algorithm that performs this to come up with an impact score for each article in the category is given below. The score dictionary contains the impact score calculated for each article in the set of articles.
+
+\begin {center}
+\begin {algorithm}[ht]
+\SetNoFillComment
+\caption{Calculate Impact Score for each article from a list of articles, given extended vocabulary}
+\SetKwInOut{Input}{inputs}
+\SetKwInOut{Output}{output}
+\SetKwProg{CalculateVocabImpactScore}{CalculateVocabImpactScore}{}{}
+\CalculateVocabImpactScore{$(V, D)$} {
+    \Input{A list of words that form ExtendedVocabulary V; a list of articles D}
+    \Output{A dictionary representing impact scores for all articles in D}
+    $score \gets \emptyset $\;
+    $RangeD \gets range(0, len(D)) $\;
+    \ForEach {index $i \in RangeD$} {
+    	score[i] = 0 \;
+	freq = [] \;
+	\tcc{iterate over all words in $i_{th}$ article to count frequency}
+	\ForEach {word $w \in D[i]$} {
+		freq[word] += 1 \;
+	}
+	\tcc{iterate over all words in V to build a score for article $i$}
+	\ForEach {word $w \in V$} {
+		score[i] += freq[w] \;
+	}
+    }
+    score.Normalize() \;
+    \KwRet{$score$}\;
+}
+\end {algorithm}
+\end {center}
+
+We have detailed our results of the above score dictionary in the Results section.
+
+\subsubsection {Relevant words using TF-IDF}
+
+Term Frequency-Inverse Document Frequency commonly known as TF-IDF can be used to find the frequency of vocabulary words in a document to perform sentiment analysis or extract relevancy from a document.
+
+This algorihm has 2 algorithms working together.
+\begin{enumerate}
+\item {Term Frequency}
+\[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
+
+
+Before using this algorithm, we first do some pre processing of the doc as follows:
+\begin{itemize}
+\item {Remove all stop words.(ex: in, the,are it)}
+\item {Convert all words to lowercase.}
+\end {itemize}
+Now using the term frequency alone will end up giving us words that are not unique (for ex: repeated words, should not add up to the relevance of the document)
+
+\item Inverse document frequency
+
+ This gives us the uniqueness of a word:
+
+ \[idf(t,d) =  = log(\frac{no of times the term appears }{no of documents containing the word})\]
+
+The final step is to multiply the two together to get the TFIDF score which would give us the impact score.
+\end{enumerate}
+\section{Experiments}
+
+\section{Results}
+\section{Conclusion}
+\section{References}
+
+
+%%% End document
+\end{document}
