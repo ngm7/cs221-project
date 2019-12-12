@@ -88,7 +88,7 @@
 \begin{document}
 \maketitle
 \section{Introduction}
-There is an abundance of documents/news articles/social media posts that could be meaningful and relevant to a business. Identifying news that could impact a brand is extremely useful for large brands or analytics divisions to get ahead of the PR cycle and formulate an early response. However it is extremely difficult to filter out the documents relevant and impactful to a particular brand. There have been a number of advances in getting sentiment analysis of a set of documents, however limited work has been done on opinion mining and impact analysis of news articles for a specific brand. We decided to tackle this problem by using classification algorithms and impact analysis methods.
+There is an abundance of documents/news articles/social media posts that could be meaningful and relevant to a business. Identifying news that could impact a brand is extremely useful for large brands or analytic divisions to get ahead of the PR cycle and formulate an early response. However it is extremely difficult to filter out the documents relevant and impact-full to a particular brand. There have been a number of advances in getting sentiment analysis of a set of documents, however limited work has been done on opinion mining and impact analysis of news articles for a specific brand. We decided to tackle this problem by using classification algorithms and impact analysis methods.
 This project focuses on using classifying the documents into various categories and then look through the lens of a specific brand to calculate an impact score of the document.
 
 
@@ -101,7 +101,11 @@ This project focuses on using classifying the documents into various categories 
 
 \section{Method Overview}
 \paragraph{Approach}
-This project can be broken down into two stages: a) Classification and b) Impact analysis. Both these operations will deploy ML techniques. The system will take as input some domain data which represents the brand. It will also present to the user certain categories or news groups that the brand is interested in.
+This project can be broken down into two stages: 
+a) Classification : This is the component which given a bunch of documents is able to classify the category that they belongs to and give them a label.
+b) Impact analysis. : This is the component, where given  an article/articles and a bunch of  words for the domain of the article, it is able to give an impact score for it , indicating how significant this article could be. 
+
+Both of these operations will deploy ML techniques. The system will take as input some domain data which represents the brand. It will also present to the user certain categories or news groups that the brand is interested in.
 
 \begin{figure}
 	\centering
@@ -111,23 +115,34 @@ This project can be broken down into two stages: a) Classification and b) Impact
 \end{figure}
 \section{Classification}
 \subsubsection {Stochastic Gradient Descent with TFIDF Vectorizer}
-For classification of the documents into categories, we used the SGD classifier with TfIdf vectorizer. SGD is a simple and efficient optimization algorithm for learning of linear classifiers.
-SGD randomly chooses training data, gradually decreases the learning rate, and penalizes data points which deviate significantly from what's predicted. Since we had a large dataset to go through, SGD was the optimal and simplest algorithm to use.
+{For classification of the documents into categories, we used the Logistic Regression classifier with TfIdf vectorizer which uses Stochastic Gradient Descent for optimization. SGD is a simple and efficient optimization method which is used for learning of linear classifiers.}
 
-\subsubsection{Feature Extracton process}
+An SGD randomly chooses training data, gradually decreases the learning rate, and penalizes data points which deviate significantly from what's predicted. Since we had a large dataset to go through, SGD was the optimal and simplest algorithm to use.
+
+For the purpose of this project we used the SGDClassifier provided by scikit-learn for training our models. 
+
+\subsubsection{Feature Extraction process}
 TF-IDF which stands for Term Frequency – Inverse Document Frequency. It is one of the most important techniques used for information retrieval to represent how important a specific word or phrase is to a given document.
 
 The tf-idf value increases in proportion to the number of times a word appears in the document but is often offset by the frequency of the word in the corpus, which helps to adjust with respect to the fact that some words appear more frequently in general.
 \[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
 
 \subsubsection{Model fitting}
-We then fit the model with preprocessed training data and labels. We feed the model with training data and their categories to train it to accurately classify the documents into respective categories.
+We then fit the model with pre-processed training data and labels. We feed the model with training data and their categories to train it to accurately classify the documents into respective categories.
 \paragraph{Classify} We then run classification of test data on this trained model to get dataset categorized into various topics.
 
+\textbf{Model Tuning and Optimization}
+For the purpose of tuning the models , we used the Grid Search where the Hyper-parameters for training the models were varied and the best Hyper-parameters where chosen to finally build the model/s based on the outcome of the F1 score from Grid Search.  The table below talks about some of these hyper-parameters which were applied during building of the model and the impact of those parameters on the final F1 score.   
+\begin{figure}
+	\centering
+ 	 \includegraphics[width=0.6\linewidth]{Project/p-final/Grid-Search.png}
+	  \caption{Grid Search Results}
+ 	 \label{fig:Grid Search.png}
+\end{figure}
 
 
 \section{Impact score analysis}
-\subsubsection {Similar Words using GloVe learning}
+\subsubsection {Similar Words using GloVe embeddings}
 A measure of how relevant an article is to a brand is to know how many of semantically or linguistically similar words occur in that article. For each of the words in the vocabulary, we get a list of \textit{similar words} using the GloVe learning algorithm [1]. We then use a simple TF algorithm to understand how commonly do these similar words occur in an article.
 
 \begin{center}
@@ -217,9 +232,13 @@ Now using the term frequency alone will end up giving us words that are not uniq
 
 The final step is to multiply the two together to get the TFIDF score which would give us the impact score.
 \end{enumerate}
+
+Aspect Extraction followed by Aspect based Sentiment Analysis: This technique was used 
+
 \section{Experiments}
 
 \section{Results}
+
 \section{Conclusion}
 \section{References}
 
