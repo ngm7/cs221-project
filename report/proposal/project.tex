@@ -1,48 +1,104 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Example: Project Report
+%
+% Source: http://www.howtotex.com
+%
+% Feel free to distribute this example, but please keep the referral
+% to howtotex.com
+% Date: March 2011
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX:
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Edit the title below to update the display in My Documents
+%\title{Project Report}
+%
+%%% Preamble
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
 
-\documentclass{article}
-
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
 \input{structure.tex} % Include the file specifying the document structure and custom commands
-\usepackage{graphicx}
+\usepackage[ruled]{algorithm2e}
 
-%----------------------------------------------------------------------------------------
-%	ASSIGNMENT INFORMATION
-%----------------------------------------------------------------------------------------
 
-\title{CS221: Project Proposal} % Title of the assignment
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{ \normalfont\scshape}
 
-\author{	\textbf{Nimisha Tandon}\\  \texttt{nimisha@stanford.edu} \\
-		\textbf{Shaila Balaraddi}\\  \texttt{shailaab@stanford.edu} \\ 
-		\textbf{Naman Muley}\\      \texttt{ngmuley@stanford.edu}}
 
-\date{\today} % University, school and/or department name(s) and a date
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
 
-%----------------------------------------------------------------------------------------
 
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\title{
+		%\vspace{-1in}
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{Stanford University} \\ [25pt]
+		\horrule{0.5pt} \\[0.4cm]
+		\huge CS221 Final Project - Impact Lens \\
+		\horrule{2pt} \\[0.5cm]
+}
+\author{
+		\normalfont 								\normalsize
+        Nimisha Tandon\\[-3pt]		\normalsize
+        Naman Muley\\[-3pt]		\normalsize
+        Shaila Balaraddi\\[-3pt]		\normalsize
+        \today
+}
+\date{}
+
+
+%%% Begin document
 \begin{document}
+\maketitle
+\section{Introduction}
+A lot of information on the internet like news, social media posts etc that can impact brands. Directly, in the form of positive or negative PR and indirectly in that their product strategy could be potentially informed from these. Identifying such news is extremely useful for large brands or analytics divisions to get ahead of the PR cycle and formulate an early response.
 
-\maketitle % Print the title
+\par We attempt to identify information that can be potentially impactful to a brand. We decided to tackle this problem by using classification algorithms and impact analysis methods. This project focuses on using classification to break down the documents into various categories and then look through the lens of a specific brand to calculate an impact score of each document. We present a stack rank of such documents back to the brand.
 
-%----------------------------------------------------------------------------------------
-%	INTRODUCTION
-%----------------------------------------------------------------------------------------
+\section{Method Overview}
+\paragraph{Approach}
+This project can be broken down into two stages: 
+a) Classification : This is the component which given a bunch of documents is able to classify the category that they belongs to and give them a label.
+b) Impact analysis. : This is the component, where given  an article/articles and a bunch of  words for the domain of the article, it is able to give an impact score for it , indicating how significant this article could be. 
 
-\section{Introduction} % Unnumbered section
-
-Identifying information on the internet that could be potentially damaging to a brand is an important function of marketing and PR for a brand. News articles about the entire industry, a product ecosystem or the brand itself, could be relevant to a brand and impact it positively or negatively. A system that provides an impact score by analyzing news and other textual documents can provide useful leads for a brand to get ahead of a PR cycle. For example, articles in Mexican national newspapers about use of guns can be relevant to NRA as a brand in North America and will be helpful for it to shape it's policies.
-
-For the final project we will, first, classify a set of articles into a news groups. Once classified we will analyze the article to produce an impact score for a set of pre-defined parameters. These parameters give insight into how these articles will affect a brand. The impact score can be used to stack rank articles, when presented to the brand.  
-
-\maketitle % Print the title
-
-%----------------------------------------------------------------------------------------
-%	SCOPE
-%----------------------------------------------------------------------------------------
-\section*{Project Scope} % Unnumbered section
-
-This project can be broken down into two stages: a) Classification and b) Impact analysis. Both these operations will deploy ML techniques. The system will take as input some domain data which represents the brand. It will also present to the user certain categories or news groups that the brand is interested in. 
+Both of these operations will deploy ML techniques. The system will take as input some domain data which represents the brand. It will also present to the user certain categories or news groups that the brand is interested in.
 
 \begin{figure}
 	\centering
@@ -50,180 +106,220 @@ This project can be broken down into two stages: a) Classification and b) Impact
 	  \caption{Process Overview}
  	 \label{fig:Impact Potential}
 \end{figure}
+\section{Classification}
+\subsubsection {Stochastic Gradient Descent with TFIDF Vectorizer}
+{For classification of the documents into categories, we used the Logistic Regression classifier with TfIdf vectorizer which uses Stochastic Gradient Descent for optimization. SGD is a simple and efficient optimization method which is used for learning of linear classifiers.}
 
-\subsection{Classification into News Groups}
+An SGD randomly chooses training data, gradually decreases the learning rate, and penalizes data points which deviate significantly from what's predicted. Since we had a large dataset to go through, SGD was the optimal and simplest algorithm to use.
 
-We will start by building a text classifier. This classifier runs on a recent set of articles provided to it by the application, either siphoned from the internet or gathered from the client. It will then classify these articles into pre-defined categories. 
+For the purpose of this project we used the SGDClassifier provided by scikit-learn for training our models. 
 
-To build this we will explore multiple techniques like RNN using LSTM, CNN and ML. Based on our findings we plan to either chose one classification model or create an ensemble of the 3 models and use that to classify our article. 
+\subsubsection{Feature Extraction process}
+TF-IDF which stands for Term Frequency – Inverse Document Frequency. It is one of the most important techniques used for information retrieval to represent how important a specific word or phrase is to a given document.
 
-\subsection{Impact Analysis}
-Once the article is categorized, providing an impact score based on the classification is the next step. Creating a meaningful impact score is key and part of the challenge. Impact to a brand can be classified based on certain parameters that are important to a brand e.g. market share, sentiment of it's products, sales, research and development etc. Some of these parameters are specific to a category and some others are generally relevant to the brand.
+The tf-idf value increases in proportion to the number of times a word appears in the document but is often offset by the frequency of the word in the corpus, which helps to adjust with respect to the fact that some words appear more frequently in general.
+\[tf(t,d) =  = \frac{\textit{no of occurrences of term in doc} }{\textit{total number of all words in document}}\]
+\item Inverse document frequency
 
-Following are some parameters for a category like \textit{geography}:
-\begin{itemize}
-	\item \textit{Country}: Is the geographical location talked about in this article one that is highly relevant to the brand?
-	\item \textit{Population}: Is this article relevant to a high population number or low?
-\end{itemize}
+ This gives us the uniqueness of a word:
 
-Following are some general parameters that could be relevant to the brand:
+ \[idf(t,d) =  = log(\frac{\textit{no of times the term appears} }{\textit{no of documents containing the word}})\]
+  \[TfIdf(t,d) =  = tf(t,d) * idf(t,d)\]
 
-\begin{itemize}
-	\item \textit{Features}: are people talking about a particular aspect of your product or service?
-	\item \textit{Sentiment}: is the article talking about the brand in positive or negative light
-	\item \textit{Sales}: is the article talking price, sales or any other monetary factors relevant to the brand
-\end{itemize}
+\subsubsection{Model fitting}
+We then fit the model with pre-processed training data and labels. We feed the model with training data and their categories to train it to accurately classify the documents into respective categories.
+\paragraph{Classify} We then run classification of test data on this trained model to get dataset categorized into various topics.
 
-%----------------------------------------------------------------------------------------
-%	ORACLE AND BASELINE
-%----------------------------------------------------------------------------------------
+\textbf{Model Tuning and Optimization}
+For the purpose of tuning the models , we used the Grid Search where the Hyper-parameters for training the models were varied and the best Hyper-parameters where chosen to finally build the model/s based on the outcome of the F1 score from Grid Search.  The table below talks about some of these hyper-parameters which were applied during building of the model and the impact of those parameters on the final F1 score.   
+\begin{figure}
+	\centering
+ 	 \includegraphics[width=0.6\linewidth]{Project/p-final/Grid-Search.png}
+	  \caption{Grid Search Results}
+ 	 \label{fig:Grid Search.png}
+\end{figure}
 
-\section{Oracle and Baseline} % Unnumbered section%
 
-We undertook basic exercise to identify upper and lower bounds for our system. These bounds are on the impact score presented to the articles.
-
-\subsection{Oracle}
-The Oracle will be a manual classification of articles, and impact score based on the content and its relevance to the subject.
-Following is a table of the results of the articles that have any impact to the subject of "guns".
-
-We are interested in articles that reflect a true impact to the brand of guns and NRA.
-The following list of articles are categorized and evaluated.
-
+\section{Impact score analysis}
+\subsubsection {Similar Words using GloVe embeddings}
+A measure of how relevant an article is to a brand is to know how many of semantically or linguistically similar words occur in that article. For each of the words in the vocabulary, we get a list of \textit{similar words} using the GloVe learning algorithm [1]. We then use a simple TF algorithm to understand how commonly do these similar words occur in an article.
 \begin{center}
-		\begin{tabular}{ c c c }
-			Article Index & Category & Impact Score \\
-			55241 & Guns & 0.9 \\ 
-			54735 & Guns & 0.8 \\ 
-			54606 & Guns & 0.8 \\ 
-			54670 & Guns & 0.7 \\ 
-			54580 & Guns & 0.7 \\ 
-			53294 & Guns & 0.6 \\ 
-			54598 & Guns & 0.5 \\ 
-			53297 & Guns & 0.5 \\ 
-			176846 & Guns & 0.0 \\ 
-			54591 & Guns  & 0.0 \\  	 
-		\end{tabular}
-	\end{center}
+\begin{algorithm}
+  \caption{Extend Vocabulary with Similar Words using Glove Model}
+  \SetKwInOut{Input}{inputs}
+  \SetKwInOut{Output}{output}
+  \SetKwProg{GetGloveWords}{GetGloveWords}{}{}
 
-As per the Oracle, the scores are dependent on the context of the domain in question.
-Hence even though the article 54591 has words like "fire, suicide and survivors", it is an article about an incident, and not about guns.
+ $Vocabulary \gets ["guns", "rifle", "weapon", "nra", "handgun", "firearm"] $\;
+ $model \gets train\_glove(\textit{glove.6B.300d.w2vformat.tx}) $\;
+ \GetGloveWords{$(Vocabulary, model)$} {
+      $extended\_vocab \gets Vocabulary $\;
+     \ForEach{word $w \in Vocabulary$}{%
+       $similar\_words \gets model.get\_similar\_words($word=w, $topN=10) $\;
+       $extended\_vocab.extend($similar\_words$) $\;
+      }
+    \KwRet{$extended\_vocab$}\;
+  }
+\end{algorithm}
+\end{center}
+Once the vocabulary is extended, we use this extended vocabulary to identify articles that have the most occurrences of these words. In the baseline program, we had used a similar algorithm to calculate, with the vocabulary as the raw input set of words. Following is a figure that shows how the expanded vocabulary behaves for a brand like NRA and input vocabulary = \textit {["guns", "weapons", "nra"]}.
 
-\subsection{Baseline}
-For the baseline we implemented the following:
+\begin{figure}[ht]
+	\centering
+ 	 \includegraphics[width=0.5\linewidth]{similar_words_nra.png}
+	  \caption{Similar Words obtained from GloVe Learning for \textit{NRA}}
+ 	 \label{fig:Similar Words for NRA}
+\end{figure}
 
-\begin{enumerate}
-	\item \textit{Classifier:} SGD ML classifier, where TF-IDF and vector count was used as features. With this we achieved an accuracy score of 82.4 percent.
-	The output of the classifier is what we fed into the impact score analyzer where we tried to rank the documents in terms of their impact score. For calculating the impact score we gave the function a set of words for a given category of the articles. Using these tokens we identified the frequency of these tokens in each of the articles. 
+We use this extended vocabulary to come up with an impact score by simply counting frequencies of these words. Our algorithm that performs this to come up with an impact score for each article in the category is given below. The score dictionary contains the impact score calculated for each article in the set of articles.
 
-	\item \textit {Impact Analysis:} Given the domain information in the form of some vocabulary, were the set of tokens against which the impact score was being calculated.  However the numbers were not great. We talk about these challenges in the following section
-\end{enumerate}
+\begin {center}
+\begin {algorithm}[ht]
+\SetNoFillComment
+\caption{Calculate Impact Score for each article from a list of articles, given extended vocabulary}
+\SetKwInOut{Input}{inputs}
+\SetKwInOut{Output}{output}
+\SetKwProg{CalculateVocabImpactScore}{CalculateVocabImpactScore}{}{}
+\CalculateVocabImpactScore{$(V, D)$} {
+    \Input{A list of words that form ExtendedVocabulary V; a list of articles D}
+    \Output{A dictionary representing impact scores for all articles in D}
+    $score \gets \emptyset $\;
+    $RangeD \gets range(0, len(D)) $\;
+    \ForEach {index $i \in RangeD$} {
+    	score[i] = 0 \;
+	freq = [] \;
+	\tcc{iterate over all words in $i_{th}$ article to count frequency}
+	\ForEach {word $w \in D[i]$} {
+		freq[word] += 1 \;
+	}
+	\tcc{iterate over all words in V to build a score for article $i$}
+	\ForEach {word $w \in V$} {
+		score[i] += freq[w] \;
+	}
+    }
+    score.Normalize() \;
+    \KwRet{$score$}\;
+}
+\end {algorithm}
+\end {center}
 
-We ran a baseline program for a brand like \textit{guns}. We used the \textit{talk.politics.guns} category already provided in the Newsgroup20 dataset. 
+We have detailed our results of the above score dictionary in the Results section.
 
-We took as domain input the following vocabulary: \textit{"guns", "shooting", "victim", "mass", "kill", "murder", "weapon", "gun", "nra", "handgun", "assault"}. The baseline performance can be noted down in the following way:
+\subsubsection {Relevant words using TF}
 
+Term Frequency is used to find the frequency of vocabulary words in a document to perform impact score analysis by extracting relevancy from a document.
+Before using TF to calculate, we perform a basic text preprocessing on the categorized documents.
 \begin{itemize}
-	\item The classifier has 82\% efficiency in classifying the category
-	\item The Impact Analysis program resulted into the following Top 10 impact scoring articles. The article indices are indices into the test dataset of articles:
-	
-	\begin{center}
-		\begin{tabular}{ c c }
-			Article Index & Impact Score \\
-			7274 & 0.05 \\ 
-			3613 & 0.03 \\  
-			2668 & 0.03 \\ 
-			548 & 0.03 \\ 
-			1665 & 0.02 \\  
-			6763 & 0.02 \\ 
-			6896 & 0.02 \\ 
-			3781 & 0.01 \\  
-			6620 & 0.01 \\ 
-			2135 & 0.01 \\ 
-		\end{tabular}
-	\end{center}
+\item {Remove all stop words.(ex: in, the, are it)}
+\item {Convert all words to lowercase.}
+\end {itemize}
+We then use the term frequency calculation to calculate the impact score..
+\begin{itemize}
+\item {Term Frequency}
+\[tf(t,d) =  = \frac{\textit{no of occurrences of term in doc} }{\textit{total number of all words in document}}\]
 \end{itemize}
 
 
 
-\maketitle 
-%---------i-------------------------------------------------------------------------------
-%	CHALLENGES
-%----------------------------------------------------------------------------------------
+\section{Data}
+We used the following datasets for various learning algorithms.
 
-\section{Challenges} % Unnumbered section
+\begin {enumerate}
 
-Following are some key challenges facing the project:
-\begin{itemize}
-	\item \textit{Impact Score:}
-	The impact score definition is purposefully kept a bit fluid. The idea of the impact score is to use the category to determine a unique set of characteristics that determine \textit{impactful} texts in that category. In order to improve the impact score we want to explore using the following transformers: 
+\item \textbf{\textit{20-News:} }
+The newsgroup dataset contains 18000 news posts on 20 topics split. We used this data set to train the classifier and to come up with fundamental categories for the news articles.
 
-	\begin{enumerate}
-		\item Word2Vec : Using this we would include in the word frequency not just exact words which match but also words that are close in meaning. 
-		\item Wordvector averaging 
-		\item BERT and ELMO - Since these embedding take into account not just the word but also the context of the input this would help us improve how we calculate the impact score. 
-	\end{enumerate}
-	
-	\item \textit{Category Classifier:} 
-	Build a classifier system that can compliment the impact score better. We would also like to improve our classification model for which we want to look at using Neural Network (RNN using LSTM CNN) using Keras and Tensorflow. 
-	
-	To name a few we would be exploring the below(and more) features to study each ones impact on the classification model. We will compare the output of the model looking at the  Precision , Recall and F1 scores on the validation set: 
-	
-	\begin{itemize}
-		\item Bag of words 
-		\item Word2Vec using Glove vectors
-		\item TF-IDF
-		\item Part of Speech Tagging
-		\item Averaging word vectors 
-	\end{itemize}
+The categories provided by this dataset seemed to work just fine for our purposes. Following are the categories that this data set provides. To showcase our system and it's functionalities, we created a fictitious client NRA and chose the \textit{talk.politics.guns} category to work upon in detail.
 
-	\item \textit{Dataset:}
-	Obtaining the right data set for the training the classifier and impact score system is crucial. Getting the right data to train the classifier on the categories we want to support is a challenge. We have identified the BBC dataset but would like to explore more.
-	 
-	 Training data for the impact score system is also another challenge. The impact score system will use the category output of the classifier and must also consider the domain in its training. 
-	 
+\begin {enumerate}
+\item {comp.graphics}
+\item {comp.os.ms-windows.misc}
+\item {comp.sys.ibm.pc.hardware}
+\item {comp.sys.mac.hardware}
+\item {comp.windows.x}
+\item {misc.forsale}
+\item {rec.autos}
+\item {rec.motorcycles}
+\item {rec.sport.baseball}
+\item {rec.sport.hockey}
+\item {talk.politics.misc}
+\item {talk.politics.guns}
+\item { talk.politics.mideast}
+\item {sci.crypt}
+\item {sci.electronics}
+\item {sci.med}
+\item {sci.space}
+\item {talk.religion}
+\item {alt.atheism}
+\item {soc.religion.christian}
+\end {enumerate}
+
+We used the 20 News group to also assess accuracy of our classifiers. The test data split out of this dataset was used to assess the accuracy of the classifiers.
+
+\item \textbf{\textit{New York Times articles:}}
+A set of 6179 articles from New York Times archive of December 2018. These provide a perfect testing dataset to see how our system classifies articles into categories and provides impact scores for each.
+
+\end {enumerate}
+
+\section{Experiments}
+Below are some of things we tried in addition to those listed above, however did not chose to include them in the main flow because of lack of good results using the same. 
+
+1. Aspect extraction and their polarity extraction for Impact Analysis. 
+\begin{figure}
+	\centering
+ 	 \includegraphics[width=0.6\linewidth]{Project/p-final-12/Aspect Extraction.png}
+	  \caption{Aspect and Polarity of Aspect Extraction}
+ 	 \label{fig:Aspect Extraction.png}
+\end{figure}
+Aspect is 
+For the purpose of extracting the impact score it seemed almost natural to think of some of things about the product and or brand in question that the people would be talking about. Which led us to the notion of extracting Aspects from the articles and then studying its polarity in order to further understand if that aspect is being positively or negatively perceived.
+
+As described in the picture above, Aspects were extracted using a very rudimentary approach: 
+Step 1: Cleaning the articles and removing all stop words
+Step 2: Tokenize the articles using a Sentence tokenizer
+Step 3: POS Tagging of the sentences 
+Step 4: Identifying the Noun and Noun Phrases
+Step 5: Identifying Aspects and also the associated orientation.
+
+After passing the articles through the pipeline of the aspect and sentiment extraction, below are some of the results that were obtained: 
+<PUT RESULTS>
+
+As the results indicate, since the aspect extraction is purely based on the Noun words and Noun phrases, they are not all truly aspects. 
+Additionally some of these identified as Aspects do not depict the correct polarity hence the decision to not include these results in the main stream for calculating the impact score,. 
+\section{Results}
+We wanted to showcase a few sets of results from our experiments.
+
+\subsection {Classification}
+
+\begin {itemize}
+
+\item {Naive Bayes vs. Stochastic Gradient Descent}
+The SGD classifier did slightly better than the Naive Bayes classifier. <Input table>
+
+\item {Loss function comparison}
+<Talk about comparison of various loss functions>
+
+\end {itemize}
+
+\subsection {Enhancing Vocabulary with GloVe embeddings}
+
+\subsection {New York Times results}
+
+The NYT archive of 2018 December provided a great real world ground for our complete end-to-end testing.
+
+\begin {itemize}
+\item {Classification} The SGD classified 189 articles into the \textit{talk.politics.guns} category. Articles were on variety of topcis like gun shootings, poaching in africa, drug cartels around the world, police aggression in US etc. All of these were rightly classified.
+
+\item {Impact Scores}
+\par We found the impact scores change after enhancing the vocabulary with GloVe embeddings. With the raw input vocabulary, the articles that came in the top 10 index were these:
+
+\par After the use of GloVe embeddings, with the vocabulary that included the positive GloVe embeddings, we found the articles change impact scores. New articles came into the top 10, while those that were present changed their positions.
+
 \end{itemize}
 
- 
-%----------------------------------------------------------------------------------------
-%	INFRASTRUCTURE
-%----------------------------------------------------------------------------------------
-
-\section{Infrastructure} % Unnumbered section
-The details of the infrastructure required for this project is detailed below. The "Application and Interface" section provides a basic information about
-the core of the project (Ex: code and any api calls). Compute is used to specify the infrastructure used for the project. The section for "Dataset" will cover
-the source, preprocessing and cleanup of data done so far.
-
-\subsection{Application and interfaces}
-The project will be written in Python using Scikit-learn library as needed. \newline
-The model will accept input from user on the category and will display the outputs as a stack rank of articles on the internet along with their potential impact scores. \newline
-This application will interact with the model. \newline
-The application will also be responsible for pulling articles from the internet in obtaining test data if required.
-
-\subsection{Compute}
-The project will be run on GCP (Google Cloud platform) using the google cloud credits.
-
-\subsection{Dataset}
-We will be using the “20 Newsgroup” data set from sklearn. The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. \newline
-To the best of our knowledge, it was originally collected by Ken Lang, probably for his Newsweeder: Learning to filter netnews paper, though he does not explicitly mention this collection.
-The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. This comes builtin with scikit learn. And can be used directly from there. \newline
-We are also looking to use the bbc data set which consists of 2225 documents from the BBC news website corresponding to stories in five topical areas business, entertainment, politics, sport, tech.
-
-The data cleanup and preprocessing is done using the TFIDFVectorizer from Scikit-learn.
-We also explored the Bagofwords algorithm before finalizing on the tfidf for training, as this has additional capability of cleaning up words that are too common across documents.
-To provide impact analysis, we have manually built a vocabulary set to look for specific domain in the articles, for two categories.
+\section{Conclusion}
+\section{References}
 
 
-Vocab for medicine
-intestine, parasitic, hospital, lungs, ulcer, trauma, accident, illness, chigger, bug, hemorrhage, chronic, patient, clinic, medicine, cancer,health, cholesterol,drug, hdl,ldl, disease
-\maketitle % Print the title
-
-%----------------------------------------------------------------------------------------
-%	SOCIAL IMPACT
-%----------------------------------------------------------------------------------------
-
-\section*{Social Impact} % Unnumbered section
-A brand is a financial entity that is interested in knowing potentially impacting content on the internet. Substitute a brand with a social cause like \textit{election}, \textit{poverty}, \textit{amazon rainforest} etc and this system will be able to provide a stack rank of articles that are important to such a cause. 
-
-Also, in the context of fake news, one of the features that the impact analysis system could build is \textit{credibility} where the credibility of a news source is a feature that the impact scoring system takes into account for building an impact score. In that context, this system can be integrated with an RSS feeder plugin which can then recommend potentially impacting articles in a stack rank to people who subscribe to causes like the ones mentioned above.
-
+%%% End document
 \end{document}
