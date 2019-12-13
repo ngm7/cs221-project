@@ -42,7 +42,7 @@
 
 %%% Custom sectioning
 \usepackage{sectsty}
-\allsectionsfont{\centering \normalfont\scshape}
+\allsectionsfont{ \normalfont\scshape}
 
 
 %%% Custom headers/footers (fancyhdr package)
@@ -88,16 +88,9 @@
 \begin{document}
 \maketitle
 \section{Introduction}
-There is an abundance of documents/news articles/social media posts that could be meaningful and relevant to a business. Identifying news that could impact a brand is extremely useful for large brands or analytic divisions to get ahead of the PR cycle and formulate an early response. However it is extremely difficult to filter out the documents relevant and impact-full to a particular brand. There have been a number of advances in getting sentiment analysis of a set of documents, however limited work has been done on opinion mining and impact analysis of news articles for a specific brand. We decided to tackle this problem by using classification algorithms and impact analysis methods.
-This project focuses on using classifying the documents into various categories and then look through the lens of a specific brand to calculate an impact score of the document.
+A lot of information on the internet like news, social media posts etc that can impact brands. Directly, in the form of positive or negative PR and indirectly in that their product strategy could be potentially informed from these. Identifying such news is extremely useful for large brands or analytics divisions to get ahead of the PR cycle and formulate an early response.
 
-
-
-
-
-\section{Data}
-\paragraph{20-News} We used the 20-News group data set.
-\paragraph{Newyork Times articles} A set of 6200 articles from New York Times archive.
+\par We attempt to identify information that can be potentially impactful to a brand. We decided to tackle this problem by using classification algorithms and impact analysis methods. This project focuses on using classification to break down the documents into various categories and then look through the lens of a specific brand to calculate an impact score of each document. We present a stack rank of such documents back to the brand.
 
 \section{Method Overview}
 \paragraph{Approach}
@@ -125,7 +118,13 @@ For the purpose of this project we used the SGDClassifier provided by scikit-lea
 TF-IDF which stands for Term Frequency – Inverse Document Frequency. It is one of the most important techniques used for information retrieval to represent how important a specific word or phrase is to a given document.
 
 The tf-idf value increases in proportion to the number of times a word appears in the document but is often offset by the frequency of the word in the corpus, which helps to adjust with respect to the fact that some words appear more frequently in general.
-\[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
+\[tf(t,d) =  = \frac{\textit{no of occurrences of term in doc} }{\textit{total number of all words in document}}\]
+\item Inverse document frequency
+
+ This gives us the uniqueness of a word:
+
+ \[idf(t,d) =  = log(\frac{\textit{no of times the term appears} }{\textit{no of documents containing the word}})\]
+  \[TfIdf(t,d) =  = tf(t,d) * idf(t,d)\]
 
 \subsubsection{Model fitting}
 We then fit the model with pre-processed training data and labels. We feed the model with training data and their categories to train it to accurately classify the documents into respective categories.
@@ -144,7 +143,6 @@ For the purpose of tuning the models , we used the Grid Search where the Hyper-p
 \section{Impact score analysis}
 \subsubsection {Similar Words using GloVe embeddings}
 A measure of how relevant an article is to a brand is to know how many of semantically or linguistically similar words occur in that article. For each of the words in the vocabulary, we get a list of \textit{similar words} using the GloVe learning algorithm [1]. We then use a simple TF algorithm to understand how commonly do these similar words occur in an article.
-
 \begin{center}
 \begin{algorithm}
   \caption{Extend Vocabulary with Similar Words using Glove Model}
@@ -164,7 +162,7 @@ A measure of how relevant an article is to a brand is to know how many of semant
   }
 \end{algorithm}
 \end{center}
-Once the vocabulary is extended, we use this extended vocabulary to identify articles that have the most occurrences of these words. In the Proposal, we had used a similar algorithm to calculate our baseline but with the vocabulary as the raw input set of words. Following is a figure that shows how the expanded vocabulary behaves for a brand like NRA and input vocabulary = \textit {["guns", "weapons", "nra"]}.
+Once the vocabulary is extended, we use this extended vocabulary to identify articles that have the most occurrences of these words. In the baseline program, we had used a similar algorithm to calculate, with the vocabulary as the raw input set of words. Following is a figure that shows how the expanded vocabulary behaves for a brand like NRA and input vocabulary = \textit {["guns", "weapons", "nra"]}.
 
 \begin{figure}[ht]
 	\centering
@@ -207,37 +205,94 @@ We use this extended vocabulary to come up with an impact score by simply counti
 
 We have detailed our results of the above score dictionary in the Results section.
 
-\subsubsection {Relevant words using TF-IDF}
+\subsubsection {Relevant words using TF}
 
-Term Frequency-Inverse Document Frequency commonly known as TF-IDF can be used to find the frequency of vocabulary words in a document to perform sentiment analysis or extract relevancy from a document.
-
-This algorihm has 2 algorithms working together.
-\begin{enumerate}
-\item {Term Frequency}
-\[tf(t,d) =  = \frac{no of occurrences of term in doc }{total number of all words in document}\]
-
-
-Before using this algorithm, we first do some pre processing of the doc as follows:
+Term Frequency is used to find the frequency of vocabulary words in a document to perform impact score analysis by extracting relevancy from a document.
+Before using TF to calculate, we perform a basic text preprocessing on the categorized documents.
 \begin{itemize}
-\item {Remove all stop words.(ex: in, the,are it)}
+\item {Remove all stop words.(ex: in, the, are it)}
 \item {Convert all words to lowercase.}
 \end {itemize}
-Now using the term frequency alone will end up giving us words that are not unique (for ex: repeated words, should not add up to the relevance of the document)
+We then use the term frequency calculation to calculate the impact score..
+\begin{itemize}
+\item {Term Frequency}
+\[tf(t,d) =  = \frac{\textit{no of occurrences of term in doc} }{\textit{total number of all words in document}}\]
+\end{itemize}
 
-\item Inverse document frequency
 
- This gives us the uniqueness of a word:
 
- \[idf(t,d) =  = log(\frac{no of times the term appears }{no of documents containing the word})\]
+\section{Data}
+We used the following datasets for various learning algorithms.
 
-The final step is to multiply the two together to get the TFIDF score which would give us the impact score.
-\end{enumerate}
+\begin {enumerate}
 
-Aspect Extraction followed by Aspect based Sentiment Analysis: This technique was used 
+\item \textbf{\textit{20-News:} }
+The newsgroup dataset contains 18000 news posts on 20 topics split. We used this data set to train the classifier and to come up with fundamental categories for the news articles.
+
+The categories provided by this dataset seemed to work just fine for our purposes. Following are the categories that this data set provides. To showcase our system and it's functionalities, we created a fictitious client NRA and chose the \textit{talk.politics.guns} category to work upon in detail.
+
+\begin {enumerate}
+\item {comp.graphics}
+\item {comp.os.ms-windows.misc}
+\item {comp.sys.ibm.pc.hardware}
+\item {comp.sys.mac.hardware}
+\item {comp.windows.x}
+\item {misc.forsale}
+\item {rec.autos}
+\item {rec.motorcycles}
+\item {rec.sport.baseball}
+\item {rec.sport.hockey}
+\item {talk.politics.misc}
+\item {talk.politics.guns}
+\item { talk.politics.mideast}
+\item {sci.crypt}
+\item {sci.electronics}
+\item {sci.med}
+\item {sci.space}
+\item {talk.religion}
+\item {alt.atheism}
+\item {soc.religion.christian}
+\end {enumerate}
+
+We used the 20 News group to also assess accuracy of our classifiers. The test data split out of this dataset was used to assess the accuracy of the classifiers.
+
+\item \textbf{\textit{New York Times articles:}}
+A set of 6179 articles from New York Times archive of December 2018. These provide a perfect testing dataset to see how our system classifies articles into categories and provides impact scores for each.
+
+\end {enumerate}
 
 \section{Experiments}
 
 \section{Results}
+We wanted to showcase a few sets of results from our experiments.
+
+\subsection {Classification}
+
+\begin {itemize}
+
+\item {Naive Bayes vs. Stochastic Gradient Descent}
+The SGD classifier did slightly better than the Naive Bayes classifier. <Input table>
+
+\item {Loss function comparison}
+<Talk about comparison of various loss functions>
+
+\end {itemize}
+
+\subsection {Enhancing Vocabulary with GloVe embeddings}
+
+\subsection {New York Times results}
+
+The NYT archive of 2018 December provided a great real world ground for our complete end-to-end testing.
+
+\begin {itemize}
+\item {Classification} The SGD classified 189 articles into the \textit{talk.politics.guns} category. Articles were on variety of topcis like gun shootings, poaching in africa, drug cartels around the world, police aggression in US etc. All of these were rightly classified.
+
+\item {Impact Scores}
+\par We found the impact scores change after enhancing the vocabulary with GloVe embeddings. With the raw input vocabulary, the articles that came in the top 10 index were these:
+
+\par After the use of GloVe embeddings, with the vocabulary that included the positive GloVe embeddings, we found the articles change impact scores. New articles came into the top 10, while those that were present changed their positions.
+
+\end{itemize}
 
 \section{Conclusion}
 \section{References}
