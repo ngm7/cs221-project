@@ -39,7 +39,7 @@ def generate_bow(allsentences):
 
 
 # Bag of Words algorithm to use as training data set.
-with io.open('53294') as myfile:
+with io.open('53294_negative') as myfile:
     lines = []
     word_dict = collections.defaultdict(int)
     for line in myfile:
