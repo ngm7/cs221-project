@@ -26,6 +26,7 @@ from commons.datamodel import DataModel
 from classifier.sgdClassifier import SgdClassifier
 from classifier import Classifier
 from commons.data.nyt import buildTestDataFromNYT
+from src.commons.AspectSentimentExtraction import displayaspectandpolarity
 
 CATEGORY_MAP = {
     'guns': 16
@@ -96,6 +97,19 @@ class ImpactScorer:
 
         return sorted(impact_score.items(), key=lambda x: x[1], reverse=True)
 
+#This function extracts the aspects and their polarity from the articles.
+def extractaspectandpolarity(classifier):
+    filepath = r"C:\\Nimisha\\Stanford\\Project\\data\\impactarticleindex\\"
+    #filename="article.txt"
+    impactarticleindex = [5893, 692, 6763, 7274, 326, 3613, 3831, 1665, 3781, 2135]
+    for dIndex in impactarticleindex:
+        datastring = classifier.testing_data.data[dIndex]
+        filecommonname = str(dIndex)
+        f = open(filepath + filecommonname + "article.txt", "w+")
+        f.write(datastring)
+        f.close()
+        displayaspectandpolarity(filepath, filecommonname)
+
 
 def main(category: str):
     """The Main function"""
@@ -117,6 +131,9 @@ def main(category: str):
     enhanced_vocab = VOCABULARY[category]
     for word, score in gloveVectors:
         enhanced_vocab.append(word)
+
+    #Uncomment the below for extracting Aspects and their polarity
+    #extractaspectandpolarity(classifier)
 
     # identify the articles
     stack = ImpactScorer.calculatetfidf(classifier=classifier,
