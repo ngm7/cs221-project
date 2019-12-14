@@ -335,9 +335,35 @@ Following were some of the noteworthy results:
 
 \end{itemize}
 
-\section{Conclusion}
-\section{References}
+\section{Conclusion and Future Work}
+The articles presented in stack rank are a good initial success for our project. We believe these when presented to our fictitious client will help them identify potentially impactful information.
 
+However, we realized that the text based opinion and impact mining is a very difficult task, and felt the need for a much more sophisticated algorithm to get better impact scores. The concept of an impact score, we feel, still does not capture all the richness we can provide using natural language processing algorithms. We intend to improve in the following areas:
+\begin {enumerate}
+\item \textit {Aspect based Sentiment Analysis}: ABSA is another methodology that literature showed is a good way of identifying important aspects in articles. We added a very rudimentary implantation of Aspect based sentiment analysis but we would like to enhance this by using proven methods of deep learning to derive aspects and related scores more appropriately, which will add more meaning to the impact score.
+\item \textit {Better Trained Models}: Currently the GloVe embeddings we use is trained from on wikipedia dataset. We would ideally like to train on top of the available models using customized data. We intend to see if training it on a more relevant dataset creates a better set of similar words that we can use to calculate impact scores
+\item \textit {BERT}: Google's BERT paper brings a deeper sense of language context. There is scope to introduce that in building the impact score.
+\end {enumerate}
+
+\section {Code}
+The code can be referenced in full at: \textit{https://github.com/ngm7/cs221-project}
+
+\section {References}
+We referenced the following sources throughout our project:
+
+\subsection {Papers}
+
+\begin {enumerate}
+\item {GloVe Embedding} : https://nlp.stanford.edu/pubs/glove.pdf
+\item {Aspect extraction for opinion mining with a deep convolutional neural network:} https://sentic.net/aspect-extraction-for-opinion-mining.pdf
+\end {enumerate}
+
+\subsection {Datasets}
+\begin {enumerate}
+\item {20 Newsgroup: http://qwone.com/~jason/20Newsgroups/}
+\item {Wikipedia 2014 + gigaword 5 used in GloVe Embeddings: http://nlp.stanford.edu/data/glove.6B.zip}
+\item {NYT articles: https://developer.nytimes.com/docs/articlesearch-product/1/overview}
+\end{enumerate}
 
 %%% End document
 \end{document}
