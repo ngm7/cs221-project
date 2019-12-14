@@ -48,7 +48,7 @@ categories."""
         print("Recall %" , scoretuple[1])
         print("F1 %", scoretuple[2])
 
-    def classify(self, testing_data: DataModel):
+    def classify(self, testing_data: DataModel): # NYT is passed into testing_data
         self.testing_data = testing_data
         predicted_svm = self.model.predict(testing_data.data)
         # score = metrics.accuracy_score(predicted_svm, testing_data.target)

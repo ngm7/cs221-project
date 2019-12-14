@@ -1,4 +1,4 @@
-from src.commons import aspsentiment
+from commons import aspsentiment
 
 def printResultChoice():
     userChoice = str(input('\nDo you want to print the result on output window? (Y/N) :'))

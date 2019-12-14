@@ -24,9 +24,8 @@ from sklearn.feature_extraction import stop_words
 
 from commons.datamodel import DataModel
 from classifier.sgdClassifier import SgdClassifier
-from classifier import Classifier
 from commons.data.nyt import buildTestDataFromNYT
-from src.commons.AspectSentimentExtraction import displayaspectandpolarity
+from commons.AspectSentimentExtraction import displayaspectandpolarity
 
 CATEGORY_MAP = {
     'guns': 16
@@ -113,10 +112,10 @@ def extractaspectandpolarity(classifier):
 
 def main(category: str):
     """The Main function"""
-    testData = fetch_20newsgroups(subset='train', shuffle=True)
+    trainData = fetch_20newsgroups(subset='train', shuffle=True)
     classifier_training_data = DataModel()
-    classifier_training_data.setData(testData.data)
-    classifier_training_data.setTarget(testData.target)
+    classifier_training_data.setData(trainData.data)
+    classifier_training_data.setTarget(trainData.target)
 
     classifier_testing_data = buildTestDataFromNYT(download=False, articlesDir="../data/nyt", writeToDir=True)
 
