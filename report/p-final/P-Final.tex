@@ -274,19 +274,24 @@ Aspect is
 For the purpose of extracting the impact score it seemed almost natural to think of some things about the product and or brand in question that the people would be talking about. Which led us to the notion of extracting Aspects from the articles and then studying its polarity in order to further understand if that aspect is being positively or negatively perceived.
 
 As described in the diagram above, Aspects were extracted using a very rudimentary approach: 
-Step 1: Hear we cleaning the articles, removing all stop words
-Step 2: We then tokenized the articles using a Sentence tokenizer
-Step 3: POS Tagging for each token in the sentence were then identified.  
-Step 4: We then filtered those tokens which were Noun and Noun Phrases
-Step 5: Using the tokens which were nouns or noun phrases we then identify ed the Aspects and also the associated orientation/polarity.
+{Step 1: Hear we cleaning the articles, removing all stop words}
+{Step 2: We then tokenized the articles using a Sentence tokenizer}
+{Step 3: POS Tagging for each token in the sentence were then identified.}  
+{Step 4: We then filtered those tokens which were Noun and Noun Phrases}
+{Step 5: Using the tokens which were nouns or noun phrases we then identify ed the Aspects and also the associated orientation/polarity.}
 
-After passing the articles through the pipeline of the aspect and sentiment extraction, below are some of the results that were obtained: 
+{After passing the articles through the pipeline of the aspect and sentiment extraction, below are some of the results that were obtained:}
 
+\begin{figure}
+	\centering
+ 	 \includegraphics[width=0.6\linewidth]{Project/p-final-12/Aspect Scores.png}
+	  \caption{Aspect and Polarity of Aspect Extraction}
+ 	 \label{fig:Aspect Extraction.png}
+\end{figure}
 
 As the results indicate, since the aspect extraction is purely based on the Noun words and Noun phrases, they are not all truly aspects. 
-Additionally some of these identified as Aspects do not depict the correct polarity hence the decision to not include these results in the main stream for calculating the impact score,. 
-\section{Results}
-We wanted to showcase a few sets of results from our experiments
+Additionally some of these identified as Aspects do not depict the correct polarity hence we decided to not include these results in the main stream for calculating the impact score.
+\section{
 
 \section{Results}
 We wanted to showcase a few sets of results from our experiments.
