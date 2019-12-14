@@ -30,6 +30,7 @@
 \documentclass[paper=a4, fontsize=11pt]{scrartcl}
 \usepackage[T1]{fontenc}
 \usepackage{fourier}
+\usepackage{float}
 
 \usepackage[english]{babel}															% English language/hyphenation
 \usepackage[protrusion=true,expansion=true]{microtype}
@@ -120,7 +121,7 @@ TF-IDF which stands for Term Frequency – Inverse Document Frequency. It is one
 The tf-idf value increases in proportion to the number of times a word appears in the document but is often offset by the frequency of the word in the corpus, which helps to adjust with respect to the fact that some words appear more frequently in general.
 \[tf(t,d) =  = \frac{\textit{no of occurrences of term in doc} }{\textit{total number of all words in document}}\]
 
-Inverse document frequency
+\par Inverse document frequency
 
  This gives us the uniqueness of a word:
 
@@ -257,6 +258,9 @@ The categories provided by this data set seemed to work just fine for our purpos
 
 We used the 20 News group to also assess accuracy of our classifiers. The test data split out of this dataset was used to assess the accuracy of the classifiers.
 
+\item \textbf{\textit{Wikipedia 2014 + Gigaword 5}}
+The GloVe enhancement used the Wikipedia 2014 dataset with 300 dimensional vectors. This dataset helps get a set of enhanced positive words that complement a given word. For the input set of words, we find the positive GloVe embeddings and include them in an enhanced vocabulary, which we can then use for impact score algorithms.
+
 \item \textbf{\textit{New York Times articles:}}
 A set of 6179 articles from New York Times archive of December 2018. These provide a perfect testing dataset to see how our system classifies articles into categories and provides impact scores for each.
 
@@ -265,7 +269,7 @@ A set of 6179 articles from New York Times archive of December 2018. These provi
 \section{Experiments}
 Below are some of things we tried in addition to those listed above, however did not chose to include them in the main flow because of lack of good results using the same.
 1. Aspect extraction and their polarity extraction for Impact Analysis.
-\begin{figure}
+\begin{figure}[H]
 	\centering
  	 \includegraphics[width=0.6\linewidth]{Aspect_Extraction.png}
 	  \caption{Aspect and Polarity of Aspect Extraction}
@@ -283,7 +287,7 @@ As described in the diagram above, Aspects were extracted using a very rudimenta
 
 {After passing the articles through the pipeline of the aspect and sentiment extraction, below are some of the results that were obtained:}
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
  	 \includegraphics[width=0.6\linewidth]{Aspect_Scores.png}
 	  \caption{Aspects and Polarity Score of Aspects}
@@ -293,35 +297,41 @@ As described in the diagram above, Aspects were extracted using a very rudimenta
 As the results indicate, since the aspect extraction is purely based on the Noun words and Noun phrases, they are not all truly aspects.
 Additionally some of these identified as Aspects do not depict the correct polarity hence we decided to not include these results in the main stream for calculating the impact score.
 
-
 \section{Results}
 We wanted to showcase a few sets of results from our experiments.
 
-\subsection {Classification}
 
-\begin {itemize}
+\subsection {Classification: Naive Bayes vs. Stochastic Gradient Descent}
+The SGD classifier did slightly better than the Naive Bayes classifier. We used the test data split in the News20 group dataset to test out our classification and verify with the labels already present in the dataset.
 
-\item {Naive Bayes vs. Stochastic Gradient Descent}
-The SGD classifier did slightly better than the Naive Bayes classifier. <Input table>
-
-\item {Loss function comparison}
-<Talk about comparison of various loss functions>
-
-\end {itemize}
-
-\subsection {Enhancing Vocabulary with GloVe embeddings}
+\par The Naive Bayes classifier had an accuracy of 0.80 and the SGD classifier with hinge loss had an accuracy of 0.82. We believe that is too close a difference to conclusively say one is better than another.
 
 \subsection {New York Times results}
 
-The NYT archive of 2018 December provided a great real world ground for our complete end-to-end testing.
+The NYT archive of 2018 December provided a great real world ground for our complete end-to-end testing. We went with the fictitious scenario that NRA is our client and they have selected the category \textit{guns}. They have then provided the following set of words as vocabulary: \textit{["guns", "shooting", "lobby", "rifles", "weapon", "nra", "handgun", "politics"]}
+
+Following were some of the noteworthy results:
+
+\begin{figure}[H]
+	\centering
+ 	 \includegraphics[width=0.6\linewidth]{nyt_articles_stackrank.png}
+	  \caption{NYT Articles Stack Rank Without GloVe embeddings and With Glove Embeddings}
+ 	 \label{fig:NYT Articles}
+\end{figure}
 
 \begin {itemize}
-\item {Classification} The SGD classified 189 articles into the \textit{talk.politics.guns} category. Articles were on variety of topcis like gun shootings, poaching in africa, drug cartels around the world, police aggression in US etc. All of these were rightly classified.
+\item {\textbf{\textit{Classification}}} The SGD classified 189 articles into the \textit{talk.politics.guns} category. Articles were on variety of topcis like gun shootings, poaching in africa, drug cartels around the world, police aggression in US etc. All of these were rightly classified.
 
-\item {Impact Scores}
-\par We found the impact scores change after enhancing the vocabulary with GloVe embeddings. With the raw input vocabulary, the articles that came in the top 10 index were these:
+\item {\textbf{\textit{Impact Scores}}}
+\par We found the impact scores change after enhancing the vocabulary with GloVe embeddings. With the raw input vocabulary, the articles that came in the top 10 index included the following:
 
-\par After the use of GloVe embeddings, with the vocabulary that included the positive GloVe embeddings, we found the articles change impact scores. New articles came into the top 10, while those that were present changed their positions.
+\begin {enumerate}
+\item Article 2888: Mass shootings in Parkland, FL and gun restrictions
+\item Article 158: Police shootings of black population
+\item Article 3967: Nigerian Military shooting unarmed protesters
+\end {enumerate}
+
+\par After the use of GloVe embeddings, with the vocabulary that included the positive GloVe embeddings, we found the articles change impact scores. New articles came into the top 10, while those that were present changed their positions. For example we now found \textit{Article 3957 - Use of American guns in poaching in Mozambique} entering into the top 10. This article talks about shipment of American guns being sent over for illegal activities in Africa and can be important from a strategy perspective for NRA, our fictitious client.
 
 \end{itemize}
 
