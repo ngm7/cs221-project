@@ -1,0 +1,12 @@
+We referenced the following sources throughout our project:
+
+TUTORIALS -
+1. scikit learn for SGD: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html
+
+PAPERS -
+1. GloVe Embedding : https://nlp.stanford.edu/pubs/glove.pdf
+2. Aspect extraction for opinion mining with a deep convolutional neural network : https://sentic.net/aspect-extraction-for-opinion-mining.pdf
+
+DATASETS -
+http://qwone.com/~jason/20Newsgroups/
+http://mlg.ucd.ie/datasets/bbc.html
