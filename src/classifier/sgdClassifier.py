@@ -7,6 +7,8 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import SGDClassifier
 from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 from sklearn.pipeline import Pipeline
+import numpy as np
+from sklearn.metrics import precision_recall_fscore_support
 
 
 class SgdClassifier(Classifier):
@@ -39,6 +41,12 @@ categories."""
                                                                alpha=1e-3, max_iter=20, random_state=42,
                                                                early_stopping=True, tol=100))])
         self.model.fit(self.training_data.data, self.training_data.target)
+        predicted_svm = self.model.predict(self.testing_data.data)
+        print(np.mean(predicted_svm == self.testing_data.target))
+        scoretuple = precision_recall_fscore_support(self.testing_data.target, predicted_svm, average='macro')
+        print("Precision %", scoretuple[0])
+        print("Recall %" , scoretuple[1])
+        print("F1 %", scoretuple[2])
 
     def classify(self, testing_data: DataModel):
         self.testing_data = testing_data
