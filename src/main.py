@@ -16,8 +16,8 @@ Output
  """
 import sys
 import gensim
+import os
 from collections import defaultdict
-from typing import List
 
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction import stop_words
@@ -43,10 +43,13 @@ class ImpactScoreUtil:
     @staticmethod
     def find_similar_words_using_glove(word):
         # TODO : File path needs to be changed
-        # gloveFile = r'../data/glove.6B/glove.6B.300d.txt'
-        word2VecFile = r'../../data/glove.6B/glove.6B.300d_word2Vec.txt'
-        # gensim.scripts.glove2word2vec.glove2word2vec(gloveFile, word2VecFile)
+        print("Attempting to find 20 similar words for 'gun'")
+        gloveFile = r'../glove.6B.300d.txt'
+        word2VecFile = r'../glove.6B.300d_word2Vec.txt'
+        print(f"Reading from Glove File: {gloveFile}. Converting to word2Vec format: {word2VecFile}")
+        gensim.scripts.glove2word2vec.glove2word2vec(gloveFile, word2VecFile)
         model = gensim.models.KeyedVectors.load_word2vec_format(word2VecFile, binary=False)
+        print("Finishing gloVe learning.")
         return model.most_similar(positive=[word], topn=20)
 
 
@@ -112,15 +115,22 @@ def extractaspectandpolarity(classifier):
 
 def main(category: str):
     """The Main function"""
-    trainData = fetch_20newsgroups(subset='train', shuffle=True)
+    print("Fetching 20Newsgroup data to train classifier")
+    trainData_20newsgroup = fetch_20newsgroups(subset='train', shuffle=True)
+    testData_20newsgroup = fetch_20newsgroups(subset='test', shuffle=True)
+
+    testData = DataModel()
+    testData.setData(testData_20newsgroup.data)
+    testData.setTarget(testData_20newsgroup.target)
+
     classifier_training_data = DataModel()
-    classifier_training_data.setData(trainData.data)
-    classifier_training_data.setTarget(trainData.target)
+    classifier_training_data.setData(trainData_20newsgroup.data)
+    classifier_training_data.setTarget(trainData_20newsgroup.target)
 
     classifier_testing_data = buildTestDataFromNYT(download=False, articlesDir="../data/nyt", writeToDir=True)
 
     classifier = SgdClassifier()
-    classifier.trainModel(classifier_training_data)
+    classifier.trainModel(classifier_training_data, testData)
     predictions_sgd = classifier.classify(classifier_testing_data)
 
     # identify indices for talk.politics.guns (index 16 in target_names)
@@ -130,7 +140,7 @@ def main(category: str):
     enhanced_vocab = VOCABULARY[category]
     for word, score in gloveVectors:
         enhanced_vocab.append(word)
-
+    print(f"Enhanced vocabulary with GloVe embeddings for 'gun' : {enhanced_vocab}")
     #Uncomment the below for extracting Aspects and their polarity
     #extractaspectandpolarity(classifier)
 

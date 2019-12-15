@@ -32,7 +32,8 @@ categories."""
         return count_vect, tfidf_transformer
 
     # This function trains the model
-    def trainModel(self, training_data: DataModel):
+    def trainModel(self, training_data: DataModel, testing_data: DataModel):
+        print("\nTraining the SGD classifier with newsgroup20 data...")
         self.training_data = training_data
         count_vect, tfidf_transformer = self.extractfeatures()
         self.model = Pipeline(steps=[('vect', count_vect),
@@ -40,13 +41,17 @@ categories."""
                                      ('clf-svm', SGDClassifier(loss='hinge', penalty='l2',
                                                                alpha=1e-3, max_iter=20, random_state=42,
                                                                early_stopping=True, tol=100))])
-        self.model.fit(self.training_data.data, self.training_data.target)
-        predicted_svm = self.model.predict(self.testing_data.data)
-        print(np.mean(predicted_svm == self.testing_data.target))
-        scoretuple = precision_recall_fscore_support(self.testing_data.target, predicted_svm, average='macro')
+        self.model.fit(training_data.data, training_data.target)
+        print("Training done. Printing out Accuracy statistics: ")
+        # Calculate accuracy scores.
+        predicted_svm = self.model.predict(testing_data.data)
+        print(f"Accuracy: {np.mean(predicted_svm == testing_data.target)}")
+        scoretuple = precision_recall_fscore_support(testing_data.target, predicted_svm, average='macro')
         print("Precision %", scoretuple[0])
-        print("Recall %" , scoretuple[1])
+        print("Recall %", scoretuple[1])
         print("F1 %", scoretuple[2])
+        print("\n")
+
 
     def classify(self, testing_data: DataModel): # NYT is passed into testing_data
         self.testing_data = testing_data

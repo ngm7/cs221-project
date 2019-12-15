@@ -22,7 +22,7 @@ def buildTestDataFromNYT(download=True, articlesDir=".", writeToDir=False):
     count = 0
 
     if not download:
-        print("Building test dataset from NYT's archive of 12/2018.")
+        print("\nStep 1: Building Test Dataset Building test dataset from NYT's archive of 12/2018.")
         print(f"Loading articles from f{articlesDir}")
         files = os.listdir(articlesDir)
         files = [os.path.join(articlesDir, f) for f in files]
