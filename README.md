@@ -1,14 +1,14 @@
 The Impact Lens project attempts to identify potentially impactful information for a specific domain or brand. Imagine a fictitious client like NRA wants to identify information on the internet that could affect their product strategy or brand image. They would like to identify information on the internet that is relevant to guns. They have come to us to help them get ahead of the PR cycle and formulate a response / strategy. We will run our program to help them.
 
-Our program presupposes that NRA gave us the following vocabulary to describe the domain they are looking for: _["guns", "shooting", "lobby", "rifles", "weapon", "nra", "handgun", "politics"]_. Ideally we would have taken this as input from the client. 
+Our program presupposes that NRA gave us the following vocabulary to describe the domain they are looking for: _{"guns", "shooting", "lobby", "rifles", "weapon", "nra", "handgun", "politics"}_. Ideally we would have taken this as input from the client. 
 
 # HOW TO:
 0. Before you start, you will need to download the gloVe dataset from their website: http://nlp.stanford.edu/data/glove.6B.zip
 1. install dependencies - `$pip install requests, newspaper, pyjq, gensim, sklearn, flask, numpy`
-1. Click on the zip link above, download and keep in repository's home directory
-2. Unzip it. The gloVe files for various dimensions will be extracted into the home directory. Keep them there. The code uses this relative path
-3. go to src folder
-4. Run $python3 main.py guns
+2. Click on the zip link above, download and keep in repository's home directory
+3. Unzip it. The gloVe files for various dimensions will be extracted into the home directory. Keep them there. The code uses this relative path
+4. go to src folder
+5. `$python3 main.py guns`
 
 # Slighly Longer Explanation:
 The program follows the following 4 stages:
