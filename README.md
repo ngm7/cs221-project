@@ -4,6 +4,7 @@ Our program presupposes that NRA gave us the following vocabulary to describe th
 
 # HOW TO:
 0. Before you start, you will need to download the gloVe dataset from their website: http://nlp.stanford.edu/data/glove.6B.zip
+1. install dependencies - `$pip install requests, newspaper, pyjq, gensim, sklearn, flask, numpy`
 1. Click on the zip link above, download and keep in repository's home directory
 2. Unzip it. The gloVe files for various dimensions will be extracted into the home directory. Keep them there. The code uses this relative path
 3. go to src folder
